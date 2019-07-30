@@ -1,0 +1,72 @@
+@less: '../../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+.freelancer-job-my_proposals {
+	.page-content .page-content-section {
+		padding-top: 15px;
+	}
+	.page-navs {
+		padding: 3px 0;
+		border-bottom: 1px solid @border-color;
+
+		.tab {      
+			padding: 5px 20px;
+			border: 1px solid @border-color;
+			.border-radius(5px 5px 0 0);
+			border-bottom: none;      
+			text-decoration: none;
+			background-color: @border-color;
+			color: @default-color;
+			outline: none;
+			letter-spacing: 1px;
+		}
+
+		.active {
+			border-bottom: 1px solid #fff;
+			color: #666;
+			background-color: #fff;
+			padding: 5px 20px;
+		}
+	}
+
+	.page-section {
+		.job-title {
+			font-size: 16px;
+		}
+
+		.item-header {
+			font-weight: bold;
+		}
+
+		.title-section {
+			border-bottom: 1px solid @border-color;
+			padding: 10px 0;
+			font-size: 20px;
+			margin-bottom: 25px;
+
+			.connects {
+				font-size: 18px;
+				float: right;
+				margin-top: 8px;
+			}
+		}
+	}
+
+	#offers.box-section {
+		margin-top: 0px;
+	}
+
+	.box-row {
+		.status-cancelled {
+			text-transform: uppercase;
+			color: #e74d44;
+		}
+
+		.submitted-date, .username, .date, .status {
+			margin-top: 2px;
+		}
+	}
+}

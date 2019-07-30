@@ -1,0 +1,49 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+/* Plugins */
+.toolbar .select2-container--default .select2-selection--single .select2-selection__clear {
+  display: none;
+}
+#user_overview {
+  margin: 15px;
+}
+#user_overview .hourly-rate {
+  font-size: 20px;
+  margin-top: 20px;
+}
+#user_overview .local-time {
+  margin-top: 15px;
+}
+#user_overview .last-active {
+  margin-top: 25px;
+  text-align: right;
+}
+#user_overview .created-at {
+  text-align: right;
+  margin-top: 20px;
+}
+#user_overview table.table tr td {
+  text-align: center;
+  vertical-align: middle;
+}
+#user_overview .stars {
+  position: relative;
+}
+#user_overview .stars .star-marks {
+  margin-top: -8px;
+  margin-left: -1px;
+}
+#user_overview .job-success {
+  display: inline-block;
+  border-bottom: 3px solid #14bff4;
+  padding: 0px 10px 5px;
+}
+#user_overview .tab-content .control-label {
+  font-weight: bold;
+}
+#user_overview .tab-content .form-control-static.email {
+  text-decoration: underline;
+}
+#user_overview .logo-gateway {
+  height: 35px;
+}

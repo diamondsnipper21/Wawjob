@@ -1,0 +1,208 @@
+/***
+Dashboard stats
+***/
+
+.dashboard-stat-variant(@name, @bg-color, @text-color) {
+    &.@{name} {
+        background-color: @bg-color;  
+
+        .visual {
+            > i { 
+                color: @text-color;
+                opacity: 0.3;
+                filter: alpha(opacity=30); 
+            }
+        }
+
+        .details {
+            .number {
+                color: @text-color; 
+            }
+
+            .desc {
+                color: @text-color; 
+                opacity: 0.8;
+                filter: alpha(opacity=80);    
+            }              
+        }
+
+        .more {
+            color: @text-color;
+            background-color: rgba(0,0,0,0.3);   
+
+            &:hover {
+                background-color: rgba(0,0,0,0.5);   
+            }
+        }
+    }
+}
+
+.dashboard-stat {
+    margin-bottom: 10px;
+    overflow: hidden;
+
+    &.round {border-radius: 5px;}
+
+    .clearfix();
+
+    .portlet &:last-child {
+        margin-bottom: 0;
+    }
+
+    .visual {
+        width: 80px;
+        height:80px;
+        display: block;
+        float: left;
+        padding-top: 10px;
+        padding-left: 15px;   
+        margin-bottom: 15px;  
+        font-size: 35px; 
+        line-height: 35px; 
+
+        > i {
+            margin-left: -27px;  
+            font-size: 110px; 
+            line-height: 110px;  
+        }
+    }
+
+    .details { 
+        position: absolute;
+        right: 15px;
+        padding-right: 15px;  
+ 
+        .number {    
+            padding-top: 25px;  
+            text-align: right; 
+            font-size: 34px;
+            line-height: 36px;
+            letter-spacing: -1px;
+            margin-bottom: 0px;     
+            font-weight: 300;
+        }
+
+        .desc {
+            text-align: right;
+            font-size: 16px;
+            letter-spacing: 0px;
+            font-weight: 300;
+        }
+    }
+
+    .more {
+        clear: both;
+        display: block;   
+        padding: 6px 10px 6px 10px;
+        position: relative;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 11px;
+        opacity: 0.7;  
+        filter: alpha(opacity=70);
+
+        &:hover {
+            text-decoration: none;
+            opacity: 0.9;  
+            filter: alpha(opacity=90);
+        }
+
+        > i {
+            display: inline-block;
+            margin-top: 1px;
+            float: right;
+        }
+    }  
+
+
+    .dashboard-stat-variant(blue-madison, #578ebe, #fff);
+    .dashboard-stat-variant(blue, #4991D0, #fff);
+    .dashboard-stat-variant(pink, #BF50C3, #fff);
+    .dashboard-stat-variant(green, #449E69, #fff);
+    .dashboard-stat-variant(blue-dark, #22516D, #fff);
+    .dashboard-stat-variant(jade, #226D6D, #fff);
+    .dashboard-stat-variant(brown, #F59630, #fff);
+    .dashboard-stat-variant(red-intense, #e35b5a, #fff);
+    .dashboard-stat-variant(green-haze, #44b6ae, #fff);
+    .dashboard-stat-variant(purple-plum, #8775a7, #fff);
+    
+}
+
+/***
+Text Stats
+***/
+
+.text-stat {
+    h3 {
+        margin-top: 5px;
+        margin-bottom: 0px;
+        font-size: 18px;
+    }
+
+    span {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: @screen-xs-max) { /* 767px */  
+
+  .text-stat {
+    margin-top: 20px;
+  }  
+
+}
+
+
+/* white icon */
+
+.icon-sf {
+    
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-top: 3px;
+    line-height: 14px;
+    vertical-align: top;
+    background-image: url(/assets/images/common/icons/sf-icons.png);    
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    &.icon-white {
+      background-image: url(/assets/images/common/icons/sf-icons-white.png);
+    }
+}
+
+
+/*  Misc */
+.icon-swapright {
+  background-position: -27px -10px;
+}
+
+.icon-swapdown {
+  background-position: -68px -10px;
+}
+
+.icon-swapleft {
+  background-position: -8px -10px;
+}
+
+.icon-swapup {
+  background-position: -46px -10px;
+}
+
+.icon-big-swapright {
+  background-position: -42px -28px;
+}
+
+.icon-big-swapdown {
+  background-position: -115px -28px;
+}
+
+.icon-big-swapleft {
+  background-position: -6px -28px;
+}
+
+.icon-big-swapup {
+  background-position: -78px -28px;
+}

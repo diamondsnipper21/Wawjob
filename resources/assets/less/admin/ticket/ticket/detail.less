@@ -1,0 +1,206 @@
+@less: '../../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '/assets/plugins/metronic/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css';
+@import '/assets/plugins/select2/select2.min.css';
+
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal.css';
+
+@import '/assets/plugins/metronic/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css';
+
+.ticket-ticket-detail {
+	.no-messsages {
+		text-align: center;
+		font-style: italic;
+		border-bottom: 1px solid #e5e5e5;
+	}
+
+	.media-list {	
+	}
+
+	.ticket-info {
+		.control-label {
+			text-align: left;
+			margin-bottom: 10px;
+			a {
+				text-decoration: underline;
+			}
+		}
+		.assigner {
+			margin-top: 15px;
+			img {
+				float: left;
+				margin-left: 10px;
+				margin-right: 15px;
+			}
+			.assigner-name {
+				display: block;
+				padding-top: 21px;
+			}
+			.assigner-role {
+				display: block;
+				padding-top: 5px;
+			}
+		}
+
+		.receiver {
+			margin-top: 15px;
+			img {
+				float: left;
+				margin-left: 10px;
+				margin-right: 15px;
+			}
+			.receiver-name {
+				display: block;
+				padding-top: 21px;
+			}
+			.receiver-role {
+				display: block;
+				padding-top: 5px;
+			}
+		}
+	}
+
+	.ticket-status {
+		span {
+			font-size: 12px;
+			color: #337ab7;
+		}
+
+		blockquote {
+			font-style: italic;
+			font-size: 12px;
+			margin-top: 10px;
+		}
+	}
+	.text_center
+	{
+		text-align: center;
+	}
+}
+.ticket-detail.portlet {
+	.box-shadow(0px 0px 0px 0px)
+}
+.button-solve {
+	background-color: #26A69A!important;
+}
+.button-reopen {
+	display: inline!important;
+	background-color: #F3565D!important;
+	width:100px!important;
+}
+.reopen-panel {
+	padding-top: 15px;
+}
+.view-project-label {
+	text-decoration: underline;
+}
+.button-panel {
+	margin-top: 11px;
+}
+
+.memo-control {
+	margin-bottom: 10px;
+}
+.initiator-label {
+	font-size: 8px!important;
+	font-weight: normal!important;
+	padding: 3px 6px 3px 6px;
+	text-transform: uppercase;
+	text-shadow: none !important;
+	color: white;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25em;
+	line-height: 1;
+	display: inline;
+	background-color: #00BCD4;
+	font-family: "Open Sans", sans-serif;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.18);
+	box-sizing: border-box;
+}
+.info-panel {
+	border-right: solid 1px #ddd;
+}
+.content-panel {
+	.attachments {
+		margin: 10px 0px;
+	}
+}
+.more-less-link {
+	color: #337ab7;
+}
+.all-text {
+	display: none;
+}
+.btn-ticket {
+    width: 196px!important;
+    display: inline-block!important;
+    overflow: visible!important;
+    position: relative!important;
+}
+.badge-unread-message {
+	background-color: #F36A5A!important;
+    color: white!important;
+    position: absolute!important;
+    left: auto;
+    right: -3px;
+    top: -6px!important;
+}
+.img-circle-message-item {
+	width: 40px!important;
+}
+
+.message-list {
+	.message-row {
+		.sender-message {
+			margin-left: 90px;
+		}
+
+		.sender-image {
+			width: 80px;
+		}
+		
+		.sender-name {
+			padding-top: 5px;
+			display: block;
+		}
+	}
+}
+
+.required-value {
+	color: #f13e64;
+}
+.load-more-panel {
+	display: block;
+	padding-top: 13px;
+    padding-bottom: 5px;
+    border: solid 1px #ddd;
+    margin-bottom: 9px;
+}
+.notification-msg-panel {
+	padding-top: 36px;
+}
+.padding-top-10 {
+	padding-top: 10px;
+}
+.select2-assignee-wrapper {
+	width:150px;
+}
+.select2-priority-wrapper {
+	width:150px;
+}
+
+.ticket-description {
+	font-style: italic;
+	font-weight: bold;
+	a {
+		text-decoration: underline;
+	}
+}

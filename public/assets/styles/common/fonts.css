@@ -1,0 +1,117 @@
+/**
+ * Fonts
+ */
+@font-face {
+  font-family: 'bauhs93';
+  src: url('/assets/fonts/bauhs93.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open-sanslight';
+  src: url('/assets/fonts/opensans-light-webfont.eot');
+  src: url('/assets/fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/opensans-light-webfont.woff2') format('woff2'), url('/assets/fonts/opensans-light-webfont.woff') format('woff'), url('/assets/fonts/opensans-light-webfont.ttf') format('truetype'), url('/assets/fonts/opensans-light-webfont.svg#open_sanslight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'helvetica-neue';
+  src: url('/assets/fonts/helvetica-neue.eot');
+  src: url('/assets/fonts/helvetica-neue.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/helvetica-neue.woff2') format('woff2'), url('/assets/fonts/helvetica-neue.woff') format('woff'), url('/assets/fonts/helvetica-neue.ttf') format('truetype'), url('/assets/fonts/helvetica-neue.svg#helvetica_neue') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'arial-regular';
+  src: url('/assets/fonts/arial-webfont.eot');
+  src: url('/assets/fonts/arial-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/arial-webfont.woff2') format('woff2'), url('/assets/fonts/arial-webfont.woff') format('woff'), url('/assets/fonts/arial-webfont.ttf') format('truetype'), url('/assets/fonts/arial-webfont.svg#arialregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'myriadpro-regular';
+  src: url('/assets/fonts/MyriadPro-Regular.eot');
+  src: local('☺'), url('/assets/fonts/MyriadPro-Regular.woff') format('woff'), url('/assets/fonts/MyriadPro-Regular.ttf') format('truetype'), url('/assets/fonts/MyriadPro-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'myriadpro-boldcond';
+  src: url('/assets/fonts/MyriadProBoldCond.eot');
+  src: url('/assets/fonts/MyriadProBoldCond.eot') format('embedded-opentype'), url('/assets/fonts/MyriadProBoldCond.woff2') format('woff2'), url('/assets/fonts/MyriadProBoldCond.woff') format('woff'), url('/assets/fonts/MyriadProBoldCond.ttf') format('truetype'), url('/assets/fonts/MyriadProBoldCond.svg#MyriadProBoldCond') format('svg');
+}
+@font-face {
+  font-family: 'myriadpro-cond';
+  src: url('/assets/fonts/MyriadPro-Cond.eot');
+  src: local('☺'), url('/assets/fonts/MyriadPro-Cond.woff') format('woff'), url('/assets/fonts/MyriadPro-Cond.ttf') format('truetype'), url('/assets/fonts/MyriadPro-Cond.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'corbel';
+  src: url('/assets/fonts/corbel.eot');
+  src: url('/assets/fonts/corbel.eot') format('embedded-opentype'), url('/assets/fonts/corbel.woff2') format('woff2'), url('/assets/fonts/corbel.woff') format('woff'), url('/assets/fonts/corbel.ttf') format('truetype'), url('/assets/fonts/corbel.svg#corbel') format('svg');
+}
+@font-face {
+  font-family: 'open-sansitalic';
+  src: url('/assets/fonts/opensans-italic-webfont.eot');
+  src: url('/assets/fonts/opensans-italic-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/opensans-italic-webfont.woff2') format('woff2'), url('/assets/fonts/opensans-italic-webfont.woff') format('woff'), url('/assets/fonts/opensans-italic-webfont.ttf') format('truetype'), url('/assets/fonts/opensans-italic-webfont.svg#open_sansitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open-sansextrabold_italic';
+  src: url('/assets/fonts/opensans-extrabolditalic-webfont.eot');
+  src: url('/assets/fonts/opensans-extrabolditalic-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/opensans-extrabolditalic-webfont.woff2') format('woff2'), url('/assets/fonts/opensans-extrabolditalic-webfont.woff') format('woff'), url('/assets/fonts/opensans-extrabolditalic-webfont.ttf') format('truetype'), url('/assets/fonts/opensans-extrabolditalic-webfont.svg#open_sansextrabold_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open-sansextrabold';
+  src: url('/assets/fonts/opensans-extrabold-webfont.eot');
+  src: url('/assets/fonts/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/opensans-extrabold-webfont.woff2') format('woff2'), url('/assets/fonts/opensans-extrabold-webfont.woff') format('woff'), url('/assets/fonts/opensans-extrabold-webfont.ttf') format('truetype'), url('/assets/fonts/opensans-extrabold-webfont.svg#open_sansextrabold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open-sansbold_italic';
+  src: url('/assets/fonts/opensans-bolditalic-webfont.eot');
+  src: url('/assets/fonts/opensans-bolditalic-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/opensans-bolditalic-webfont.woff2') format('woff2'), url('/assets/fonts/opensans-bolditalic-webfont.woff') format('woff'), url('/assets/fonts/opensans-bolditalic-webfont.ttf') format('truetype'), url('/assets/fonts/opensans-bolditalic-webfont.svg#open_sansbold_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open-sansbold';
+  src: url('/assets/fonts/opensans-bold-webfont.eot');
+  src: url('/assets/fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/opensans-bold-webfont.woff2') format('woff2'), url('/assets/fonts/opensans-bold-webfont.woff') format('woff'), url('/assets/fonts/opensans-bold-webfont.ttf') format('truetype'), url('/assets/fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open-sanssemibold';
+  src: url('/assets/fonts/opensans-semibold-webfont.eot');
+  src: url('/assets/fonts/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/opensans-semibold-webfont.woff2') format('woff2'), url('/assets/fonts/opensans-semibold-webfont.woff') format('woff'), url('/assets/fonts/opensans-semibold-webfont.ttf') format('truetype'), url('/assets/fonts/opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open-sanssemibold_italic';
+  src: url('/assets/fonts/opensans-semibolditalic-webfont.eot');
+  src: url('/assets/fonts/opensans-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/opensans-semibolditalic-webfont.woff2') format('woff2'), url('/assets/fonts/opensans-semibolditalic-webfont.woff') format('woff'), url('/assets/fonts/opensans-semibolditalic-webfont.ttf') format('truetype'), url('/assets/fonts/opensans-semibolditalic-webfont.svg#open_sanssemibold_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open-sansregular';
+  src: url('/assets/fonts/opensans-regular-webfont.eot');
+  src: url('/assets/fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/opensans-regular-webfont.woff2') format('woff2'), url('/assets/fonts/opensans-regular-webfont.woff') format('woff'), url('/assets/fonts/opensans-regular-webfont.ttf') format('truetype'), url('/assets/fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open-sanslight_italic';
+  src: url('/assets/fonts/opensans-lightitalic-webfont.eot');
+  src: url('/assets/fonts/opensans-lightitalic-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/opensans-lightitalic-webfont.woff2') format('woff2'), url('/assets/fonts/opensans-lightitalic-webfont.woff') format('woff'), url('/assets/fonts/opensans-lightitalic-webfont.ttf') format('truetype'), url('/assets/fonts/opensans-lightitalic-webfont.svg#open_sanslight_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

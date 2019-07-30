@@ -1,0 +1,106 @@
+@less: '../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '/assets/plugins/select2/select2.min.css';
+@import '/assets/plugins/jcrop/css/jquery.Jcrop.min.css';
+@import '/assets/plugins/bootstrap-fileinput/bootstrap-fileinput.css';
+
+.section {
+	margin-bottom: 30px;
+
+    &.account-section {
+        .form-section {
+            position: relative;
+            padding-left: 50px;
+            padding-top: 10px;
+            .user-avatar {
+                position: absolute;
+                top: 10px;
+                left: 30px;
+            }
+        }
+
+        #temp-avatar {
+            max-width: 100%;
+
+            > img {
+                max-width: 100%;
+                max-height: 280px;
+            }
+
+            .jcrop-holder {
+                margin: 0px auto;
+            }
+        }
+    }
+}
+
+.user-contact-info-page {
+    &.page-content-section {
+        min-height: 30px;
+    }
+
+	.pre-summary {
+		font-weight: bold;
+        font-size: 14px;
+	}
+
+    .info-div {
+        line-height: 1.585em;
+
+        .user-avatar {
+            img {
+                .border-radius(50%);
+            }
+        }
+    }
+
+    .close-my-account {
+        cursor: pointer;
+        font-size: 14px;  
+        margin: 20px 0;
+    }
+}
+
+.language-select .dropdown-menu.selectpicker {
+	li a{
+		padding: 7px 14px;
+	}
+}
+
+.control-value-avatar {
+    margin-bottom: 15px;
+    position: relative;
+    a {
+        position: absolute;
+        bottom: 0px;
+        right: -30px;
+        font-size: 20px;
+        color: #666;
+        text-decoration: none;
+    }
+}
+
+.invoice-address-section .form-section {
+    p {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+#note_require_id_verification {
+    color: #C00;
+    a {
+        color: #C00;
+        text-decoration: underline;
+    }
+}
+
+.info {
+    color: #888;
+}
+
+@import 'contact_info_mobile.less';

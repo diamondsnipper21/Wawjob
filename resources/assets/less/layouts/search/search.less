@@ -1,0 +1,104 @@
+@import '../_default.less';
+
+.user-sidebar-menu {
+	.title {
+		color: #666;
+		font-size: 15px;
+		font-weight: bold;
+		padding-bottom: 10px;
+	}
+
+	> ul {
+		padding-left: 20px;
+		> li {
+			padding: 10px 12px 10px 17px;
+			
+			&.active {
+				background: #eaedee url('/assets/images/common/menu-selected-bg.png') 0px 0px repeat-y;
+			}
+			
+			a {
+				font-weight: bold;
+				
+				&:hover {
+					color: @default-color;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.freelancer-user-page {
+	form {
+		.action-group {
+			padding: 50px 0px;
+		}
+	}
+}
+
+.right-menu {
+	.icon {
+		font-size: 22px;
+		color: #999;
+		position: relative;
+	}
+
+	a.dropdown-toggle {
+		position: relative;
+	}
+
+	.badge {
+		position: absolute;
+		top: -6px;
+		right: 6px;
+		padding: 3px 6px;
+
+		background-color: #d64635;
+		color: white;
+	}
+}
+
+.job-content-section {
+	padding: 0;
+	
+	.box-section {
+		padding: 30px 25px;
+		border: solid 1px #ddd;
+		background: #F4F9ED;
+		
+		.title {
+			font-size: 18px;
+		}
+
+		.divider {
+			display: block;
+			height: 1px;
+			border-bottom: solid 1px #ddd;
+			margin: 40px 0px;
+		}
+	}
+}
+
+.bold-title {
+	font-weight: bold;  
+}
+
+.clear-div {
+	clear: both;
+}
+
+.box-sub-section {
+	width: 300px;
+	
+	.block-section {
+		label {
+			font-size: 12px;
+			margin-bottom: 0;
+		}
+
+		label.help-comment {
+			font-size: 10px;
+		}
+	}
+}

@@ -1,0 +1,44 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+/* Plugins */
+@import '/assets/plugins/metronic/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css';
+@import '/assets/plugins/select2/select2.min.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css';
+#deposits .totals {
+  margin: 6px 0px 0px 20px;
+  color: #5b9bd1;
+  font-style: italic;
+}
+#deposits .totals strong {
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: underline;
+}
+#deposits tr .deposit-id i {
+  display: none;
+}
+#deposits tr.review {
+  background-color: #E6BACF;
+}
+#deposits tr.past .deposit-id span {
+  display: none;
+}
+#deposits tr.past .deposit-id i {
+  display: inline;
+}
+#deposits td.done {
+  background-color: #89BEEF;
+}
+#deposits td.td-status {
+  position: relative;
+}
+#deposits td.td-status .label {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#deposits .tooltip {
+  min-width: 160px;
+}

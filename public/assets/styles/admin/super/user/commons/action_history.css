@@ -1,0 +1,10 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+@import '/assets/plugins/metronic/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css';
+@import '/assets/plugins/metronic/global/plugins/select2/select2.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css';
+#user_action_histories .portlet {
+  -moz-box-shadow: 0px 0px 0px 0px;
+  -webkit-box-shadow: 0px 0px 0px 0px;
+  box-shadow: 0px 0px 0px 0px;
+}

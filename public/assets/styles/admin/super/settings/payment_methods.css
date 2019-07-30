@@ -1,0 +1,55 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+/* Plugins */
+@import '/assets/plugins/metronic/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css';
+@import '/assets/plugins/select2/select2.min.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css';
+@import '/assets/plugins/jquery.uniform/css/uniform.default.min.css';
+#payment_methods .form-datatable .table-container table.table tbody tr span.enable-status {
+  padding: 5px;
+  background-color: #5CA6DF;
+  border-radius: 5px;
+  color: #fff;
+}
+#payment_methods .form-datatable .table-container table.table tbody tr span.disable-status {
+  padding: 5px;
+  background-color: #637481;
+  border-radius: 5px;
+  color: #fff;
+}
+#payment_methods .form-datatable .table-container table.table tbody tr td.drop {
+  position: relative;
+}
+#payment_methods .form-datatable .table-container table.table tbody tr td.drop .dropdown-menu {
+  margin-left: -326px;
+  top: 38px;
+  width: 400px;
+  padding: 10px;
+}
+#payment_methods .form-datatable .table-container table.table tbody tr td.drop .dropdown-menu .dropdown-slug {
+  padding-bottom: 7px;
+  border-bottom: 1px solid #D1D1D1;
+}
+#payment_methods .form-datatable .table-container table.table tbody tr td.drop .dropdown-menu .row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+#payment_methods .form-datatable .table-container table.table tbody tr td.drop .dropdown-menu .col-sm-9 {
+  padding-right: 0px !important;
+}
+#payment_methods .form-datatable .table-container table.table tbody tr td.drop .dropdown-menu .col-sm-9 {
+  word-break: break-word;
+  padding-left: 0px !important;
+}
+#payment_methods .form-datatable .table-container table.table tbody tr td.drop .dropdown-menu::before {
+  position: absolute;
+  top: -7px;
+  right: 9px;
+  display: inline-block !important;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #fff;
+  border-left: 7px solid transparent;
+  content: "";
+}

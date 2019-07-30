@@ -1,0 +1,43 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+/* Plugins */
+@import '/assets/plugins/metronic/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css';
+@import '/assets/plugins/select2/select2.min.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css';
+#escrows .portlet-title .caption {
+  float: left;
+  padding: 10px 0;
+  font-size: 18px;
+  line-height: 18px;
+  display: inline-block;
+}
+#escrows .portlet-title .caption .caption-subject {
+  font-size: 16px;
+}
+#escrows .portlet-title .tools {
+  padding: 10px 0 13px 0;
+  margin-top: 2px;
+}
+#escrows .totals {
+  margin: 6px 0px 0px 20px;
+  color: #5b9bd1;
+  font-style: italic;
+}
+#escrows .totals strong {
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: underline;
+}
+#escrows td.td-status {
+  position: relative;
+}
+#escrows td.td-status .label {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#escrows td .milestone-title {
+  padding-left: 10px;
+}

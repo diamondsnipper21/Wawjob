@@ -1,0 +1,91 @@
+@less: '../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+
+.page-frontend-contact_us {
+	color:#555;
+	.page-content {
+		background: #FFF;
+		margin: 0px;
+		padding-bottom: 40px;
+
+		.container {
+			.box-shadow(0px 0px 0px);
+
+			.title {
+				margin-top:75px;
+				h1 {
+					margin-bottom:30px;
+					font-size: 36px;
+					color: @text-color;
+				}
+
+				.hover-line {
+				}
+
+				.desc {
+					margin: 20px 0px 40px;
+					font-size: 14px;
+				}
+			}
+
+			.form-control {
+				/*padding: 12px 15px;*/
+			}
+
+			textarea {
+				resize:none;
+			}
+
+			.captcha {
+				input {
+					padding: 12px 15px;
+				}
+			}
+			.captcha-img {
+				img {
+					height: 46px;
+					border: 1px solid @border-color;
+				}
+			}
+
+			.captcha-refresh {
+				font-size: 18px;
+				background: transparent;
+				color: @default-color;
+				cursor: pointer;
+			}
+
+			.success-message {
+				font-size: 16px;
+			}
+
+			button[type="submit"] {
+				padding-right: 50px;
+				padding-left: 50px;
+			}
+
+			.contact-right {
+				.icon-envelope-letter {
+					font-size: 16px;
+				}
+
+				.icon-location-pin {
+					font-size: 16px;
+					margin-top: 3px;
+				}
+
+				.email {
+					margin-left: 25px;
+				}
+
+				.location {
+					margin-left: 25px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,137 @@
+@less: '../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '/assets/plugins/select2/select2.min.css';
+@import '/assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css';
+
+.user-affiliate {
+	.page-section {
+		&.container {
+			background: transparent;
+			.box-shadow(0px 0px 0px);
+
+			.page-content {
+				background: transparent;
+				.box-shadow(0px 0px 0px);
+				padding:0;
+			}
+		}
+	}
+}
+
+.user-affiliate-page {
+	.user-affiliate-page-left {
+		background: #fff;
+
+		.sub-title {
+			font-size: 18px;
+			color: @gray-text-color2;
+		}
+
+		.info {
+			color: @gray-text-color;
+		}
+
+		#chart_invitation {
+			height:150px;
+		}
+
+		.value {
+			font-size: 26px;
+			font-weight: 700;
+		}
+
+		.form-horizontal {
+			.row {
+				margin-top:10px;
+
+				.pre-summary {
+					padding-top:5px;
+					padding-bottom:5px;
+				}
+
+				.pre-italic {
+					font-style:italic;
+				}
+
+				.field-url {
+					cursor:default;
+				}
+			}
+		}
+
+		#affiliate_history {
+			min-height:400px;
+
+			#date_range {
+				width:250px;
+			}
+		}
+	}
+
+	.user-affiliate-page-right {
+		.box {
+			background: #fff;
+
+			h5 {
+				font-size: 16px;
+				text-transform: uppercase;
+			}
+
+			&.pending {
+				.wallet {
+					background:#ffb22b;
+					.border-radius(50%);
+					text-align: center;
+					width: 50px;
+					height: 50px;
+					margin: 0 auto;
+
+					i {
+						color: #fff;
+						font-size: 22px;
+						display: inline-block;
+						margin-top: 12px;
+					}
+				}
+
+				.amount {
+					font-size:22px;
+				}
+
+				label {
+					font-size: 13px;
+					color: @gray-text-color;
+				}
+			}
+
+			&.incoming {
+				.icon {
+					text-align: center;
+
+					i {
+						font-size: 32px;
+						color: @gray-text-color2;
+					}
+				}
+
+				.amount {
+					text-align: center;
+					font-size: 32px;
+				}
+
+				label {
+					display: block;
+					color: @default-light-color;
+					text-align: center;
+					font-size: 22px;
+				}
+			}
+		}
+	}
+}
+
+@import 'affiliate_mobile.less';

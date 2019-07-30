@@ -1,0 +1,161 @@
+@less: '../../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+.report-overview-page {
+
+	.title-section {
+		margin-bottom:30px;
+	}
+
+	.nav-tabs {
+		li {
+			min-width: 25%;
+
+			a {
+				text-align: center;
+				min-height: 91px;
+				outline: none;
+
+				.amount {
+					font-size: 20px;
+					letter-spacing: 1px;
+					font-weight: bold;
+					text-align: center;
+					display:block;
+				}
+			}
+		}  
+	}
+
+	.tab-content {
+		.tab-pane {
+			min-height:300px;
+		}
+
+		.section {
+			margin: 30px 0;
+
+			.section-title {
+				margin: 20px 0;
+				padding: 0 0 10px;
+				font-size: 16px;
+				border-bottom: 1px solid @border-color;
+
+				.sep {
+					padding-left:10px;
+					padding-right:10px;
+				}
+			}
+
+			.section-content {
+				padding: 10px 0px;
+				background: #f8f8f8;
+
+				table {
+					margin-bottom:0;
+
+					tr {
+						th {
+							text-align:center;
+
+							&:first-child {
+								text-align:left;
+							}
+
+							&:last-child {
+								text-align:right;
+							}
+
+							&.text-left {
+								text-align:left;
+							}
+						}
+
+						td {
+							text-align:center;
+
+							&:first-child {
+								text-align:left;
+							}
+
+							&:last-child {
+								text-align:right;
+							}
+
+							&.text-left {
+								text-align:left;
+							}
+
+							&.text-right {
+								text-align:right;
+							}
+
+							.user {
+								display:block;
+							}
+						}
+					}
+				}
+			}
+
+			&.section-fixed-price {
+				table {
+					tr {
+						th {
+							text-align:left;
+
+							&:last-child {
+								text-align:right;
+							}
+						}
+
+						td {
+							text-align:left;
+
+							&:last-child {
+								text-align:right;
+							}
+						}
+					}
+				}
+			}
+
+			&.section-transactions {
+				table {
+					tr {
+						td {
+							.user {
+								color:@site-color;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.manual-alert {
+			text-align: right;
+			color: #999;
+			margin-bottom:20px;
+			strong {
+				color: #666;
+			}
+		}
+	}
+
+	.note {
+		margin-top:10px;
+		margin-bottom:30px;
+	}
+
+	.link {
+		margin-top:20px;
+		margin-bottom:10px;
+		text-align:right;
+	}
+}
+
+@import 'overview_mobile.less';

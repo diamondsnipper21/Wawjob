@@ -1,0 +1,33 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+/* Plugins */
+@import '/assets/plugins/metronic/admin/pages/css/todo.css';
+#proposal .portlet {
+  -moz-box-shadow: 0px 0px 0px 0px;
+  -webkit-box-shadow: 0px 0px 0px 0px;
+  box-shadow: 0px 0px 0px 0px;
+}
+#proposal h2 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+#proposal .block {
+  border-bottom: 1px dashed #CCC;
+  font-size: 16px;
+}
+#proposal .well {
+  background-color: #FAFAFA;
+}
+#proposal .term-section .term-label {
+  text-align: right;
+  margin-right: 10px;
+  float: left;
+  width: 100px;
+  font-weight: bold;
+}
+#proposal .term-section .term-data {
+  float: left;
+}
+#proposal .messages {
+  margin-top: 0px;
+}

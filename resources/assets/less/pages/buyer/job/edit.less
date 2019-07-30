@@ -1,0 +1,236 @@
+@less: '../../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '/assets/plugins/bootstrap-fileinput/bootstrap-fileinput.css';
+@import '/assets/plugins/select2/select2.min.css';
+@import '/assets/plugins/jquery.uniform/css/uniform.default.min.css';
+
+.page-content .page-content-section {
+	padding-top: 0px;
+}
+
+.buyer-job-edit {
+
+	.page-content .title-section {
+		padding: 25px 15px 10px;
+	    margin: 0px -15px;
+	}
+
+	.page-section.container .page-content {
+		padding: 0px;
+		background: transparent;
+		.box-shadow(0px 0px 0px);
+	}
+
+	.job-content-section {
+		> .row {
+			margin: 0px;
+			> .col-md-9 {
+				background: #FFF;
+				.box-shadow(@default-box-shadow);
+			}
+			> .col-md-3 {
+				padding-right: 0px;
+			}
+		}
+	}
+
+}
+
+.job-content-section {
+
+	.sub-title {
+		font-size: 18px;
+		padding-bottom: 20px;
+		font-weight: bold;
+	}
+
+	.sub-section {
+		padding-left:20px;
+	}
+
+	hr {
+		border-color: @border-color;
+		margin-left: -40px;
+		margin-right: -40px;
+		margin-bottom: 30px;
+	}
+
+	.form-group {
+		padding-bottom:15px;
+
+		.control-label {
+			padding-top: 7px;
+			font-size: 14px;
+
+			i {
+				font-size:24px;
+				margin-right:10px;
+			}
+		}
+
+		.control-desc {
+			display:block;
+			padding-bottom:5px;
+			line-height: 1.765em;
+		}
+
+		.radio-box {
+			margin-top: 5px;
+		}
+
+		.radio {
+			margin-left:10px;
+		}
+
+		.checkbox {
+			margin-left:10px;
+
+			input[type="checkbox"] {
+				margin-left:-20px;
+			}
+		}
+
+		#description {
+			resize: none;
+		}
+
+		.characters-left {
+			padding-top: 5px;
+		}
+		
+		&.attachments {
+			a {
+				line-height:22px;
+				cursor:pointer;
+
+				i.fa-trash-o {
+					font-size:18px;
+					margin-right:5px;
+				}
+			}
+		}
+
+		.help-block-error {
+			color:#a94442;
+		}
+
+		.select2-container-multi {
+			.select2-search-choice-close {
+				left:auto;
+				right:2px;
+				top:7px;
+			}
+
+			.select2-choices {
+				.select2-search-choice {
+					padding:3px 18px 3px 5px;
+					line-height:20px;
+				}
+			}
+		}
+	}
+
+	.fixed-job .hourly-job-section {
+		display: none;
+	}
+
+	.hourly-job .fixed-job-section {
+		display: none;
+	}
+
+	.qualifications-section {
+		padding-top:20px;
+		padding-left:20px;
+		display:none;
+
+		&.show {
+			display:block;
+		}
+
+		.row {
+			margin-bottom:10px;
+		}
+
+		.control-label {
+			font-size:15px;
+		}
+	}
+
+	.label-suffix {
+		margin-top: 6px;
+	}
+
+	.select2-container .select2-selection--single {
+		height: 36px;
+	}
+
+	.has-error .select2-selection--single {
+		border-color: #a94442 !important;
+	}
+
+	.has-success .select2-selection--single {
+		border-color: #3c763d !important;
+	}
+
+	.have-group-addon.input-icon.right i {
+		right: 40px;
+	}
+
+	.select2-container--default .select2-selection--single .select2-selection__rendered {
+		line-height: 34px;
+	}
+
+	.select2-container--default .select2-selection--single .select2-selection__arrow {
+		height: 34px;
+	}
+
+	.btn-normal {
+		color:@site-color;
+		border-color:@site-color;
+	}
+
+	.desired-exper-level {
+		i {
+			font-size: 16px;
+		}
+
+		.col-md-3 {
+			position: static;
+		}
+	}
+
+	.job-post-instruction {
+		background: #f8f9fc;
+		color: #666;
+		padding-bottom: 2px;
+		.title {
+			line-height: 70px;
+			font-size: 24px;
+			text-align: center;
+		}
+
+		ul {
+			background: #FFF;
+			margin: 0px 2px 0px;
+			list-style: disc;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			li {
+				padding: 15px 15px 0px 0px;
+				line-height: 25px;
+				font-size: 14px;
+			}
+		}
+	}
+
+}
+
+.radio, .checkbox {
+	margin-top: 0px;
+}
+
+@import 'edit_mobile.less';

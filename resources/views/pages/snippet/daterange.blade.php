@@ -1,0 +1,1 @@
+<input type="text" class="form-control" name="date_range" value="{{ old('date_range') ?: (isset($dates) ? date($format_date2, strtotime($dates['from'])) . ' - ' . date($format_date2, strtotime($dates['to'])) : '') }}">

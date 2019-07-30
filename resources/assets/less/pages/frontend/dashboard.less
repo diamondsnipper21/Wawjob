@@ -1,0 +1,224 @@
+@less: '../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '@{less}/stars.less';
+
+.frontend-dashboard {
+	.page-wrapper {
+	}
+
+	.title-section {
+		padding: 0 0 10px;
+		a {
+			float: right;
+		}
+	}
+
+	.balance a {
+		font-weight: bold;
+    	font-size: 16px;
+    	color: #223;
+    	&:hover {
+    		color: #297acc;
+    		text-decoration: none;
+    	}
+	}
+
+	.page-section.container {
+		.box-shadow(0px 0px 0px);
+		background: transparent;
+		padding-left: 0px;
+		padding-right: 0px;
+		padding-top: 0px;
+
+		.content {
+			.box-shadow(@default-box-shadow);
+			background: #FFF;
+			&:last-child {
+				padding-right: 0px;
+			    margin-left: 15px;
+			    margin-right: -15px;
+			}
+		}
+
+		.page-content > .row {
+			margin-right: 15px;
+			margin-left: 0px;
+		}
+	}
+
+	.boxes {
+		.box {
+			margin: 20px 20px 15px;
+			width: ~"calc((100% - 6px - 20px * 2) / 3)";
+			float: left;
+			border: 1px solid #e4e4e4;
+			/*.box-shadow(@default-box-shadow);*/
+			padding: 15px;
+			&:first-child, &:last-child {
+				margin-left: 0px;
+				margin-right: 0px;
+			}
+
+			.box-icon {
+				font-size: 50px;
+				padding: 7px 10px 10px 10px;
+				width: 80px;
+				height: 80px;
+				text-align: center;
+				float: left;
+				.box-shadow(1px 1px 10px);
+				opacity:0.7;
+			}
+
+			.box-content {
+				float: right;
+				width: ~"calc(100% - 100px)";
+				text-align: center;
+				.box-value {
+					font-size: 40px;
+				}
+				.box-title {
+					font-size: 16px;
+				}
+			}
+
+			.box-bottom {
+				border-top: 1px solid @border-color;
+				margin-top: 15px;
+				padding-top: 15px;
+				text-align: right;
+			}
+
+			&.job-postings {
+				.box-icon {
+					color: #fb8c00;
+					border: 1px solid #fb8c00;
+				}
+			}
+
+			&.contracts {
+				.box-icon {
+					color: #47a34b;
+					border: 1px solid #47a34b;
+				}		}
+
+			&.offer-sent {
+				.box-icon {
+					color: #08b1c6;
+					border: 1px solid #08b1c6;
+				}
+			}
+		}
+	}
+
+	.profile {
+		padding: 15px 15px 15px 0px;
+
+		.profile-image {
+			float: left;
+			width: 100px;
+			text-align: center;
+			img {
+				width: 100%;
+			}
+
+			.profile-hourly-rate {
+				font-size: 18px;
+				margin-top: 20px;
+			}
+		}
+
+		.profile-info {
+			float: right;
+			width: ~"calc(100% - 125px)";
+
+			.profile-title {
+				margin-bottom: 8px;
+				font-weight: bold;
+			}
+			.profile-name {
+				font-size: 18px;
+				margin-bottom: 15px;
+				font-weight: bold;
+			}
+
+			.profile-country {
+				margin-bottom: 8px;
+			}
+
+			.profile-timezone {
+				margin-bottom: 8px;
+				color: #999;
+			}
+
+			.profile-score {
+				.stars {
+					float: left;
+				}
+				.profile-reviews {
+					float: left;
+					margin-top: 4px;
+					margin-left: 10px;
+				}
+			}
+
+			.profile-success-percent {
+				margin-top: 10px;
+				width: 50%;
+			}
+		}
+
+		.profile-action {
+			border-top: 1px solid @border-color;
+			margin: 32px auto 0px;
+			/*width: 85%;*/
+			padding: 24px 10px 0px 25px;
+			strong {
+				font-size: 16px;
+				font-weight: normal;
+			}
+
+			.text-right {
+				font-weight: bold;
+				font-size: 16px;
+			}
+
+			.funds {
+				a {
+					color: @text-color;
+
+					&:hover {
+						color: @link-color;
+					}
+				}
+			}
+
+			.holding {
+				text-align: right;
+				font-style: italic;
+
+				i {
+					cursor: default;
+				}
+
+				.tooltip {
+					font-style: normal;
+					width: 200px;
+				}
+			}
+		}
+	}
+}
+
+#modal_congratulations {
+	p {
+		font-size: 14px;
+		line-height: 25px;
+	}
+}
+
+@import 'dashboard_mobile.less';

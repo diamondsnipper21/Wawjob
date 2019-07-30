@@ -1,0 +1,76 @@
+@media (max-width: 768px) {
+	.frontend-dashboard {
+		.boxes {
+			.box {
+				.box-icon {
+					float: none;
+					width: 100%;
+					height: 100px;
+					padding-top: 15px;
+				}
+
+				.box-content {
+					float: none;
+					width: 100%;
+				}
+
+				.box-bottom {
+					text-align: center;
+				}
+			}
+		}
+
+		.profile {
+			.profile-image {
+				float: none;
+				width: 100%;
+
+				img {
+					width: 100px;
+				}
+			}
+
+			.profile-info {
+				float: none;
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media (max-width: 736px) {
+	.frontend-dashboard {
+		.page-section.container {
+			.page-content {
+				> .row {
+					margin-right: 0;
+
+					.content {
+						height: auto !important;
+						box-shadow: none;
+						border-bottom: 1px solid #ccc;
+
+						&:last-child {
+							margin-top: 20px;
+							margin-left: 0;
+							margin-right: 0;
+							border-bottom: none;
+						}
+					}
+				}
+			}
+		}
+
+		.profile {
+			.profile-image {
+				float: left;
+				width: 100px;
+			}
+
+			.profile-info {
+				float: right;
+				width: calc(100% - 125px);
+			}
+		}		
+	}
+}

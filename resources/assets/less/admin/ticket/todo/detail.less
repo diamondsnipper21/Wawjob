@@ -1,0 +1,99 @@
+@less: '../../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '/assets/plugins/metronic/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css';
+@import '/assets/plugins/select2/select2.min.css';
+
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal.css';
+
+@import '/assets/plugins/metronic/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css';
+
+.ticket-todo-detail {
+	.no-messsages {
+		text-align: center;
+		font-style: italic;
+		border-bottom: 1px solid #e5e5e5;
+	}
+
+	.messages {
+		margin-top: 0px;
+	}
+
+	.media-list {	
+	}
+
+	.todo-attachments {
+		margin-right: 0px;
+		li {
+			list-style: none;
+		}
+	}
+
+	.todo-info {
+		&.col-md-3 {
+			width: 23%;
+		}
+		.control-label {
+			text-align: left;
+			margin-bottom: 10px;
+			a {
+				text-decoration: underline;
+			}
+		}
+		.assigner {
+			margin-top: 15px;
+			clear: both;
+			overflow: hidden;
+			img {
+				float: left;
+				margin-left: 10px;
+				margin-right: 15px;
+			}
+			.assigner-name {
+				display: block;
+				padding-top: 21px;
+			}
+			.assigner-role {
+				display: block;
+				padding-top: 21px;
+			}
+		}
+
+		.no-body {
+			color: #999;
+		    margin-top: 10px;
+		    padding-left: 15px;
+		    font-style: italic;
+		}
+	}
+
+	.tools {
+		clear: both;
+	}
+
+	.portlet.light > .portlet-title {
+		> .actions  {
+			padding-bottom: 0px;
+		}
+
+		.back-list {
+			margin-right: 15px;
+			margin-top: 0px;
+		}
+	}
+
+	.overdue {
+		color: #F3565D;
+		font-weight: bold;
+	}
+
+	blockquote {
+		font-size: inherit;
+	}
+
+}

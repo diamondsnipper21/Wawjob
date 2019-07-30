@@ -1,0 +1,130 @@
+@less: '../../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '/assets/plugins/select2/select2.min.css';
+@import '/assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css';
+
+.title-section {
+	label {
+		font-size:18px;
+		margin-top:5px;
+		margin-bottom:0;
+	}
+}
+
+.report-transactions-page {
+
+	.filter-section {
+
+		margin-bottom:20px;
+
+		.date-filter-section {
+			#date_range {
+				width: 260px;
+				float: left;
+				margin: 0 2px;
+			}
+
+			.prev-unit, .next-unit {
+				float: left;
+				padding: 3px 8px;
+				font-size:20px;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+
+		.contract-filter-section {
+			.dropdown-menu {
+
+				.filter-item{
+					padding: 5px 10px;
+				}
+
+				.contract-filter {
+					padding-left: 30px;
+				}
+
+			}
+
+			.btn.selectpicker {
+				padding-top: 6px;
+				padding-bottom: 6px;
+			}
+		}
+
+		.btn-filter {
+			margin-left:10px;
+		}
+
+	}
+
+	.transactions-section {
+		.table {
+			.tbody {
+				background: #f5f5f5;
+				.tr.status-available {
+					.td {
+						background: #f5f5f5;
+					}
+				}
+
+				.tr.status-done {
+					.td {
+						background: #f5f5f5;
+					}
+				}
+
+				.tr.status-pending {
+					.td {
+						background: #f5f5f5;
+					}
+				}
+
+				.tr.status-review {
+					.td {
+						background: #f5f5f5;
+					}
+				}
+
+				.tr.status-cancelled {
+					.td {
+						background: #f5f5f5;
+					}
+				}
+			}
+		}
+
+		.info {
+			padding-left: 10px;
+			padding-top: 5px;
+		}
+	}
+
+	.statement-section {
+		margin-top: 50px;
+		
+		.statement-content {
+			margin-top: 20px;
+			table {
+				width: 100%;
+
+				tr td{
+					padding: 10px 8px;
+					text-align: right;
+					border-bottom: solid 1px #ddd;
+
+					&.last {
+						border-bottom: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+@import 'transactions_mobile.less';

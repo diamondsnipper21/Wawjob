@@ -1,0 +1,420 @@
+@less: '../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '/assets/plugins/bootstrap-fileinput/bootstrap-fileinput.css';
+
+body.message-threads {
+	.page-section.container-fluid {
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.message-list .scrollspy-panel {
+		max-height: none;
+	}
+
+	.page-wrapper {
+		padding: 0px 0px;
+	}
+
+	.page-section .page-content {
+		border-bottom: 1px solid @border-color;
+		padding: 0px;
+		>.alert {
+			display: none;
+		}
+
+		.row {
+			margin: 0px;
+		}
+	}
+
+	.thread-short-info {
+		line-height: 47px;
+
+		.thread-sender-name {
+			color: @default-color;
+			font-size: 16px;
+		}
+
+		.thread-project {
+			font-weight: bold;
+			max-width: 60%;
+		    text-align: right;
+		    text-overflow: ellipsis;
+		    overflow: hidden;
+		    white-space: nowrap;
+		}
+		span {
+			font-size: 12px;
+		}
+	}
+
+	.input-group-addon {
+		background: transparent;
+		cursor: pointer;
+		/*border: 0px;*/
+	}
+
+	.message-list {
+		border-right: 1px solid @border-color;
+		padding-bottom: 10px !important;
+	}
+
+	.tabs {
+		padding: 12px 0px 0px;
+		border-bottom: 1px solid @default-light-color;
+		.tab {
+			width: 25%;
+			text-align: center;
+			float: left;
+
+			a {
+				text-decoration: none;
+				line-height: 28px;
+				display: block;
+				margin: 0px 0px;
+				.border-radius(0px);
+
+				&:hover {
+					background: #EEE;
+				}
+
+				&.active {
+					background: @default-light-color;
+					color: #FFF;
+				}
+			}
+		}
+	}
+
+	#message_threads_container {
+	}
+
+	@width: 280px;
+	#messages_container {
+		padding-right: 0px;
+		width: calc(100% - @width);
+	}
+
+	#messages {
+		padding-left: 0px;
+		width: calc(100% - @width + 50px);
+	}
+
+	#message_threads {
+		width: @width;
+		padding-right: 0px;
+		padding-left: 0px;
+		.message-threads-inner {
+			padding-top: 7px;
+			border-right: 1px solid @border-color;
+			padding-right: 15px;
+			padding-left: 15px;
+			min-height: 500px;
+		}
+
+		.icon-magnifier {
+			font-size: 18px;
+		}
+
+		.input-group {
+			margin-top: 8px;
+		}
+
+		input[type="text"] {
+			height: 40px;
+			padding: 0px 10px;
+			border-right: 0px;
+		}
+
+		.slimScrollDiv {
+			margin-top: 0px;
+		}
+
+		.no-threads {
+			font-size: 18px;
+			font-style: italic;
+			text-align: center;
+			color: #999;
+		}
+	}
+
+	#threads {
+		overflow: hidden;
+	}
+	.threads {
+		display: none;
+		&.active {
+			display: block;
+		}
+
+		.loading {
+			display: none;
+		}
+
+		.tab-content {
+			padding-top: 0px;
+			padding-bottom: 0px;
+		}
+
+		.slimScrollDiv {
+			margin-top: 0px;
+		}
+
+		.thread {
+			padding: 16px 15px 16px 5px;
+			margin: 0px 0px 0px 0px;
+			font-size: 12px;
+			cursor: pointer;
+			.border-radius(0px);
+			position: relative;
+
+			&.new-message {
+				.thread-sender-name, .thread-title {
+					font-weight: bold;
+				}
+			}
+
+			.thread-left-section {
+				float: left;
+				width: 20%;
+			}
+
+			.thread-right-section {
+				width: 80%;
+				float: left;
+				padding-left: 5px;
+
+				.thread-sender-name {
+					float: left;
+					margin: 3px 0px 5px 0px;
+					color: #222;
+				}
+				.thread-last-date {
+					float: right;
+					padding-top: 2px;
+					font-style: italic;
+				}
+
+				.thread-title {
+					color: #999;
+					width: 100%;
+				    text-overflow: ellipsis;
+				    white-space: nowrap;
+				    overflow: hidden;
+				}
+			}
+
+			.thread-unreads {
+				position: absolute;    
+				top: 2px;
+    			right: 4px;
+				min-width: 15px;
+				height: 15px;
+				.border-radius(50%);
+				background: #d64635;
+				color: #FFF;
+				text-align: center;
+				line-height: 15px;
+				padding: 0px 3px;
+				font-size: 11px;
+			}
+
+			.tools {
+				display: none;
+				position: absolute;
+				bottom: 10px;
+    			right: 15px;
+
+				i {
+					cursor: pointer;
+					font-size: 13px;
+					&.move-to-inbox {
+						font-size: 15px;
+					}
+				}
+			}
+
+			&:hover {
+				background: #f5f9f9;
+				.tools {
+					display: block;
+				}
+			}
+
+			&.active {
+				background: #f5f9f9;
+				color: #666;
+			}
+		}
+	}
+
+	.application {
+		.proposal-title {
+			padding-top: 15px;
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+		.application-detail {
+			padding-left: 20px;
+			padding-right: 10px;
+			.price {
+				line-height: 25px;
+				font-size: 14px;
+				.bold {
+					font-weight: bold;
+				}
+			}
+			.duration {
+				line-height: 25px;
+			}
+		}
+	}
+
+	#attachments {
+		width: @width - 50;
+		padding-bottom: 10px;
+		.attachments-title {
+			border-top: 1px solid @border-color;
+			font-size: 16px;
+			margin-bottom: 15px;
+			padding-top: 15px;
+			margin-top: 15px;
+		}
+
+		.no-attachments {
+			/*font-size: 15px;*/
+			margin-top: 15px;
+			font-style: italic;
+			text-align: center;
+		}
+
+		.attachment {
+			.attachment-icon {
+				font-size: 22px;
+				float: left;
+				width: 20%;
+				text-align: center;
+			}
+			.attachment-info {
+				float: right;
+				width: 80%;
+				font-size: 12px;
+				.attachment-user {
+					margin-top: 8px;
+					color: #999;
+				}
+				.attachment-name {
+					margin-top: 8px;
+				}
+			}
+
+			.download-link {
+				margin-top: 5px;
+				float: right;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.message-list {
+		.send-message-form {
+
+			@textarea-height: 70px;
+
+			.button-send {
+				position: absolute;
+			    top: @textarea-height / 2 - 14;
+			    right: 26px;
+			}
+
+			form {
+				position: relative;
+
+				textarea.form-control {
+    				padding-right: 130px;
+    				height: @textarea-height;
+				}
+
+				> .row {
+				}
+				.form-group.margin-bottom-15 {
+					margin-bottom: 5px !important;
+				}
+			}
+
+			.attach-file-description {
+				display: none;
+			}
+
+			.attachments {
+				padding-left: 0px;
+			}
+
+			.col-md-4 {
+				width: 100%;
+				position: static;
+				padding-top: 0px !important;
+			}
+
+			.col-md-8 {
+				width: 100%;
+				position: static;
+
+				.fileinput {
+					position: absolute;
+				    right: 84px;
+					top: 0px;
+				}
+			}
+
+			.fileinput-new  {
+				margin-bottom: 0px;
+				span.fileinput-new span {
+					display: none;
+				}
+			}
+
+			.fileinput {
+				.loading {
+					display: none !important;
+				}
+				.btn.btn-file {
+					width: 32px;
+				    height: @textarea-height;
+				    padding: 0px;
+				    cursor: pointer;
+				    background: transparent;
+				    position: relative;
+				    color: @text-color;
+				    &:active {
+				    	.box-shadow(0px 0px 0px);
+				    }
+				    i {
+				    	font-size: 21px;
+				    	position: absolute;
+					    left: 3px;
+					    top: calc(50% - 10px);
+    					&:before {
+    						content: "\e093";
+    					}
+				    }
+				}
+			}
+		}
+	}
+
+	.page-footer {
+		margin-top: 0px;
+		display: none;
+	}
+	.page-footer .footer-nav {
+		display: none;
+	}
+}

@@ -1,0 +1,19 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+/* Plugins */
+@import '/assets/plugins/metronic/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css';
+@import '/assets/plugins/select2/select2.min.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css';
+#cronjobs tr.disabled {
+  background-color: #E6BACF;
+}
+#cronjobs td.td-status {
+  position: relative;
+}
+#cronjobs td.td-status .label {
+  position: absolute;
+  right: 0;
+  top: 0;
+}

@@ -1,0 +1,195 @@
+body {
+    .page-section.container > .page-content {
+        .box-shadow(0px 0px 0px);
+        background: transparent;
+        padding: 0px;
+    }
+}
+
+.profile-page {
+    &.disable-edit-mode {
+        position: relative;
+        &:before {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            content: "";
+            background: #FFF;
+            z-index: 10;
+            opacity: 0.5;
+        }
+    }
+}
+
+.job-content-section > .row {
+    margin: 0px;
+    .page-content {
+        margin-top: 0px;
+
+        .text-large {
+            font-size: 16px;
+        }
+        .page-content {
+            .box-shadow(0px 0px 0px);
+            margin-right: 15px;
+        }
+    }
+    > .col-md-3 {
+        padding: 0px;
+    }
+
+    > .col-md-9 {
+        padding-left: 0px;
+    }
+}
+
+.instruction {
+    .title {
+        background-color: @sidebar-header-bgcolor;
+        color: @sidebar-header-color;
+        line-height: 70px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    ul {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        li {
+            list-style-type: decimal;
+            padding: 0 15px 0px 5px;
+            line-height: 25px;
+        }
+    }
+}
+
+.freelancer-step-content.profile-page {
+    .control-value {
+        display: none !important;
+    }
+    .cancel-action, .save-action, .form-control, .form-select2-control {
+        display: block !important;
+    }
+
+    .input-group {
+        display: table !important;
+    }
+
+    span.required {
+        display: inline-block !important;
+    }
+
+    .radio-box {
+        display: block !important;;
+    }
+
+    .select2.select2-container {
+        display: block !important;;
+    }
+}
+
+.step-numbers {
+    padding: 10px 15px 20px 0px;
+    width: 75%;
+    overflow: hidden;
+    div {
+        width: 100% / 7;
+        float: left;
+        text-align: center;
+        position: relative;
+
+        @width: 32px;
+        span {
+            width: @width;
+            height: @width;
+            line-height: @width - 2;
+            margin: 0px auto;
+            .border-radius(50%);
+            background: #FFF;
+            border: 1px solid #CCC;
+            display: block;
+            font-size: 18px;
+        }
+
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            height: 4px;
+            top: ~"calc(50% - 2px)";
+            background: #FFF;
+        }
+
+        &:before {
+            right: calc(50% + @width / 2);
+            left: 0px;
+        }
+
+        &:after {
+            right: 0px;
+            left: calc(50% + @width / 2);
+        }
+
+        &.past {
+            &:before, &:after {
+                background-color: #bad28d;
+            }
+        }
+
+        &.current {
+            &:before {
+                background-color: #bad28d;
+            }
+        }
+
+        &.future {
+            &:before, &:after {
+                background-color: #f0f0f0;
+            }
+        }
+
+        &.next {
+            &:before {
+                display: block;
+                background-color: #FFF;
+            }
+        }
+
+        &.current, &.past {
+            span {
+                color: #FFF;
+                background-color: #bad28d;
+                position: relative;
+            }
+        }
+
+        &:first-child {
+            &:before {
+                display: none;
+            }
+        }
+
+        &:last-child {
+            &:after {
+                display: none;
+            }
+        }
+
+        &.current {
+            span {
+                &:before {
+                    content: '';
+                    left: -3px;
+                    right: -3px;
+                    top: -3px;
+                    bottom: -3px;
+                    position: absolute;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}
+
+@import 'step_mobile.less';

@@ -1,0 +1,56 @@
+@media (max-width: 768px) {
+	#search_form {
+		> .row {
+			.col-md-3 {
+				padding-right: 15px;
+			}
+		}
+	}
+
+	.search-user {
+		#result {
+			.user-item {
+				.user-info {
+					.earned {
+						text-align: left;
+					}
+				}
+			}
+		}
+	}	
+}
+
+@media (max-width: 736px) {
+	.search-user {
+		.search-user-left {
+			display: none;
+		}
+
+		.search-user-left,
+		.search-user-right {
+			box-shadow: none;
+			padding: 0;
+		}		
+
+		#result {
+			.user-item {
+				.user-info {
+					width: calc(100% - 135px);
+
+					.earned {
+						margin-bottom: 10px;
+					}
+
+					.profile-success-percent {
+						width: 58%;
+						margin-left: 0;
+						margin-top: 0;
+						margin-bottom: 10px;
+						text-align: center;
+						padding-top: 0;
+					}
+				}
+			}
+		}
+	}
+}

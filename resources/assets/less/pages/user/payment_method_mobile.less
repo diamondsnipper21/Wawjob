@@ -1,0 +1,44 @@
+@media (max-width: 736px) {
+	.user-payment-method-page {
+		.modal-payment-gateway {
+			.modal-body {
+				.radiobox {
+					&.selected:after {
+						display: none;
+					}
+
+					&.p-4 {
+						padding: 1em !important;
+						height: 50px;
+					}
+
+					label {
+						> span {
+							display: none;
+						}
+					}
+				}
+
+				.fields {
+					height: auto !important;
+
+					&.ml-2 {
+						margin-left: 0 !important;
+					}
+
+					&.p-4 {
+						padding: 1em !important;
+					}
+				}
+			}
+		}
+
+		.list-group-item {
+			> .row {
+				> .text-center {
+					text-align: left;
+				}
+			}
+		}
+	}
+}

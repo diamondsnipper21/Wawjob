@@ -1,0 +1,267 @@
+@import '../../layouts/_default.less';
+
+/* How it works */
+.page-frontend-help {
+    &.layout-home .page-content {
+        background: #FFF;
+        margin: 0px auto;
+    }
+
+    .content {
+        margin: 50px 150px;
+
+        .title {
+            font-size: 36px;
+            text-align: center;
+            .hover-line {
+                margin: 30px auto 30px; 
+            }
+        }
+    }
+
+    #form_help_search {
+        width: 50%;
+        margin: 0px auto;
+    }
+
+    .tabs {
+        text-align: center;
+        > div {
+            overflow: hidden;
+            width: 300px;
+            margin: 30px auto 50px;
+            border: 1px solid @default-light-color;
+            a {
+                width: 50%;
+                float: left;
+                line-height: 35px;
+                text-decoration: none;
+                &.active {
+                    background: @default-light-color;
+                    color: #FFF;
+                    &:hover {
+                        background: @default-hover-color;
+                    }
+                }
+                &:hover {
+                    background: transparent;
+                    .transition(none);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    ol.breadcrumb {
+        margin-top: 50px;
+        padding: 15px 15px;
+        background: #f9f9f9;
+        > li+li:before {
+            font-family: 'simple-line-icons';
+            content: '\e606';
+            font-size: 8px;
+            padding-right: 9px;
+        }
+    }
+
+    h2 {
+        font-size: 22px;
+        padding: 20px 0px 40px;
+        margin: 0px;
+    }
+
+    .tab-p-content {
+        display: none;
+        padding: 0px;
+        margin: 0px 50px;
+        &.active {
+            display: block;
+        }
+    }
+
+    .help-item {
+        padding: 15px 15px;
+        border-bottom: 1px solid @lighten-border-color;
+        position: relative;
+        &:last-child {
+            margin-bottom: 0px;
+            border-bottom: 0px;
+        }
+
+        &:hover {
+            background: #f8f8f8;
+            &.opening {
+                background: transparent;
+            }
+        }
+
+        .sub-help-items {
+            padding-left: 30px;
+            border-top: 1px solid @lighten-border-color;
+        }
+
+        .help-item {
+        }
+
+        span {
+            display: none;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            transform: rotate(-90deg);
+            cursor: pointer;
+            color: @default-color;
+            .transition(all 0.2s ease-in-out) 
+        }
+
+        &.has-children {
+            padding: 0px;
+            margin-bottom: 1px;
+            > a {
+                display: block;
+                text-decoration: none;
+                line-height: 20px;
+                background: #f2f2f2;
+                padding: 15px;
+            }
+            span {
+                display: block;
+            }
+            &.opening span {
+                transform: rotate(0deg);   
+            }
+        }
+
+        a {
+            font-size: 14px;
+            color: @text-color;
+            text-decoration: none;
+            strong {
+                /*color: @default-color;*/
+            }
+        }
+    }
+
+    .desc {
+        text-align: center;
+        font-size: 18px;
+        width: 65%;
+        margin: 0px auto 40px;
+    }
+
+    .submit-ticket, .redirect-login-block > div {
+        width: 360px;
+        margin: 80px auto 0px;
+        padding: 20px 45px;
+        > div {
+            font-size: 22px;
+            padding: 10px 0px;
+        }
+
+        a {
+            color: @text-color;
+            font-size: 14px;
+            text-decoration: underline;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        a.icon {
+            font-size: 50px;
+            display: inline-block;
+            .border-radius(50%);
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            .box-shadow(0 0px 25px rgba(72, 79, 99, 0.2));
+            text-decoration: none;
+            color: @default-color;
+            &.login-icon i {
+                margin-right: 9px;
+            }
+        }
+
+        p {
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+
+    .help-page-detail {
+        h2 {
+            padding: 35px 15px 20px;
+            font-weight: 600;
+            margin-bottom: 35px;
+        }
+
+        .help-page-content {
+            padding: 0px 15px 35px;
+            font-size: 15px;
+            p {
+                margin-bottom: 20px;
+                line-height: 24px;
+            }
+
+            ul {
+                list-style: disc;
+                li {
+                    margin-bottom: 15px;
+                }
+            }
+
+            h4 {
+                padding: 20px 0px 5px;
+                font-weight: 600;
+                margin-top: 35px;
+                margin-bottom: 20px;
+                &:first-child {
+                    padding-top: 0px;
+                }
+            }
+
+            h5 {
+                font-weight: 600;
+                margin-bottom: 20px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .redirect-login-block {
+        p.redirect-login-desc {
+            margin: 40px 0px 0px;
+            font-size: 14px;
+        }
+    }
+
+    .search-results {
+        h2 {
+            padding-bottom: 20px;
+        }
+        .result-top-section {
+            font-size: 14px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid @border-color;
+            span {
+            }
+            div {
+                float: right;
+            }
+        }
+        p.redirect-login-desc {
+            display: none;
+        }
+
+        .pagination-container {
+            text-align: center;
+            display: block;
+        }
+
+        .not-found-result {
+            /*padding-top: 10px;*/
+            border-top: 1px solid @border-color;
+        }
+    }
+}
+
+@import 'help_mobile.less';

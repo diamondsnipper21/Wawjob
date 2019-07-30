@@ -1,0 +1,156 @@
+@import '../_default.less';
+
+.user-sidebar-menu {
+    .title {
+        /*color: #666;*/
+        font-size: 16px;
+        /*font-weight: bold;*/
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    > ul {
+        padding-left: 0;
+        > li {
+            border-left: 3px solid transparent;
+            &.menu-item {
+                 cursor: pointer;
+            }
+           
+            &.active {
+                background: #EEE;
+                border-left: 3px solid @default-color;
+            }
+
+            a {
+                display:block;
+                padding: 10px 12px 10px 14px;
+                font-size: 14px;
+                /*font-weight: bold;*/
+                &:hover {
+                    color: @default-color;
+                    text-decoration: none;
+                    background-color:#f5f5f5;
+                }
+            }
+
+            &.active {
+                a:hover {
+                    background-color:transparent;
+                }
+            }
+
+            &.menu-seperator {
+                padding-top: 0px;
+                padding-bottom: 0px;
+                margin: 15px 12px 15px 17px;
+                border-top: 1px solid @border-color;
+            }
+        }
+    }
+    
+    &.report-sidebar-menu > ul {
+        padding-left: 0px;
+    }
+
+    .become-buyer-section {
+        margin-top:20px;
+        padding:0 0 0 15px;
+    }    
+}
+
+.page-user {
+    .sub-title {
+        /*font-size: 14px;*/
+    }
+
+    .label-field {
+        padding: 7px 13px;
+        margin: 0px;
+    }
+
+    form {
+        .label-field {
+            display: block;
+        }
+        .input-field {
+            display: none;
+        }
+        span.error {
+            display: none;
+        }
+    }
+    form.editable {
+        .label-field {
+            display: none;
+        }
+        .input-field {
+            display: block;
+        }
+        span.error {
+            display: inline-block;
+        }
+    }
+}
+
+.freelancer-page {
+    form {
+        .action-group {
+            padding: 50px 0px;
+        }
+    }
+}
+
+.freelancer-user-page {
+    form {
+        .action-group {
+            padding: 50px 0px;
+        }
+    }
+}
+
+.bold-title{
+    font-weight: bold;  
+}
+
+.clear-div{
+    clear: both;
+}
+
+.box-sub-section{
+    width: 320px;
+    .block-section{
+        label{
+            font-size: 12px;
+            margin-bottom: 0px;
+        }
+        label.help-comment{
+            font-size: 10px;
+        }
+    }
+}
+
+.alert-info {
+    a {
+        text-decoration:underline;
+        color:#1AAA0F;
+    }
+}
+
+.empty-data-section {
+    font-size: 18px;
+    padding: 10px 0px;
+    text-align: center;
+    color: #888;
+}
+
+.file {
+    .link-delete {
+        float:left;
+    }
+
+    .link-file {
+        word-break:break-word;
+    }
+}
+
+@import 'freelancer_mobile.less';

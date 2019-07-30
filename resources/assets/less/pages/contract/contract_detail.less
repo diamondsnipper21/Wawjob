@@ -1,0 +1,625 @@
+@less: '../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+@import '@{less}/stars.less';
+
+@import '/assets/plugins/jquery.uniform/css/uniform.default.min.css';
+@import '/assets/plugins/bootstrap-fileinput/bootstrap-fileinput.css';
+@import '/assets/plugins/bootstrap-datepicker/css/datepicker3.css';
+@import '/assets/plugins/select2/select2.min.css';
+
+.page-content .title-section {
+	border: 0px;
+}
+
+.info {
+	color: @default-info-color;
+}
+
+.view-section {
+	a.download-link {
+		text-decoration: underline;
+	}
+	
+	.title-section {
+		.link {
+			margin-top: 15px;
+		}
+
+		.contract-status {
+			.border-radius(10px);
+			margin-left:10px;
+			color:#fff;
+			padding:2px 10px;
+			font-size: 13px;
+		}
+
+		.status-closed, 
+		.status-cancelled, 
+		.status-paused, 
+		.status-suspended {
+			background-color:#e74d44;
+		}
+	}
+
+	.btn-leave-feedback {
+		margin-top: 15px;
+	}
+
+	.tab-content {
+		margin-top: 10px;
+
+		.suspended {
+			margin-left:5px;
+			color:#e74d44;
+		}
+
+		#contract_overview {
+
+			.left-content {
+				border-right:1px solid @lighten-border-color;
+			}
+
+			.btn-change-limit, 
+			.btn-change-manual,
+			.btn-change-overtime {
+				padding-top:0;
+				padding-bottom:0;
+				font-size:13px;
+			}
+
+			.status-label {
+				margin-top: 0px;
+			}
+
+			.action-buttons {
+				.btn {
+					display: inline-block;
+					margin-left: 10px;
+					&.btn-primary {
+						border: 1px solid @default-color;
+						background: #FFF;
+						color: @default-color;
+
+						&:hover {
+							color: #FFF;
+						    background-color: @default-color;
+						    border-color: @default-color;
+						    .transition(none);
+						}
+					}
+					&.btn-danger {
+						border: 1px solid #d9534f;
+						background: #FFF;
+						color: #d9534f;
+						&:hover {
+							color: #FFF;
+						    background-color: #d9534f;
+						    border-color: #d43f3a;
+						}
+					}
+				}
+			}			
+		}
+
+		#contract_dispute {
+			a.view-history {
+				text-decoration: none;
+			}
+			.dispute {
+		        padding-top: 30px;
+		        margin-top:30px;
+		        border-top: solid 1px @border-color;
+
+		        p {
+		        	padding-left:10px;
+		        	padding-right:10px;
+		        }
+		        
+		        .btn-link {
+                    float:right;
+                    padding-top:0;
+                    padding-bottom:0;
+                }
+		    }
+
+	        .left-content {
+	            color: #555;
+	            padding-right: 30px;
+	            
+	            .user-info {
+	            	margin-left:0;
+	                border-right: 1px solid  @border-color;
+	                padding: 30px 20px;
+
+	                .avatar-panel {
+	                    float: left;
+
+	                    .big-img-circle {
+	                        width: 80px;
+	                        height: 80px;
+	                    }
+	                }
+	                .name-panel {
+                        width: 220px;
+                        padding-left: 10px;
+                        float: left;
+
+                        .profile-name {
+                            word-break: break-all;
+                            font-size: 14px;
+                            font-weight: bold;
+                        }
+                        .profile-title {
+                            word-break: break-all;
+                        }
+                        .profile-timezone {
+                            word-break: break-all;
+                        }
+                    }
+
+	                .devider {
+	                    border-bottom: solid 1px @border-color;
+	                }
+	            }
+	        }
+
+	        .right-content {
+	            padding: 10px 0;
+	            color: #555;
+
+	            .client-name-big {
+	                font-size: 16px;
+	                font-weight: bold;
+	            }
+
+	            .subject-big {
+	                font-size: 14px;
+	                color: @site-color;
+	            }
+
+	            .ticket-date {
+	                color: @site-color;
+	                font-size: 14px;
+	            }
+
+	            .commentor {
+	                font-weight: 700;
+	            }
+	            
+	            .tickets {
+	                margin-top: 20px;
+	                margin-bottom: 20px;
+
+	                .ticket-row {
+	                    margin-bottom: 30px;
+	                    .attachments {
+	                        padding-top: 10px;
+	                        a {
+	                        	margin-right: 10px;	
+	                        }
+	                        
+	                    }
+	                }
+	            }
+	        }
+	    }
+	}	
+    
+	.tab-section {
+		margin-top: 15px;
+	}
+
+	.tab-inner {
+		/*min-height:300px;*/
+	    padding: 30px 0px 0px;
+	    margin-bottom: 0px;
+	    position: relative;
+
+	    .table {
+	    	.td {
+
+	    		.info {
+	    			padding-left: 10px;
+	    			padding-top: 5px;
+	    			color: @text-color;
+	    		}
+	    	}
+	    }
+
+	    .row {
+	    	.data-row {
+	    		margin-bottom: 10px;
+	    		&.billing-rate-row .control-label {
+	    			margin-top: 3px;
+	    		}
+	    	}
+	    }
+
+		label {
+			&.label-name {
+				margin:0px 0 0;
+			}
+
+			&.control-label {
+				font-weight: 700;
+				text-align: right;
+				display: block;
+				margin-top: 2px;
+			}
+		}
+
+		.avatar {
+			border:1px solid @border-color;
+			margin-bottom:20px;
+		}
+
+		.user-info {
+			margin-left: 120px;
+
+			.name {
+				font-weight:700;
+			}
+
+			.meta {
+				overflow:hidden;
+
+				i {
+					font-size:16px;
+				}
+			}
+		}
+
+		span {
+			&.sep {
+				height:180px;
+				width:1px;
+				border-left:1px solid #ccc;
+				display:inline-block;
+				margin-top:10px;
+				margin-bottom:10px;
+			}
+
+			&.sep-h {
+				display:block;
+				border-top:1px solid #ccc;
+				width:85%;
+				margin:15px 0 20px;
+			}
+		}
+
+		.contract-bottom {
+			margin-top:20px;
+		}
+
+	}
+
+	#contract_milestones {
+		.tab-inner {
+			padding-top:10px;
+		}
+
+		.alert {
+			p {
+				margin:10px 0 0;
+			}
+		}
+
+		.date {
+			font-size: 11px;
+			color: @default-info-color;
+		}
+
+		td {
+			vertical-align:middle;
+
+			.sent {
+				padding-top:5px;
+				text-align:center;
+				
+				label {		
+					text-align:center;			
+					display:block;
+				}
+
+				.date {
+					display:block;
+				}
+			}
+
+			.amount {
+				margin-top:10px;
+				margin-bottom:10px;
+			}
+		}
+
+		.btn-add-row, .btn-remove-row {
+			font-size:10px;
+			padding:5px 7px 3px;
+		}
+
+		.col-calendar {
+			.current-date {
+				float:left;
+				width:90px;
+			}
+
+			.date-picker {
+				float:left;
+			}
+		}
+
+		#modalMilestone {
+			.modal-title {
+				span.edit {
+					display: none;
+				}
+			}
+
+			&.edit {
+				.modal-title {
+					span.create {
+						display: none;
+					}
+
+					span.edit {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+
+	#contract_review {
+
+		.box-feedback {
+
+			.feedback {
+				margin-bottom:20px;
+				border-bottom:1px solid @border-color;
+
+				label {
+					text-align:left;
+				}
+
+				.stars {
+					margin-top:30px;
+
+					.gray-stars {
+						font-size: 16px;
+						span {
+							float: none;
+						}
+					}
+				}
+
+				.review {
+					padding:10px;
+					font-style: italic;
+				}
+
+				.user-info {
+					.name {
+						margin-top: 30px;
+					}
+					.role {
+						margin-top: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.modal-content {
+	.desc {
+		font-size: 14px;
+	}
+
+	.gray {
+		color: @gray-text-color;
+	}
+
+    .control-label {
+		margin-top:5px;
+    }
+
+    .control-value {
+        display:block;
+        padding-top:4px;
+    }
+
+    #to_both, #to_ijobdesk {
+        margin-left:0;
+    }
+
+	.row {
+		margin-bottom:10px;
+	}
+
+	.amount-field {
+		width:180px;
+	}
+
+	.date-field {
+		width:150px;
+	}
+
+	textarea {
+		display:block;
+		height:100px;
+		resize:none;
+	}
+
+	.label-week {
+		margin-top:7px;
+	}
+}
+
+.files {
+	margin-bottom: 7px;
+}
+
+#sendTicketWrapper {
+    input[type="radio"] {
+        margin-left:0;
+    }
+
+    .row {
+        margin-bottom:15px;
+    }
+
+    textarea {
+        resize:none;
+    }
+}
+.scroll-panel {
+	position: relative;
+	height: 350px;
+	overflow: auto;
+}
+a#load_more_link {
+	color: @default-color;
+}
+
+.tickets-content {
+	padding: 10px;
+	border: 1px solid @border-color;
+	position: relative;
+	
+	.comment-row {
+		margin: 5px;
+		padding: 15px;
+		border-bottom: solid 1px @border-color;
+
+		.ticket-content {
+			.attachments {
+				margin-top:10px;
+			}
+		}
+	}
+	
+	.waiting-icon {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		z-index: 999;
+		margin-left: -13px;
+		margin-top: -4px;
+		display: none;
+	}
+	.more-link {
+		color: @default-color;
+		margin-left:10px;
+		cursor:pointer;
+	}
+
+	.less-link {
+		color: @default-color;
+		margin-left:10px;
+		cursor:pointer;
+		display:none;
+	}
+	.more-text {
+		display:none;
+	}
+
+	&.expanded {
+		.more-link {
+			display:none;
+		}
+
+		.more-text {
+			display:inline;
+		}
+
+		.less-link {
+			display:inline;
+		}
+	}
+}
+
+.download-tools-tips {
+	right: 0px;
+	top: -56px;
+	position: absolute;
+}
+
+#form_change_status {
+	display: inline-block;
+}
+
+.initiator-label {
+	font-size: 8px!important;
+	font-weight: normal!important;
+	padding: 3px 6px 3px 6px;
+	text-transform: uppercase;
+	text-shadow: none !important;
+	color: white;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	.border-radius(.25em);
+	line-height: 1;
+	display: inline;
+	background-color: #00BCD4;
+	font-family: "Open Sans", sans-serif;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.18);
+	box-sizing: border-box;
+}
+
+.right-content {
+	.div {
+		color: @gray-text-color;
+	}
+
+	.hourly {
+		font-size: 14px;
+		
+		.control-label {
+			color: @gray-text-color2;
+		}
+
+		.hours {
+			font-size: 18px;
+			padding: 10px 0px;
+			font-weight: 700;
+		}
+
+		.amount {
+			color: @gray-text-color2;
+		}
+
+		.week {
+			.control-label {
+				text-align: left;
+			}
+		}
+
+		.total {
+			.amount {
+				font-weight: 700;
+				font-size: 18px;
+				color: @text-color;
+			}
+		}
+	}
+}
+
+.right-content .fixed {
+	color: @gray-text-color2;
+
+	.control-label {
+		text-align: center !important;
+	}
+
+	.value {
+		color: @text-color;
+		font-size: 18px;
+		font-weight: 700;
+	}
+}
+
+@import 'contract_detail_mobile.less';

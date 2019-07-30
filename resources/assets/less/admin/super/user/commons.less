@@ -1,0 +1,67 @@
+@less: '../../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '@{less}/stars.less';
+
+@import '/assets/plugins/select2/select2.min.css';
+
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal.css';
+
+.tabbable-custom > .nav-tabs > li > a {
+	text-align: center;
+}
+
+.toolbar .button-change-status {
+	margin-left: 10px;
+}
+
+.super-user-page .tab-content {
+	.page-breadcrumb {
+		display: none;
+	}
+}
+
+.user-short-info {
+	margin-bottom: 15px;
+	overflow: hidden;
+	img.user-avatar {
+		float: left;
+		margin-right: 15px;
+		border: 2px solid #CCC;
+	}
+	.user-name-loc {
+		.user-fullname {
+			display: block;
+		    font-size: 25px;
+		    margin-top: 14px;
+		    margin-bottom: 13px;
+		    .user-role {
+		    	font-size: 16px;
+		    }
+
+		    .user-status {
+		    	font-size: 15px;
+		    }
+		}
+		.user-location {
+			display: block;
+			font-size: 15px;
+		}	
+	}
+	.view-role {
+		margin-top: 60px;
+		.pull-left {
+			margin-top: 3px;
+			margin-right: 10px;
+		}
+	}
+}
+
+.page-breadcrumb.breadcrumb {
+	padding: 20px 20px 0px 20px;
+	clear: both;
+}

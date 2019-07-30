@@ -1,0 +1,14 @@
+{
+  "name": "html5sortable",
+  "homepage": "https://github.com/farhadi/html5sortable",
+  "_release": "c436dab52a",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c436dab52ac5df3ead3a3446a737e5976b4a694f"
+  },
+  "_source": "git://github.com/farhadi/html5sortable.git",
+  "_target": "*",
+  "_originalSource": "html5sortable",
+  "_direct": true
+}

@@ -1,0 +1,18 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+/* Plugins */
+@import '/assets/plugins/metronic/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css';
+@import '/assets/plugins/select2/select2.min.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css';
+#site_withdraws .totals {
+  margin: 6px 0px 0px 20px;
+  color: #5b9bd1;
+  font-style: italic;
+}
+#site_withdraws .totals strong {
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: underline;
+}

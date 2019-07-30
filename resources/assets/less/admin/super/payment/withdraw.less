@@ -1,0 +1,77 @@
+@less: '../../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '/assets/plugins/metronic/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css';
+@import '/assets/plugins/select2/select2.min.css';
+
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal.css';
+
+@import '/assets/plugins/metronic/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css';
+
+#withdraws {
+	.totals {
+		margin: 6px 0px 0px 20px;
+		color: #5b9bd1;
+		font-style: italic;
+		strong {
+			font-weight: bold;
+			font-size: 18px;
+			text-decoration: underline;
+		}
+	}
+
+	tr {
+		.withdraw-id {
+			i {
+				display: none;
+			}
+		}
+	}
+
+	tr.review {
+		background-color: #E6BACF;
+	}
+
+	tr.past {
+		.withdraw-id {
+			span {
+				display: none;
+			}
+			i {
+				display: inline;
+			}
+		}
+	}
+
+	td {
+		&.done {
+			background-color: #89BEEF;
+		}
+
+		&.td-status {
+			position:relative;
+
+			.label {
+				position:absolute;
+				right:0;
+				top:0;
+			}
+		}
+	}
+
+	.text-warning {
+		color:#ff5722;
+	}
+
+	.text-danger {
+		color:#F3565D;
+	}
+
+	.tooltip {
+		min-width: 160px;
+	}
+}

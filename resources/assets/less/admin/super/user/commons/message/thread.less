@@ -1,0 +1,32 @@
+@less: '../../../../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal.css';
+
+@import '/assets/plugins/metronic/admin/pages/css/todo.css';
+
+#user_message_thread {
+	.portlet {
+		.box-shadow(0px 0px 0px 0px)
+	}
+
+	.messages-container {
+		border-top: 1px solid #efefef;
+		.short-info {
+			
+		}
+		.label-attendees {
+			margin: 20px 0px;
+			padding: 0px 0px 4px 0px;
+			border-bottom: 1px solid #efefef;	
+		}
+	}
+
+	.short-info .user-short-info img.user-avatar {
+		float: none;
+	}
+}

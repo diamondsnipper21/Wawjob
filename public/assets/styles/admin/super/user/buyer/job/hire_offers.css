@@ -1,0 +1,186 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+/* Plugins */
+@import '/assets/plugins/select2/select2.min.css';
+@import '/assets/plugins/jquery.uniform/css/uniform.default.min.css';
+.job-hire-offers-page .title-section .title i {
+  margin-left: 10px;
+}
+.job-hire-offers-page .sub-title {
+  background-color: #f0f3f5;
+  font-size: 16px;
+}
+.job-hire-offers-page .contracts-section .box-row {
+  position: relative;
+  padding: 15px;
+}
+.job-hire-offers-page .contracts-section .box-row .contract-title {
+  padding-bottom: 10px;
+}
+.job-hire-offers-page .contracts-section .box-row .user-info {
+  margin-left: 60px;
+}
+.job-hire-offers-page .contracts-section .box-row .user-info .user-name {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.job-hire-offers-page .contracts-section .box-row .user-info .user-name a {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 700;
+}
+.job-hire-offers-page .contracts-section .box-row .user-action {
+  padding-top: 10px;
+}
+.job-hire-offers-page .contracts-section .box-row .user-action .box-withdraw {
+  width: 300px;
+  display: none;
+  position: absolute;
+  top: -55px;
+  right: 67%;
+  background-color: #fff;
+  border: 1px solid #CCC;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  text-align: left;
+  padding: 15px;
+}
+.job-hire-offers-page .contracts-section .box-row .user-action .box-withdraw:before {
+  position: absolute;
+  top: 120px;
+  right: -16px;
+  display: inline-block !important;
+  border-right: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #e0e0e0;
+  content: '';
+}
+.job-hire-offers-page .contracts-section .box-row .user-action .box-withdraw:after {
+  position: absolute;
+  top: 120px;
+  right: -14px;
+  display: inline-block !important;
+  border-right: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #fff;
+  content: '';
+}
+.job-hire-offers-page .contracts-section .box-row .user-action .box-withdraw .box-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.job-hire-offers-page .contracts-section .box-row .user-action .box-withdraw .box-message {
+  position: relative;
+}
+.job-hire-offers-page .contracts-section .box-row .user-action .box-withdraw .box-message .box-ctrl {
+  margin-bottom: 10px;
+}
+.job-hire-offers-page .contracts-section .box-row .user-action .box-withdraw .box-message .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  opacity: 0.5;
+  z-index: 10;
+}
+.job-hire-offers-page .contracts-section .box-row .user-action .box-withdraw .box-message label {
+  font-weight: inherit;
+  font-size: inherit;
+}
+.job-hire-offers-page .contracts-section .box-row .user-action .box-withdraw .box-message textarea {
+  height: 50px;
+  resize: none;
+}
+.job-hire-offers-page #modalJobTerm .alert {
+  margin: 20px auto;
+  width: 720px;
+  position: relative;
+  padding-left: 50px;
+}
+.job-hire-offers-page #modalJobTerm .alert i {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 180%;
+}
+.job-hire-offers-page #modalJobTerm .alert p {
+  color: #666;
+  font-size: 14px;
+}
+.job-hire-offers-page #modalJobTerm ul {
+  margin: 0 0 0 5px;
+  padding: 0;
+}
+.job-hire-offers-page #modalJobTerm ul li {
+  list-style-type: none;
+}
+.job-hire-offers-page textarea.form-control {
+  resize: none;
+  width: 100%;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.super-user-buyer-job-hire_offers .page-content-section,
+.super-job-hire_offers .page-content-section {
+  padding: 12px 0px 15px;
+}
+.super-user-buyer-job-hire_offers .job-top-section,
+.super-job-hire_offers .job-top-section,
+.super-user-buyer-job-hire_offers .job-info,
+.super-job-hire_offers .job-info,
+.super-user-buyer-job-hire_offers .job-action,
+.super-job-hire_offers .job-action {
+  display: none;
+}
+.super-user-buyer-job-hire_offers .title-section,
+.super-job-hire_offers .title-section {
+  padding: 0px 20px 20px 0px;
+  font-size: 20px;
+  color: #4DB3A2;
+}
+.super-user-buyer-job-hire_offers .title-section .status-closed,
+.super-job-hire_offers .title-section .status-closed {
+  font-size: 12px;
+}
+.super-user-buyer-job-hire_offers .overview-section,
+.super-job-hire_offers .overview-section,
+.super-user-buyer-job-hire_offers .details-section,
+.super-job-hire_offers .details-section {
+  padding: 15px 25px 0px;
+}
+.super-user-buyer-job-hire_offers .shadow-box.job-hire-offers-page,
+.super-job-hire_offers .shadow-box.job-hire-offers-page {
+  -moz-box-shadow: 0px 0px 0px;
+  -webkit-box-shadow: 0px 0px 0px;
+  box-shadow: 0px 0px 0px;
+}
+.super-user-buyer-job-hire_offers h4,
+.super-job-hire_offers h4 {
+  font-size: 14px;
+}
+.super-user-buyer-job-hire_offers .contract .user-action,
+.super-job-hire_offers .contract .user-action {
+  display: none;
+}
+.super-job-hire_offers .page-content-section {
+  padding: 0px;
+}
+.super-job-hire_offers .overview-section,
+.super-job-hire_offers .details-section {
+  padding: 0px;
+}
+.super-job-hire_offers .title-section {
+  display: none;
+}
+.super-job-hire_offers .page-breadcrumb {
+  clear: both;
+  padding: 15px 15px 15px 0px;
+}

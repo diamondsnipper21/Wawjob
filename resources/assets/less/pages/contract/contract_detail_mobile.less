@@ -1,0 +1,68 @@
+@media (max-width: 736px) {
+	.view-section {
+		.nav-tabs {
+			padding-left: 0;
+
+			> li > a {
+				padding: 10px 6px;
+			}
+		}
+
+		.tab-content {
+			#contract_overview {
+				.tab-inner {
+					padding-top: 15px;
+
+					.mr-4 {
+						margin-right: 0 !important;
+					}
+
+					.pr-5 {
+						padding-right: 0 !important;
+					}
+
+					.left-content {
+						border-right: none;
+					}
+
+					.action-buttons {
+						#btnCancelContract {
+							margin-top: 10px;
+						}
+					}
+
+					.download-tools-tips {
+						position: relative;
+						top: auto;
+						right: auto;
+						margin-bottom: 15px;
+					}
+				}
+			}
+
+			#contract_transactions {
+				.table .thead .tr .th,
+				.table .tbody .tr .td {
+					&.rp-ref,
+					&.rp-type,
+					&.rp-freelancer,
+					&.rp-buyer {
+						display: none;
+					}
+
+					&.rp-date {
+						width: 25% !important;
+					}
+
+					&.rp-description {
+						width: 50% !important;
+					}
+
+					&.rp-amount {
+						width: 25% !important;
+					}
+				}
+			}
+		}
+	}
+}

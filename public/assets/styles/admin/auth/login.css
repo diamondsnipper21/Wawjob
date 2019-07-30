@@ -1,0 +1,165 @@
+/***
+Login page
+***/
+/* logo page */
+/*--------------------------------------------------
+[TRANSITION]
+----------------------------------------------------*/
+/* Cubic Bezier Transition */
+/***
+Login page
+***/
+/* bg color */
+.auth-login {
+  background-color: #364150 !important;
+}
+.auth-login a.page-logo {
+  margin: 60px auto 0px;
+  padding: 15px;
+  text-align: center;
+  background: none !important;
+  border: none !important;
+  font-family: 'bauhs93';
+  font-size: 32px;
+  font-style: italic;
+  line-height: 32px;
+  color: #FFF;
+  /*width: 130px;*/
+  opacity: 1;
+  display: block;
+  filter: alpha(opacity=100);
+  -webkit-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+.auth-login a.page-logo:hover {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  text-decoration: none;
+}
+.auth-login a.page-logo:focus {
+  text-decoration: none;
+}
+.auth-login a.page-logo > span {
+  color: #008BCC;
+}
+.auth-login a.page-logo > span:before {
+  content: inherit;
+}
+.auth-login .logo {
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 15px;
+  text-align: center;
+}
+.auth-login .content {
+  background-color: #eceef1;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  width: 400px;
+  margin: 40px auto 10px auto;
+  padding: 30px;
+  padding-top: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.auth-login .content h3 {
+  color: #4db3a5;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400 !important;
+}
+.auth-login .content h4 {
+  color: #555;
+}
+.auth-login .content .login-form {
+  padding: 0px;
+  margin: 0px;
+}
+.auth-login .content .form-control {
+  border: none;
+  background-color: #dde3ec;
+  height: 43px;
+  color: #8290a3;
+  border: 1px solid #dde3ec;
+}
+.auth-login .content .form-control:focus,
+.auth-login .content .form-control:active {
+  border: 1px solid #c3ccda;
+}
+.auth-login .content .form-control::-moz-placeholder {
+  color: #8290a3;
+  opacity: 1;
+}
+.auth-login .content .form-control:-ms-input-placeholder {
+  color: #8290a3;
+}
+.auth-login .content .form-control::-webkit-input-placeholder {
+  color: #8290a3;
+}
+.auth-login .content select.form-control {
+  padding-left: 9px;
+  padding-right: 9px;
+}
+.auth-login .content .form-title {
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.auth-login .content .form-actions {
+  clear: both;
+  border: 0px;
+  border-bottom: 1px solid #eee;
+  padding: 0px 30px 25px 30px;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+.auth-login .content .form-actions .checkbox {
+  margin-left: 0;
+  padding-left: 0;
+}
+.auth-login .content .form-actions .btn {
+  margin-top: 1px;
+}
+.auth-login .content .btn-success {
+  font-weight: 600;
+  padding: 10px 20px !important;
+}
+.auth-login .content .btn-default {
+  font-weight: 600;
+  padding: 10px 25px !important;
+  color: #6c7a8d;
+  background-color: #ffffff;
+  border: none;
+}
+.auth-login .content .btn-default:hover {
+  background-color: #fafaff;
+  color: #45b6af;
+}
+.auth-login .content .check {
+  color: #8290a3;
+}
+.auth-login .content .rememberme {
+  margin-left: 8px;
+  margin-top: 10px;
+}
+@media (max-width: 440px) {
+  /***
+    Login page
+    ***/
+  .auth-login .logo {
+    margin-top: 10px;
+  }
+  .auth-login .content {
+    width: 280px;
+    margin-top: 10px;
+  }
+  .auth-login .content h3 {
+    font-size: 22px;
+  }
+  .auth-login .checkbox {
+    font-size: 13px;
+  }
+}

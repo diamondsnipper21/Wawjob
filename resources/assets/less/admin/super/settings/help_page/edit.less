@@ -1,0 +1,32 @@
+@less: '../../../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '/assets/plugins/metronic/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css';
+@import '/assets/plugins/select2/select2.min.css';
+
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal.css';
+
+@import '/assets/plugins/metronic/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css';
+
+.second-category-row {
+	position: relative;
+	&.disable {
+		&:before {
+			content: '';
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			background: #FFF;
+			opacity: 0.7;
+			position: absolute;
+			display: block;
+			z-index: 100;
+		}
+	}
+}

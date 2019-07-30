@@ -1,0 +1,124 @@
+@less: '../../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '/assets/plugins/select2/select2.min.css';
+
+body {
+    .page-section.container > .page-content {
+        .box-shadow(0px 0px 0px);
+        background: transparent;
+        padding: 0px;
+    }
+}
+
+.job-content-section > .row {
+    margin: 0px;
+    .page-content {
+        margin-top: 0px;
+    }
+    > .col-md-3 {
+        padding: 0px;
+    }
+}
+
+.box-section {
+	.sub-title {
+	    font-size: 18px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+
+        span {
+            font-size:13px;
+        }
+	}
+
+    #formInvitation {
+        .sub-title {
+            line-height: 40px;
+            padding: 0px 15px;
+            background: @gray-bg-color;
+        }
+
+        .control-label {
+            text-align: left;
+        }
+    }
+
+	textarea {
+		display:block;
+		height: 120px;
+		resize:none;
+	}
+
+	.description {
+		color: #555;
+		word-break: break-all;
+
+		.more-link {
+			color: @default-color;
+			margin-left:10px;
+			cursor:pointer;
+		}
+
+		.more-text {
+			display:none;
+		}
+
+		&.expanded {
+			.more-link {
+				display:none;
+			}
+
+			.more-text {
+				display:inline;
+			}
+		}
+	}
+
+    .fee-label {
+        font-size: 14px;
+
+        .input-group-addon {
+            background-color: transparent;
+            border: none;
+        }
+
+        #FeeValue {
+            line-height: 26px;
+            padding-right: 14px;
+        }
+
+        .fee-unit {
+            padding-right: 12px;
+            padding-left: 12px;
+            line-height: 26px;
+        }
+    }
+}
+
+.instruction {
+    .title {
+        background-color: @sidebar-header-bgcolor;
+        color: @sidebar-header-color;
+        line-height: 70px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    ul {
+        margin: 0px 2px 0px;
+        list-style: disc;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        li {
+            padding: 15px 15px 0px 0px;
+            line-height: 25px;
+            font-size: 14px;
+        }
+    }
+}
+
+@import 'accept_invite_mobile.less';

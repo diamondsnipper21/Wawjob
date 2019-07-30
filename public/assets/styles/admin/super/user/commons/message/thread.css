@@ -1,0 +1,22 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+/* Plugins */
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal.css';
+@import '/assets/plugins/metronic/admin/pages/css/todo.css';
+#user_message_thread .portlet {
+  -moz-box-shadow: 0px 0px 0px 0px;
+  -webkit-box-shadow: 0px 0px 0px 0px;
+  box-shadow: 0px 0px 0px 0px;
+}
+#user_message_thread .messages-container {
+  border-top: 1px solid #efefef;
+}
+#user_message_thread .messages-container .label-attendees {
+  margin: 20px 0px;
+  padding: 0px 0px 4px 0px;
+  border-bottom: 1px solid #efefef;
+}
+#user_message_thread .short-info .user-short-info img.user-avatar {
+  float: none;
+}

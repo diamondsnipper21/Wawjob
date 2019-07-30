@@ -1,0 +1,128 @@
+@import '../_default.less';
+
+/**
+ * Auth Layout
+ */
+
+@import '/assets/plugins/jquery.uniform/css/uniform.default.min.css';
+.btn-login.btn {
+	padding: 10px 14px;
+}
+
+.layout-auth {
+	.header {
+	 	padding: 11px 0px 0px 0px;
+	}
+
+ 	// Content
+ 	@pageContentWidth: 500px;
+ 	.page-content {
+ 		/*background-color: #fff;*/
+ 		.border-radius(6px);
+ 		/*.box-shadow(1px 1px 3px 3px #0D2327);*/
+ 		padding: 15px;
+ 		width: @pageContentWidth;
+ 		/*margin-left: -@pageContentWidth/2;*/
+ 		margin: 0px auto 0px;
+ 		/*position: fixed;*/
+ 		z-index: 20;
+
+ 		.border-box {
+ 			background: #FFF;
+ 			.box-shadow(@default-box-shadow);
+ 		}
+ 	}
+
+ 	.page-footer {
+ 		background: none;
+ 		border: none;
+ 		padding: 0;
+ 		z-index: 16;
+ 		/*.fixed;*/
+ 		bottom: 0;
+
+ 		.copyright {
+ 			border: none;
+ 			padding: 20px 10px;
+ 			color: #999;
+ 		}
+ 	}
+
+ 	h4 {
+ 		margin-bottom: 15px;
+		font-size: 24px;
+		/*color: #464646;*/
+		line-height: 20px;
+ 	}
+
+ 	.round-box {
+ 		border:1px solid #ccc;
+ 		border-radius:12px;
+ 		padding:30px 15px;
+
+ 		.form-group {
+ 			margin-left:0;
+ 			margin-right:0;
+ 		}
+
+ 		p {
+ 			margin-bottom:20px;
+ 		}
+ 	}
+
+	.page-footer {
+ 		.copyright {
+ 			color: #ccc;
+ 			margin-left: -15px;
+ 			margin-right: -15px;
+ 		}
+ 	}
+
+ 	.input-group-addon {
+ 		background: transparent;
+ 	}
+
+ 	.page-wrapper {
+		.form-control {
+			padding: 12px 15px;
+		}	
+ 	}
+
+	.btn-login {
+		width: 100%;
+	}
+}
+
+
+.layout-auth.page-auth-login, .layout-auth.page-auth-forgot {
+	.header {
+	 	padding: 11px 0px 10px 0px;
+	}
+}
+
+.page-auth-login {
+	.captcha-img {
+		img {
+			height: 46px;
+    		border: 1px solid #CCC;
+    	}
+	}
+}
+
+.auth-signup.layout-auth .header, 
+.auth-signup_user.page-guest .header, 
+.auth-signup_success.page-guest .header,
+.page-auth-forgot.page-guest .header,
+.page-auth-reset .header {
+	padding-bottom: 10px;
+}
+
+.auth-signup.page-guest .navbar-nav > li > a, 
+.auth-signup_user.page-guest .navbar-nav > li > a,
+.auth-signup_success.page-guest .navbar-nav > li > a,
+.page-auth-forgot.page-guest .navbar-nav > li > a,
+.page-auth-reset.page-guest .navbar-nav > li > a {
+	padding: 0px;
+}
+
+@import 'auth_mobile.less';

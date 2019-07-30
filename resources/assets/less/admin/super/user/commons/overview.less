@@ -1,0 +1,59 @@
+@less: '../../../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+.toolbar {
+	.select2-container--default .select2-selection--single .select2-selection__clear {
+		display: none;
+	}
+}
+
+#user_overview {
+	margin: 15px;
+	.hourly-rate {
+		font-size: 20px;
+    	margin-top: 20px;
+	}
+	.local-time {
+		margin-top: 15px;
+	}
+	.last-active {
+		margin-top: 25px;
+		text-align: right;
+	}
+	.created-at {
+		text-align: right;
+		margin-top: 20px;
+	}
+	table.table {
+		tr td {
+			text-align: center;
+			vertical-align: middle;
+		}
+	}
+	.stars {
+		position: relative;
+		.star-marks {
+			margin-top: -8px;
+		    margin-left: -1px;
+		}
+	}
+	.job-success {
+		display: inline-block;
+		border-bottom: 3px solid #14bff4;
+		padding: 0px 10px 5px;
+	}
+	.tab-content {
+		.control-label {
+			font-weight: bold;
+		}
+		.form-control-static.email {
+			text-decoration: underline;
+		}
+	}
+	.logo-gateway {
+		height: 35px;
+	}
+}

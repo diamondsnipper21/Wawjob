@@ -1,0 +1,206 @@
+@less: '../../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '/assets/plugins/jquery.uniform/css/uniform.default.min.css';
+
+.job-overview-page {
+	.title-section {
+		.title {
+			i {
+				margin-left:10px;
+			}
+		}
+	}
+
+	#modalJobTerm {
+		.alert {
+			margin:20px auto;
+			width:720px;
+			position:relative;
+			padding-left:50px;
+
+			i {
+				position:absolute;
+				top:15px;
+				left:15px;
+				font-size:180%;
+			}
+
+			p {
+				color:#666;
+				font-size:14px;
+			}
+		}
+
+		ul {
+			margin: 0 0 0 5px;
+			padding: 0;
+
+			li {
+				list-style-type:none;
+			}
+		}
+	}
+
+	.control-label {
+		font-weight:700;
+	}
+	
+	.overview-section {
+	    .section {
+	        padding: 0 10px;
+	        margin-bottom: 20px;
+	    }
+
+		.past-time {
+		    padding: 3px 10px;
+		    color: #999;
+		}
+
+		.job-category {
+		    padding-left: 30px;
+		    padding-right: 20px;
+		    position: relative;
+		    .border-radius(17px);
+		    &:before {
+		        font-size: 16px;
+		        position: absolute;
+		        content: "\e055";
+		        font-family: "simple-line-icons";
+		        top: 1px;
+		        left: 12px;
+		        transform: rotate(-90deg);
+		    }
+		}
+
+		.project-type-info .project-type, .project-type-info {
+		    i.fa {
+		        font-size: 25px;
+		        .hs-admin-pin-2 {
+		            font-size: 30px;
+		        }
+		    }
+
+		    strong {
+		        display: block;
+		        line-height: 25px;
+		        padding: 0px;
+		        font-size: 15px;
+		        margin-bottom: 5px;
+		    }
+
+		    .col-md-10 {
+		        > div {
+		            padding-top: 5px;
+		        }
+		    }
+		}
+
+		.project-start-date {
+		    line-height: 20px;
+		    span.glyphicon-calendar {
+		        font-size: 20px;
+		    }
+
+		    strong {
+		        display: block;
+		        margin-top: 4px;
+		        span {
+		            color: #999;
+		            font-weight: 400;
+		            font-size: 12px;
+		        }
+		    }
+		}
+
+		.attachments {
+		    padding-bottom: 15px;
+		    a {
+		        line-height: 22px;
+		        font-size: 12px;
+		    }
+		}
+
+		.project-skills {
+		    .skill-label {
+		        padding: 5px 0px;
+		        margin-right: 10px;
+		    }
+		    .skill {
+		        padding: 5px 10px;
+		        margin-right: 10px;
+		        .border-radius(4px);
+		        background: #e0e0e0;
+		    }
+		}
+
+		.sub-section {
+		    hr {
+		        border-color: #666666;
+		    }
+
+		    .title {
+		        font-size: 14px;
+		        font-weight: bold;
+		        margin-top: 20px;
+		    }
+
+		    .subtitle {
+		        font-weight: bold;
+		        margin: 0 0 5px;
+		        font-size: 14px;
+		    }
+		}
+
+		.attached-files {
+		    .file {
+		        float: left;
+		        padding: 0px 15px 10px;
+		    }
+		}
+
+		.content-right {
+			label {
+				text-align: left;
+			}
+
+			.values {
+				.value {
+					display: block;
+					text-align: center;
+					font-weight: 700;
+					font-size: 16px;
+				}
+
+				label {
+					text-align: center;
+
+					&.control-label {						
+						display: block;
+						font-weight: 400;
+						font-size: 13px;
+						color: @default-info-color;
+					}
+				}
+			}
+
+			.preferred {
+				.row {
+					label {
+						&.control-label {
+							text-align: left;
+							font-weight: 400;
+							color: #777;
+							font-size: 13px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@import 'overview_mobile.less';

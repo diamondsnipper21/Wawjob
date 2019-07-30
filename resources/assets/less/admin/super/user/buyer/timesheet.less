@@ -1,0 +1,43 @@
+@import '../../../../pages/report/timesheet.less';
+
+.super-user-buyer-timesheet {
+	.tab-pane {
+		padding: 12px 20px 15px 20px;
+	}
+
+	.page-breadcrumb.breadcrumb {
+		padding: 8px 0px 20px;
+	}
+
+	.report-mode-section {
+		margin-top: 0px;
+	}
+
+	.title-section {
+		margin-bottom: 20px;
+	}
+	span.title {
+		padding: 10px 0px;
+		min-height: 48px;
+		span {
+			display: none;
+			&.admin-title.hide {
+				display: block !important;
+				font-size: 16px;
+			}
+		}
+	}
+
+	.timesheet-section.table-scrollable {
+		overflow-x: hidden;
+		overflow-y: auto;
+		border: 0px;
+
+		th {
+			text-align: left;
+			&.text-right {
+				text-align: right;
+			}
+		}
+	}
+}

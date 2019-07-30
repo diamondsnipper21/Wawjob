@@ -1,0 +1,55 @@
+@import '/assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css';
+@import '/assets/plugins/select2/select2.min.css';
+
+@import '../../../pages/buyer/report/transactions.less';
+
+#transactions {
+	.transaction-type-section {
+		margin-top: 0px;
+	}
+
+	.show-lifetime {
+		margin-top: 10px;
+	}
+
+	.box-users {
+		position:relative;
+
+		i.fa-times {
+			position:absolute;
+			z-index:10;
+			top:10px;
+			right:40px;
+			color:#757575;
+			cursor:pointer;
+		}
+	}
+
+	table {
+		thead {
+			th {
+				text-align:left;
+
+				&.text-right {
+					text-align:right;
+				}
+			}
+		}
+
+		tr {
+			td {
+				a {
+					text-decoration: none;
+				}
+
+				a:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	.margin-top-5 {
+		margin-top:5px;
+	}
+}

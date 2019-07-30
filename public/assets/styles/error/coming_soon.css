@@ -1,0 +1,24 @@
+.page-coming-soon {
+  text-align: center;
+}
+
+.page-coming-soon .number {
+  position: relative;
+  top: 100px;
+  display: inline-block;
+  letter-spacing: -10px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  line-height: 80px;
+  font-size: 80px;
+  font-weight: 300;
+  color: #7bbbd6;
+  text-align: right;
+}
+
+.page-coming-soon .details {
+  margin-left: 40px;
+  display: inline-block;
+  padding-top: 0px;
+  text-align: left;
+}

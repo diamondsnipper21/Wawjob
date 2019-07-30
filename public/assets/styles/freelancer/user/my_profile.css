@@ -1,0 +1,487 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+/* Plugins */
+@import '/assets/plugins/select2/select2.min.css';
+@import '/assets/plugins/jquery.uniform/css/uniform.default.min.css';
+@import '/assets/plugins/bootstrap-fileinput/bootstrap-fileinput.css';
+@import '/assets/plugins/jcrop/css/jquery.Jcrop.min.css';
+@import '/assets/plugins/unify/vendor/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css';
+body .page-section.container .page-content.right {
+  padding: 0px;
+  -moz-box-shadow: 0px 0px 0px;
+  -webkit-box-shadow: 0px 0px 0px;
+  box-shadow: 0px 0px 0px;
+  background: transparent;
+}
+body .system-warnings {
+  display: none;
+}
+body .page-content .not-found-result {
+  font-size: 20px;
+}
+body .page-content.fixed {
+  position: absolute;
+}
+#my_profile_page,
+.freelancer-user-page {
+  /*.cbp-popup-lightbox-figure {
+		text-align: center;
+	}
+	.cbp-popup-lightbox-img {
+		display: inline-block;
+	}*/
+}
+.cbp-popup-lightbox-title {
+  text-align: left;
+  font-size: 14px;
+}
+.cbp-popup-lightbox-title strong {
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 8px 0px;
+}
+.profile-page .cbp-item {
+  margin: 0px;
+}
+.profile-page .disable-edit .action-buttons:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: #FFF;
+  opacity: 0.7;
+  z-index: 10;
+}
+.profile-page .disable-edit .action-link {
+  display: none;
+}
+.profile-page .form-group {
+  margin-bottom: 20px;
+}
+.profile-page .form-group .control-label {
+  /*padding-top: 10px;*/
+}
+.profile-page .action-link {
+  text-decoration: none;
+  color: #333333;
+  float: right;
+  margin: 7px 7px 0px 0px;
+}
+.profile-page .action-link i {
+  font-size: 20px;
+}
+.profile-page .page-content {
+  position: relative;
+}
+.profile-page .page-content:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  content: "";
+  background: #FFF;
+  z-index: 10;
+  opacity: 0.7;
+  display: none;
+}
+.profile-page .control-value-avatar {
+  position: relative;
+}
+.profile-page .control-value-avatar a {
+  display: none;
+  position: absolute;
+  bottom: 0px;
+  right: -30px;
+  font-size: 20px;
+  color: #666;
+  text-decoration: none;
+}
+.profile-page .file-upload-container {
+  max-width: 280px;
+}
+.profile-page .avatar-upload-container {
+  max-width: 280px;
+}
+.profile-page .avatar-upload-container > img {
+  max-width: 100%;
+  max-height: 280px;
+}
+.profile-page .avatar-upload-container .jcrop-holder {
+  margin: 0px auto;
+}
+.profile-page .toolbar .buttons {
+  overflow: hidden;
+}
+.profile-page .toolbar.fixed {
+  z-index: 601;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background: rgba(248, 249, 250, 0.9);
+  height: 50px;
+  -moz-box-shadow: 0 0px 11px rgba(72, 79, 99, 0.3);
+  -webkit-box-shadow: 0 0px 11px rgba(72, 79, 99, 0.3);
+  box-shadow: 0 0px 11px rgba(72, 79, 99, 0.3);
+}
+.profile-page .toolbar.fixed .buttons {
+  top: 8px;
+  position: absolute;
+  text-align: right;
+}
+.profile-page .toolbar.fixed .edit-action {
+  display: none;
+}
+.profile-page .toolbar.fixed .btn-edit-action {
+  display: block;
+}
+.profile-page .btn-view-others {
+  padding-right: 0px;
+  padding-top: 10px;
+}
+.profile-page .edit-action.action-link {
+  cursor: pointer;
+}
+.profile-page .edit-action,
+.profile-page .control-value {
+  display: block;
+}
+.profile-page .btn-edit-action {
+  display: none;
+}
+.profile-page .cancel-action,
+.profile-page .save-action,
+.profile-page .form-control,
+.profile-page .form-select2-control {
+  display: none;
+}
+.profile-page span.required {
+  display: none;
+}
+.profile-page .input-group {
+  display: none;
+}
+.profile-page .radio-box {
+  display: none;
+}
+.profile-page .select2.select2-container {
+  display: none;
+}
+.profile-page .actions {
+  display: none;
+}
+.profile-page.edit-mode .page-content:before {
+  display: block;
+}
+.profile-page.edit-mode #about_me.page-content:before {
+  display: none;
+}
+.profile-page.edit-mode .control-value-avatar a {
+  display: block;
+}
+.profile-page.edit-mode .btn-edit-action,
+.profile-page.edit-mode .edit-action,
+.profile-page.edit-mode .control-value {
+  display: none;
+}
+.profile-page.edit-mode .fixed .btn-edit-action {
+  display: none;
+}
+.profile-page.edit-mode .select2.select2-container {
+  display: block;
+}
+.profile-page.edit-mode .form-select2-control {
+  display: inline-block;
+}
+.profile-page.edit-mode .cancel-action,
+.profile-page.edit-mode .save-action,
+.profile-page.edit-mode .form-control {
+  display: block;
+}
+.profile-page.edit-mode span.required {
+  display: inline-block;
+}
+.profile-page.edit-mode .input-group {
+  display: table;
+}
+.profile-page.edit-mode .radio-box {
+  display: block;
+}
+.profile-page.edit-mode span.skill {
+  padding-right: 26px;
+}
+.profile-page.edit-mode span.skill i {
+  display: block;
+  cursor: pointer;
+}
+.profile-page.edit-mode .actions {
+  display: block;
+}
+.profile-page.edit-mode .add-item-action,
+.profile-page.edit-mode .add-language-action,
+.profile-page.edit-mode .add-skill-action {
+  display: block;
+}
+.profile-page .control-label {
+  font-size: 14px;
+}
+.profile-page .control-value {
+  margin-top: 7px;
+}
+.profile-page #profile_languages,
+.profile-page #profile_skills {
+  width: 80%;
+}
+.profile-page .page-content .item {
+  position: relative;
+  font-size: 12px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f0f3f5;
+}
+.profile-page .page-content .item:last-child {
+  border-bottom: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+}
+.profile-page .page-content .item .item-title {
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.profile-page .page-content .item .action-buttons {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  right: -15px;
+  width: 150px;
+}
+.profile-page .page-content .item .action-buttons .edit-item-action,
+.profile-page .page-content .item .action-buttons .remove-item-action {
+  text-align: center;
+  color: #333333;
+  font-size: 18px;
+  text-decoration: none;
+  display: table-cell;
+  vertical-align: middle;
+  position: absolute;
+  top: calc(50% - 15px);
+  right: 100px;
+}
+.profile-page .page-content .item .action-buttons .edit-item-action.remove-item-action,
+.profile-page .page-content .item .action-buttons .remove-item-action.remove-item-action {
+  font-size: 22px;
+  top: calc(50% - 18px);
+  right: 35px;
+}
+.profile-page .page-content .item .action-buttons .edit-item-action.remove-item-action:before,
+.profile-page .page-content .item .action-buttons .remove-item-action.remove-item-action:before {
+  content: '';
+  position: absolute;
+  border-left: 1px solid #f0f3f5;
+  top: -4px;
+  left: -20px;
+  width: 1px;
+  height: 50px;
+}
+.profile-page .page-content .item .col-md-12 {
+  padding-right: 150px;
+}
+.profile-page .page-content .item .col-md-12:after {
+  content: '';
+  position: absolute;
+  border-left: 1px solid #f0f3f5;
+  top: 3px;
+  right: 126px;
+  width: 1px;
+  bottom: 3px;
+}
+.profile-page .page-content .item:hover {
+  /*background: #f8f8f8;*/
+}
+.profile-page #portfolios .portfolio {
+  border: solid 1px #CCC;
+  padding: 2px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 15px;
+  position: relative;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.profile-page #portfolios .portfolio .border-top {
+  border-color: #f0f3f5 !important;
+}
+.profile-page #portfolios .portfolio .portfolio-image {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.profile-page #portfolios .portfolio .portfolio-image img {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  max-width: 100%;
+  height: auto;
+}
+.profile-page #portfolios .portfolio .portfolio-title {
+  padding: 15px 0px 0px;
+}
+.profile-page #portfolios .portfolio .portfolio-category {
+  padding: 10px 5px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.profile-page #portfolios .portfolio .portfolio-url {
+  padding: 15px 0px 0px;
+}
+.profile-page #portfolios .portfolio .portfolio-keyword {
+  padding: 15px 0px 0px;
+}
+.profile-page #portfolios .portfolio .portfolio-desc {
+  padding: 15px 0px 0px;
+}
+.profile-page #portfolios .portfolio .action-buttons {
+  position: relative;
+  width: auto;
+  right: auto;
+}
+.profile-page #portfolios .portfolio .action-buttons a {
+  float: left;
+  width: 50%;
+  line-height: 34px;
+  height: 32px;
+  position: relative;
+  right: auto;
+}
+.profile-page #portfolios .portfolio .action-buttons a.remove-item-action {
+  position: relative;
+}
+.profile-page #portfolios .portfolio .action-buttons a.remove-item-action:before {
+  content: '';
+  position: absolute;
+  border-left: 1px solid #f0f3f5;
+  top: 2px;
+  left: 0px;
+  bottom: 2px;
+  width: 1px;
+  height: auto;
+}
+.profile-page #portfolios .pagination {
+  margin: 0px;
+}
+.profile-page #certifications .certification .cert-title {
+  padding-top: 10px;
+  display: block;
+}
+.profile-page #certifications .certification .cert-title a {
+  color: #333333;
+  text-decoration: none;
+}
+.profile-page #certifications .certification .cert-desc {
+  margin-top: 10px;
+}
+.profile-page #certifications .certification .cert-date {
+  padding-top: 10px;
+}
+.profile-page #certifications .certification .cert-url {
+  padding-top: 10px;
+}
+.profile-page #employments .employment .employment-company {
+  padding-top: 10px;
+  display: block;
+}
+.profile-page #employments .employment .employment-desc {
+  margin-top: 10px;
+}
+.profile-page #employments .employment .employment-date {
+  padding-top: 10px;
+}
+.profile-page #employments .employment .employment-position {
+  padding-top: 10px;
+}
+.profile-page #educations .education .education-date,
+.profile-page #educations .education .education-major,
+.profile-page #educations .education .education-degree {
+  padding-top: 10px;
+}
+.profile-page #educations .education .education-desc {
+  margin-top: 10px;
+}
+.profile-page #experiences .experience .experience-title {
+  padding-top: 10px;
+  display: block;
+}
+.profile-page #experiences .experience .experience-desc {
+  margin-top: 10px;
+}
+.profile-page #experiences .experience .actions {
+  right: 14px;
+}
+.profile-page.edit-mode .certifications .cert-desc {
+  margin-bottom: 28px;
+}
+.profile-page.edit-mode .employments .employment-desc {
+  margin-bottom: 28px;
+}
+.profile-page .actions {
+  position: absolute;
+  bottom: 6px;
+  right: 10px;
+}
+.profile-page .actions a {
+  font-size: 14px;
+  color: #666666;
+}
+.profile-page .margin-top-3 {
+  margin-top: 3px;
+}
+.profile-page .margin-top-7 {
+  margin-top: 7px;
+}
+#modal_portfolio .portfolio-img {
+  padding-top: 15px;
+  text-align: center;
+}
+#modal_portfolio .portfolio-img img {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  max-height: 200px;
+}
+#modal_portfolio .temp-avatar {
+  width: 50%;
+}
+#modal_container .modal-title strong {
+  font-weight: normal;
+}
+@media (max-width: 736px) {
+  .profile-page .page-content .item .action-buttons {
+    width: 70px;
+    right: -10px;
+  }
+  .profile-page .page-content .item .action-buttons .edit-item-action {
+    top: 10px;
+    right: 45px;
+  }
+  .profile-page .page-content .item .action-buttons .remove-item-action.remove-item-action {
+    top: 7px;
+    right: 0;
+  }
+  .profile-page .page-content .item .action-buttons .remove-item-action.remove-item-action:before {
+    top: 2px;
+    left: -10px;
+    height: 25px;
+  }
+}

@@ -1,0 +1,100 @@
+@less: '../../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import 'my_jobs.less';
+
+.page-wrapper {
+	/*padding-top: 24px;*/
+}
+.buyer-jobs-page {
+	.nav-tabs {
+		margin: 20px 0 20px;
+	}
+
+	.section-content {
+		padding-bottom: 15px;
+
+		.title-section .title {
+			font-size: 20px;
+		}
+
+		.object-item {
+			.job-title {
+				/*margin-left: 10px;*/
+				margin-top: 3px;
+			}
+		}
+
+		.closed,
+		.cancelled {
+			background-color:#f5f5f5;
+		}
+	}
+
+	.job-title {
+		a {
+			color: @default-color;
+			font-size: 16px;;
+			word-break: break-all;
+		}
+
+		.job-type {
+			margin-top:5px;
+			margin-bottom:5px;
+		}
+	}
+
+	.job-info {
+		.job-info-value {
+			padding-top: 16px;
+			text-align:center;
+
+			&.status {
+			    text-transform: uppercase;
+				padding-top: 16px;
+			}
+		}
+	}
+
+	.tab-content-archived {
+		.job-info {
+			padding-top: 10px;
+		}
+
+		.job-action {
+			margin-top: 10px;
+
+		}
+	}
+
+	.job-action {
+		padding-top: 9px;
+	}
+
+	#job_postings .right-action-link, #offers .right-action-link {
+		margin-top: 4px;
+	}
+
+	.right-action-link a {
+		display: inline !important;
+		color: #FFF !important;
+		margin-top: 5px !important;
+	}
+
+	&.exist-offers #job_postings .right-action-link {
+		display: none !important;
+	}
+
+	#open_contracts {
+		margin-top: 20px;
+	}
+
+	#all_jobs {
+		/*margin-top: 15px;*/
+	}
+}
+
+@import 'all_jobs_mobile.less';

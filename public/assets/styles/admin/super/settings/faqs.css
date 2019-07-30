@@ -1,0 +1,11 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+@import '/assets/plugins/metronic/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css';
+@import '/assets/plugins/metronic/global/plugins/select2/select2.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css';
+.super-users-list table.table td {
+  text-align: center;
+  vertical-align: middle;
+}

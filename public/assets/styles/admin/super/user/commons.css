@@ -1,0 +1,86 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+/* Plugins */
+@import '/assets/plugins/select2/select2.min.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal.css';
+.gray-stars {
+  font-size: 18px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.gray-stars > i {
+  color: #ccc;
+}
+.gray-stars .red-stars {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.gray-stars .red-stars i {
+  color: #ffc501;
+}
+.gray-stars i {
+  margin: 0 2px;
+  display: inline-block;
+}
+.star-marks-overlay {
+  visibility: hidden;
+  display: inline-block;
+}
+.star-marks {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.tabbable-custom > .nav-tabs > li > a {
+  text-align: center;
+}
+.toolbar .button-change-status {
+  margin-left: 10px;
+}
+.super-user-page .tab-content .page-breadcrumb {
+  display: none;
+}
+.user-short-info {
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.user-short-info img.user-avatar {
+  float: left;
+  margin-right: 15px;
+  border: 2px solid #CCC;
+}
+.user-short-info .user-name-loc .user-fullname {
+  display: block;
+  font-size: 25px;
+  margin-top: 14px;
+  margin-bottom: 13px;
+}
+.user-short-info .user-name-loc .user-fullname .user-role {
+  font-size: 16px;
+}
+.user-short-info .user-name-loc .user-fullname .user-status {
+  font-size: 15px;
+}
+.user-short-info .user-name-loc .user-location {
+  display: block;
+  font-size: 15px;
+}
+.user-short-info .view-role {
+  margin-top: 60px;
+}
+.user-short-info .view-role .pull-left {
+  margin-top: 3px;
+  margin-right: 10px;
+}
+.page-breadcrumb.breadcrumb {
+  padding: 20px 20px 0px 20px;
+  clear: both;
+}

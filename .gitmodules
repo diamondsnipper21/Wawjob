@@ -1,0 +1,6 @@
+[submodule "public/assets/plugins/jquery-slimscroll"]
+	path = public/assets/plugins/jquery-slimscroll
+	url = https://github.com/rochal/jQuery-slimScroll.git
+[submodule "public/assets/plugins/fancybox"]
+	path = public/assets/plugins/fancybox
+	url = https://github.com/fancyapps/fancybox.git

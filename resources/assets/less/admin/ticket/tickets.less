@@ -1,0 +1,98 @@
+@less: '../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '/assets/plugins/metronic/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css';
+@import '/assets/plugins/select2/select2.min.css';
+
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal.css';
+
+@import '/assets/plugins/metronic/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css';
+
+.ticket-tickets {
+	#modal_assign .btn-file {
+		cursor: pointer;
+	}
+	.option-icon {
+		float: left;
+		margin-top: 1px;
+		margin-right: 10px;
+	}
+	.option-text {
+		float: left;
+	}
+	.select2-chosen .option-icon {
+		margin-top: 4px;
+	}
+	.bootstrap-maxlength {
+		z-index: 11000 !important;
+	}
+	
+	.padding-top-10
+	{
+		padding-top: 10px;
+	}
+}
+
+#tickets {
+	.portlet {
+		.box-shadow(0px 0px 0px 0px);
+		.portlet-title {
+			.caption {
+				.number {
+					margin-left: 15px;
+					color: #5b9bd1;
+					font-style: italic;
+					font-size: 13px;
+					display: block;
+					strong {
+						font-size: 18px;
+						font-weight: bold;
+						text-decoration: underline;
+					}
+					span {
+						font-size: 13px;
+						color: #ff5722;
+					}
+				}
+			}
+		}
+	}
+
+	.corner-ribbon.top-right {
+	    top: 3px;
+	    right: -88px;
+	    font-size: 10px;
+	    line-height: 22px;
+	    a {
+	    	color: #f0f0f0;
+	    	text-decoration: none;
+	    }
+	}
+
+	table.table tr td.with-ribbon {
+		overflow: hidden;
+		position: relative;
+		&.is-new {
+			padding-right: 40px;
+		}
+	}
+}
+
+table.table tr td {
+	.new, .unread-messages, .unread-admin-messages {
+		float: right;
+		font-size: 18px !important;
+		margin-right: 5px;
+
+		cursor: pointer;
+		a {
+			text-decoration: none;
+			color: #FFF;
+		}
+	}
+}

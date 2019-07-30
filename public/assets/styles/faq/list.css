@@ -1,0 +1,45 @@
+.faq-sidebar-menu > ul {
+  padding-left: 20px;
+}
+.faq-sidebar-menu > ul > li {
+  padding: 10px 12px 10px 17px;
+}
+.faq-sidebar-menu > ul > li.active {
+  background: #eaedee url('/assets/images/common/menu-selected-bg.png') 0px 0px repeat-y;
+}
+.faq-sidebar-menu > ul > li a {
+  font-weight: bold;
+}
+.faq-sidebar-menu > ul > li a:hover {
+  color: #008bcc;
+  text-decoration: none;
+}
+.faq-sidebar-menu.faq-sidebar-menu > ul {
+  padding-left: 0px;
+}
+.faq-list .dd-list .dd-item {
+  border: 1px solid #e0e0e0;
+  margin: 0px 0px 2px 0px;
+  color: #666;
+}
+.faq-list .dd-list .dd-item .dd-item-header {
+  background-color: #f9f9f9;
+  padding: 10px 15px;
+  cursor: pointer;
+  line-height: 1em;
+}
+.faq-list .dd-list .dd-item .dd-item-header h5 {
+  margin: 0px;
+  color: #666;
+}
+.faq-list .dd-list .dd-item.selected .dd-item-header h5 {
+  color: #337ab7;
+  font-weight: bold;
+}
+.faq-list .dd-list .dd-item .dd-item-body .dd-item-content p {
+  padding: 10px 15px;
+  margin: 0;
+}
+.faq-list .dd-list .dd-item .dd-item-body .dd-item-content.in {
+  border-top: 1px solid #e0e0e0;
+}

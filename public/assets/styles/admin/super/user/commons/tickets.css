@@ -1,0 +1,81 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+/* Plugins */
+@import '/assets/plugins/metronic/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css';
+@import '/assets/plugins/select2/select2.min.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css';
+.ticket-tickets #modal_assign .btn-file {
+  cursor: pointer;
+}
+.ticket-tickets .option-icon {
+  float: left;
+  margin-top: 1px;
+  margin-right: 10px;
+}
+.ticket-tickets .option-text {
+  float: left;
+}
+.ticket-tickets .select2-chosen .option-icon {
+  margin-top: 4px;
+}
+.ticket-tickets .bootstrap-maxlength {
+  z-index: 11000 !important;
+}
+.ticket-tickets .padding-top-10 {
+  padding-top: 10px;
+}
+#tickets .portlet {
+  -moz-box-shadow: 0px 0px 0px 0px;
+  -webkit-box-shadow: 0px 0px 0px 0px;
+  box-shadow: 0px 0px 0px 0px;
+}
+#tickets .portlet .portlet-title .caption .number {
+  margin-left: 15px;
+  color: #5b9bd1;
+  font-style: italic;
+  font-size: 13px;
+  display: block;
+}
+#tickets .portlet .portlet-title .caption .number strong {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#tickets .portlet .portlet-title .caption .number span {
+  font-size: 13px;
+  color: #ff5722;
+}
+#tickets .corner-ribbon.top-right {
+  top: 3px;
+  right: -88px;
+  font-size: 10px;
+  line-height: 22px;
+}
+#tickets .corner-ribbon.top-right a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+#tickets table.table tr td.with-ribbon {
+  overflow: hidden;
+  position: relative;
+}
+#tickets table.table tr td.with-ribbon.is-new {
+  padding-right: 40px;
+}
+table.table tr td .new,
+table.table tr td .unread-messages,
+table.table tr td .unread-admin-messages {
+  float: right;
+  font-size: 18px !important;
+  margin-right: 5px;
+  cursor: pointer;
+}
+table.table tr td .new a,
+table.table tr td .unread-messages a,
+table.table tr td .unread-admin-messages a {
+  text-decoration: none;
+  color: #FFF;
+}

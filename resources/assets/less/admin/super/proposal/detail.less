@@ -1,0 +1,40 @@
+@less: '../../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '/assets/plugins/metronic/admin/pages/css/todo.css';
+
+#proposal {
+	.portlet {
+		.box-shadow(0px 0px 0px 0px)
+	}
+	h2 {
+		margin-top: 0px;
+		margin-bottom: 5px;
+	}
+	.block {
+		border-bottom: 1px dashed #CCC;
+		font-size: 16px;
+	}
+	.well {
+		background-color: #FAFAFA;
+	}
+
+	.term-section {
+		.term-label {
+			text-align: right;
+			margin-right: 10px;
+			float: left;
+			width: 100px;
+			font-weight: bold;
+		}
+		.term-data {
+			float: left;
+		}
+	}
+	.messages {
+    	margin-top: 0px;
+    }
+}

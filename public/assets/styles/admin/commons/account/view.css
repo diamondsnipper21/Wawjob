@@ -1,0 +1,49 @@
+@import '/assets/plugins/metronic/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css';
+@import '/assets/plugins/jcrop/css/jquery.Jcrop.min.css';
+@import '/assets/plugins/select2/select2.min.css';
+.settings-page .form-group {
+  font-size: 14px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.settings-page .form-control-static {
+  padding: 0px;
+  margin: 0px;
+}
+.settings-page .avatar-img {
+  width: 150px;
+  max-width: 100%;
+}
+.settings-page .user-info {
+  margin-top: 0px;
+}
+.settings-page .user-info .user-name {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.settings-page .user-info .user-name h4 {
+  font-size: 13px;
+}
+.settings-page .user-info .user-role-name {
+  margin-bottom: 10px;
+}
+.settings-page .image-container {
+  border: solid 1px #ddd;
+  border-radius: 4px;
+  padding: 4px 4px;
+  background-color: #eff3f8;
+}
+.settings-page .image-container.user-avatar {
+  max-width: 160px;
+}
+.settings-page .image-container.crop-preview {
+  width: 60%;
+}
+.settings-page .control-label {
+  text-align: right;
+}
+.settings-page .form-section {
+  margin: 30px 0px 25px 0px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}

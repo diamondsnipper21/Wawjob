@@ -1,0 +1,30 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+/* Plugins */
+@import '/assets/plugins/select2/select2.min.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal.css';
+@import '/assets/plugins/metronic/global/plugins/jstree/dist/themes/default/style.min.css';
+#job_categories .tree-container {
+  width: 70%;
+  margin: 0px auto;
+}
+#job_categories .tree-container .toolbar {
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+#job_categories .tree-container .toolbar button {
+  margin-left: 10px;
+}
+#job_categories .tree-container .tree {
+  padding: 10px;
+  border: 1px solid #eee;
+}
+.parent-category-name {
+  margin-top: 9px;
+  font-weight: bold;
+}
+.label-KP,
+.label-CH {
+  display: none;
+}

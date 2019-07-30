@@ -1,0 +1,5 @@
+php artisan make:migration create_users_table --create=users
+php artisan make:migration add_votes_to_users_table --table=users
+
+php artisan make:migration create_users_table --create=users
+php artisan make:migration change_default_of_need_feedback_to_contracts_table --table=contracts

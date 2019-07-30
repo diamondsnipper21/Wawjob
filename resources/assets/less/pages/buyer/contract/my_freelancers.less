@@ -1,0 +1,142 @@
+@less: '../../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '@{less}/stars.less';
+@import '/assets/plugins/select2/select2.min.css';
+
+#my_freelancers {
+
+	.row-filters {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.contractor-item {
+        &.user-item:hover {
+        	background: transparent;
+        }
+
+	    &.status-closed {
+	        background: #eee;
+	    }
+
+		.user-description {
+			width: 80%;
+		}
+
+	    .contract-date {
+	    	margin-top: 8px;
+	    	margin-bottom: 8px;
+	    }
+
+	    .contractor-location {
+	        i {
+	            font-size: 16px;
+	            float:left;
+	        }
+
+	        label {
+	        	float:left;
+	        	margin-left:5px;
+	        }
+	    }
+
+	    .contractor-feedback {
+	        margin: 15px 0px 0px 127px;
+	        span.freelancer-total-score {
+	            margin-left: 5px;
+
+	            i {
+	                margin-left: -5px;
+	            }
+	        }
+
+			.contract-item {
+			    padding: 10px 0px 0px;
+			}
+
+			.contract-block {
+			    border-top: 1px solid @border-color2;
+			    padding: 10px 0px;
+
+			    .title {
+			    	font-size: 18px;
+			    }
+			}
+
+			a.show-feedback {
+			    text-decoration: none;
+			    cursor: pointer;
+			}
+
+			.feedbacks {
+			    display: none;
+			    margin-top: 10px;
+			    padding: 0px 15px 0px;
+			}
+	    }
+
+	    .latest-contract {
+	        font-style: italic;
+	        font-weight: bold;
+	        a {
+	            font-weight: normal;
+	            font-style: normal;
+	            font-size: 16px;
+	        }
+	    }
+
+	    .contractor-item-section {
+	        margin-left: 74px;
+
+	        .contractor-name {
+	            font-size: 18px;
+	            margin-bottom: 5px;
+	        }
+
+	        .contractor-title {
+	            font-size: 16px;
+	        }
+
+	        .success {
+	        	/*margin-top: -5px;*/
+
+	        	.success-percent {
+	        		text-align: center;
+	        	}
+
+	        	.wrapper {
+		            /*.border-radius(4px);*/
+		            position:relative;
+		            background-color:#eee;
+
+		            .job_success {
+		            	/*.border-radius(4px);*/
+		                background-color: @site-color;
+		                height:4px;
+		            }
+
+		        }
+	        }	        
+
+	        .score {
+	        	label {
+	        		margin-right:5px;
+	        	}
+
+	        	.stars {
+	        		float:left;
+	        	}
+	        }
+	    }
+
+	    .user-action {
+	    	padding-top: 25px;
+	    }
+	}
+}
+
+@import 'my_freelancers_mobile.less';

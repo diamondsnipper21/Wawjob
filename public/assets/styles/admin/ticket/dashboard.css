@@ -1,0 +1,22 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+/* Plugins */
+@import '/assets/plugins/metronic/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css';
+@import '/assets/plugins/metronic/admin/pages/css/tasks.css';
+.ticket-dashboard a:hover {
+  text-decoration: none;
+}
+.ticket-dashboard .feeds li .col2 {
+  width: 100px;
+  margin-left: -115px;
+}
+.ticket-dashboard .tasks-widget .task-list > li > .task-title {
+  margin-left: 10px;
+}
+.ticket-dashboard .dashboard-stat a.more {
+  /*visibility: hidden;*/
+}
+.ticket-dashboard .label-color-icon {
+  border-radius: 50%;
+  padding: 5px 3px 5px 3px;
+}

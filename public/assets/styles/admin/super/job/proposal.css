@@ -1,0 +1,141 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+@import '/assets/plugins/metronic/global/plugins/select2/select2.css';
+.tabbable-custom > .nav-tabs > li > a {
+  text-align: center;
+}
+#job_proposal {
+  padding-top: 20px;
+}
+#job_proposal .proposals-filter {
+  margin-top: 10px;
+}
+#job_proposal .proposals-filter select {
+  width: 250px;
+  margin-top: 10px;
+}
+#job_proposal .proposal-item {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+}
+#job_proposal .proposal-item .ribbon-widget {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  z-index: 10;
+}
+#job_proposal .proposal-item .ribbon-widget span {
+  padding: 3px 8px 3px 15px;
+  margin-bottom: 3px;
+  display: block;
+  width: 100px;
+  text-align: left;
+  position: relative;
+  color: #fff;
+}
+#job_proposal .proposal-item .ribbon-widget span.featured {
+  background-color: #f0ad4e;
+}
+#job_proposal .proposal-item .ribbon-widget span.new {
+  background-color: #5bc0de;
+}
+#job_proposal .proposal-item .ribbon-widget span:before,
+#job_proposal .proposal-item .ribbon-widget span:after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 11px 8px 11px 0;
+  border-style: solid;
+  border-color: transparent;
+  border-right-color: #fff;
+  content: ' ';
+}
+#job_proposal .proposal-item .user-avatar img {
+  display: block;
+  margin: 40px auto 0;
+}
+#job_proposal .proposal-item .user-info .except {
+  font-style: italic;
+}
+#job_proposal .proposal-item .user-info .name {
+  color: #008BCC;
+}
+#job_proposal .proposal-item .user-info .name .label {
+  font-size: 12px;
+  font-weight: 400;
+  float: right;
+}
+#job_proposal .proposal-item .user-info .user-meta {
+  padding-bottom: 10px;
+}
+#job_proposal .proposal-item .user-info .user-meta span {
+  margin-right: 20px;
+}
+#job_proposal .proposal-item .user-info .user-meta .success .success-percent {
+  text-align: center;
+  color: #000;
+  margin-top: -3px;
+}
+#job_proposal .proposal-item .user-info .user-meta .success .wrapper {
+  border: 1px solid #2E6DA4;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 0px;
+}
+#job_proposal .proposal-item .user-info .user-meta .success .wrapper .job-success {
+  border-radius: 0px;
+  background-color: #337AB7;
+  height: 5px;
+}
+#job_proposal .proposal-item .user-info .user-skills {
+  padding-bottom: 15px;
+}
+#job_proposal .proposal-item .user-info .user-skills .label-default {
+  background-color: #e5e5e5;
+  margin-right: 10px;
+  color: #666;
+  font-weight: 400;
+  font-size: 90%;
+}
+#job_proposal .proposal-item .user-cover-letter {
+  margin-bottom: 10px;
+}
+#job_proposal .proposal-item .user-cover-letter .heading {
+  font-weight: 700;
+}
+#job_proposal .proposal-item .user-cover-letter.expanded .escape {
+  display: none;
+}
+#job_proposal .proposal-item .user-cover-letter.expanded .hidden {
+  word-break: break-all;
+  display: inline-block !important;
+  visibility: visible !important;
+}
+#job_proposal .proposal-item .user-cover-letter .escape {
+  word-break: break-all;
+  margin-bottom: 0;
+}
+#job_proposal .proposal-item .user-cover-letter .escape a.btn {
+  padding: 0;
+  display: inline;
+  color: #008BCC;
+}
+#job_proposal .proposal-item .user-proposal-price .heading {
+  font-weight: 700;
+}
+#job_proposal .not-found-result {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#job_proposal .not-found-result .text-center {
+  text-align: center;
+}
+#job_proposal .not-found-result .text-center .red {
+  color: #751010;
+}

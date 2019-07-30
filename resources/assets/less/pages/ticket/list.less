@@ -1,0 +1,205 @@
+@less: '../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '/assets/plugins/bootstrap-fileinput/bootstrap-fileinput.css';
+@import '/assets/plugins/select2/select2.min.css';
+
+.ticket-page {
+    .pagination {
+        margin-bottom: 0px;
+    }
+    .search-section {
+
+        .btn {
+            color: #e1eaea;
+            outline: none;
+            box-shadow: none;
+
+            i {
+                font-size: 14px;
+                margin-top: 4px;
+                color: #ccc;
+            }
+
+            &:hover {
+                i {
+                    color: @site-color;
+                }
+            }
+        }
+    }
+
+    .subject-file-section-1 {
+        padding-top: 16px;
+        padding-right: 0px;
+    }
+
+    .subject-file-section-2 {
+        padding-top: 16px;
+        padding-right: 0px;
+    }
+
+    .subject {
+        font-size: 16px;
+    }
+
+    .type-section {
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+
+    .status-section {
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+
+    .message-section {
+        padding-bottom: 10px;
+        padding-top: 20px;
+        padding-left: 15px !important;
+
+        a.unreads {
+            background-color: #d64635;
+            color: white;
+        }
+    }
+
+    .job-action {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        text-align:right;
+
+        a.action-link {
+            text-decoration:none;
+            border:1px solid #d1d1d1;
+        }
+
+        .dropdown-menu {
+            right: 15px;
+            top: 100%;
+
+            .btn-link {
+                cursor: pointer;
+            }
+
+            .btn {
+                text-align:left;
+
+                i {
+                    margin-right:5px;
+                }
+            }
+        }
+    }
+
+    .content-section {
+        padding-top: 10px;
+    }
+
+    .text-center {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .margin-top-50 {
+        margin-top: 50px;
+    }
+    
+    ul {
+        &.ticket-section, &.comment-section {
+            padding-left: 0px;
+        }
+
+        li {
+            
+        }
+    }
+
+    .h-color {
+        color:@site-color;
+    }
+
+    .panel-title {
+        font-size: 16px;
+    }
+
+    .font-bold {
+        font-weight:bold;
+    }
+
+    .toggle-section {
+        float:right !important;
+        padding-right: 25px;
+    }
+
+    .comment-row {
+        margin-left: 10px;
+        margin-right: 10px;
+
+        padding-bottom:10px;
+        padding-top:10px;
+        padding-left: 5px;
+        padding-right: 5px;
+
+        border: solid 1px #fff;
+
+        :last-child {
+            margin-bottom: 0px;
+        }
+
+    }
+
+    .no-bottom-margin {
+        margin-bottom: 0;
+    }
+}
+
+.file-label {
+    padding-top : 0px!important;
+}
+
+.ticket_content_panel {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.panel-body {
+    position: relative;
+    padding: 0px!important;
+    .waiting-icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 999;
+        margin-left: -13px;
+        margin-top: -4px;
+        display: none;
+    }
+    .nav.navbar-nav {
+        display: none;
+    }
+}
+.characters-left {
+    margin-top: 5px;
+    text-align: right;
+}
+
+.item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.no-ticket {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    h3 {
+        padding: 0px;
+        margin: 0px;
+    }
+}

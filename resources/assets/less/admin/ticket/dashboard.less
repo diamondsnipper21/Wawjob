@@ -1,0 +1,34 @@
+@less: '../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '/assets/plugins/metronic/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css';
+@import '/assets/plugins/metronic/admin/pages/css/tasks.css';
+
+.ticket-dashboard {
+	a {
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	.feeds li .col2 {
+		width: 100px;
+		margin-left: -115px;
+	}
+	.tasks-widget .task-list > li > .task-title {
+		margin-left: 10px;
+	}
+
+	.dashboard-stat {
+		a.more {
+			/*visibility: hidden;*/
+		}
+	}
+
+	.label-color-icon {
+		border-radius: 50%;
+		padding: 5px 3px 5px 3px;
+	}
+}

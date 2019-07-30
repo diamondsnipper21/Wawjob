@@ -1,0 +1,242 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+/* Plugins */
+@import '/assets/plugins/jquery.uniform/css/uniform.default.min.css';
+.job-overview-page .title-section .title i {
+  margin-left: 10px;
+}
+.job-overview-page #modalJobTerm .alert {
+  margin: 20px auto;
+  width: 720px;
+  position: relative;
+  padding-left: 50px;
+}
+.job-overview-page #modalJobTerm .alert i {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 180%;
+}
+.job-overview-page #modalJobTerm .alert p {
+  color: #666;
+  font-size: 14px;
+}
+.job-overview-page #modalJobTerm ul {
+  margin: 0 0 0 5px;
+  padding: 0;
+}
+.job-overview-page #modalJobTerm ul li {
+  list-style-type: none;
+}
+.job-overview-page .control-label {
+  font-weight: 700;
+}
+.job-overview-page .overview-section .section {
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+.job-overview-page .overview-section .past-time {
+  padding: 3px 10px;
+  color: #999;
+}
+.job-overview-page .overview-section .job-category {
+  padding-left: 30px;
+  padding-right: 20px;
+  position: relative;
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  border-radius: 17px;
+}
+.job-overview-page .overview-section .job-category:before {
+  font-size: 16px;
+  position: absolute;
+  content: "\e055";
+  font-family: "simple-line-icons";
+  top: 1px;
+  left: 12px;
+  transform: rotate(-90deg);
+}
+.job-overview-page .overview-section .project-type-info .project-type i.fa,
+.job-overview-page .overview-section .project-type-info i.fa {
+  font-size: 25px;
+}
+.job-overview-page .overview-section .project-type-info .project-type i.fa .hs-admin-pin-2,
+.job-overview-page .overview-section .project-type-info i.fa .hs-admin-pin-2 {
+  font-size: 30px;
+}
+.job-overview-page .overview-section .project-type-info .project-type strong,
+.job-overview-page .overview-section .project-type-info strong {
+  display: block;
+  line-height: 25px;
+  padding: 0px;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.job-overview-page .overview-section .project-type-info .project-type .col-md-10 > div,
+.job-overview-page .overview-section .project-type-info .col-md-10 > div {
+  padding-top: 5px;
+}
+.job-overview-page .overview-section .project-start-date {
+  line-height: 20px;
+}
+.job-overview-page .overview-section .project-start-date span.glyphicon-calendar {
+  font-size: 20px;
+}
+.job-overview-page .overview-section .project-start-date strong {
+  display: block;
+  margin-top: 4px;
+}
+.job-overview-page .overview-section .project-start-date strong span {
+  color: #999;
+  font-weight: 400;
+  font-size: 12px;
+}
+.job-overview-page .overview-section .attachments {
+  padding-bottom: 15px;
+}
+.job-overview-page .overview-section .attachments a {
+  line-height: 22px;
+  font-size: 12px;
+}
+.job-overview-page .overview-section .project-skills .skill-label {
+  padding: 5px 0px;
+  margin-right: 10px;
+}
+.job-overview-page .overview-section .project-skills .skill {
+  padding: 5px 10px;
+  margin-right: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background: #e0e0e0;
+}
+.job-overview-page .overview-section .sub-section hr {
+  border-color: #666666;
+}
+.job-overview-page .overview-section .sub-section .title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.job-overview-page .overview-section .sub-section .subtitle {
+  font-weight: bold;
+  margin: 0 0 5px;
+  font-size: 14px;
+}
+.job-overview-page .overview-section .attached-files .file {
+  float: left;
+  padding: 0px 15px 10px;
+}
+.job-overview-page .overview-section .content-right label {
+  text-align: left;
+}
+.job-overview-page .overview-section .content-right .values .value {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+.job-overview-page .overview-section .content-right .values label {
+  text-align: center;
+}
+.job-overview-page .overview-section .content-right .values label.control-label {
+  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  color: #999;
+}
+.job-overview-page .overview-section .content-right .preferred .row label.control-label {
+  text-align: left;
+  font-weight: 400;
+  color: #777;
+  font-size: 13px;
+}
+@media (max-width: 736px) {
+  .job-overview-page .overview-section .section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .job-overview-page .overview-section .section .project-type-info {
+    margin-bottom: 15px;
+  }
+  .job-overview-page .overview-section .sub-section.pl-3 {
+    padding-left: 0 !important;
+  }
+  .job-overview-page .overview-section .sub-section.pr-3 {
+    padding-right: 0 !important;
+  }
+  .job-overview-page .overview-section .content-right {
+    border-left: none !important;
+    padding-left: 0 !important;
+  }
+}
+.super-user-buyer-job-overview .page-content-section,
+.super-job-overview .page-content-section {
+  padding: 12px 0px 15px;
+}
+.super-user-buyer-job-overview .job-top-section,
+.super-job-overview .job-top-section,
+.super-user-buyer-job-overview .job-info,
+.super-job-overview .job-info,
+.super-user-buyer-job-overview .tab-section,
+.super-job-overview .tab-section,
+.super-user-buyer-job-overview .job-action,
+.super-job-overview .job-action {
+  display: none;
+}
+.super-user-buyer-job-overview .title-section,
+.super-job-overview .title-section {
+  padding: 0px 20px 20px 0px;
+  font-size: 20px;
+  color: #4DB3A2;
+}
+.super-user-buyer-job-overview .title-section .status-closed,
+.super-job-overview .title-section .status-closed {
+  font-size: 12px;
+}
+.super-user-buyer-job-overview .overview-section .title-section,
+.super-job-overview .overview-section .title-section {
+  display: none;
+}
+.super-user-buyer-job-overview .overview-section,
+.super-job-overview .overview-section,
+.super-user-buyer-job-overview .details-section,
+.super-job-overview .details-section {
+  padding: 15px 0px 0px;
+}
+.super-user-buyer-job-overview h4,
+.super-job-overview h4 {
+  font-size: 14px;
+}
+.super-user-buyer-job-overview .job-overview-page .overview-section .sub-section .title,
+.super-job-overview .job-overview-page .overview-section .sub-section .title {
+  margin-top: 0px;
+}
+.super-user-buyer-job-overview .shadow-box,
+.super-job-overview .shadow-box {
+  -moz-box-shadow: 0px 0px 0px;
+  -webkit-box-shadow: 0px 0px 0px;
+  box-shadow: 0px 0px 0px;
+}
+.super-job-overview .page-content-section {
+  padding: 0px;
+}
+.super-job-overview .overview-section,
+.super-job-overview .details-section {
+  padding: 0px;
+}
+.super-job-overview .title-section {
+  display: none;
+}
+.super-job-overview .page-breadcrumb {
+  clear: both;
+  padding: 15px 15px 15px 0px;
+}
+.super-job-overview .shadow-box.job-overview-page {
+  -moz-box-shadow: 0px 0px 0px;
+  -webkit-box-shadow: 0px 0px 0px;
+  box-shadow: 0px 0px 0px;
+}
+.super-job-overview .overview-section .title-section {
+  display: none;
+}

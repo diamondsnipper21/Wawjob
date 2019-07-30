@@ -1,0 +1,461 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+/* Plugins */
+@import '/assets/plugins/select2/select2.min.css';
+@import '/assets/plugins/jquery.uniform/css/uniform.default.min.css';
+@import '/assets/plugins/bootstrap-datepicker/css/datepicker3.css';
+@import '/assets/plugins/unify/vendor/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css';
+.datepicker {
+  z-index: 200 !important;
+}
+.datepicker table tr td.worked {
+  background-color: #008000;
+  color: #FFF;
+}
+.datepicker table tr td.worked:hover {
+  color: #000;
+}
+.row-contract {
+  margin-bottom: 30px;
+}
+.characters-left {
+  margin-top: 5px;
+  text-align: right;
+}
+.col-calendar {
+  line-height: 36px;
+}
+.col-calendar .date-nav {
+  text-decoration: none;
+}
+.col-calendar .goto-today {
+  vertical-align: baseline;
+}
+.row-logmeta .info-group {
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.row-logmeta .info-group .rect {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  margin: 0 4px 2px 0;
+}
+.row-logmeta .info-group .rect-auto {
+  background-color: rgba(0, 128, 0, 0.6);
+}
+.row-logmeta .info-group .rect-manual {
+  background-color: rgba(255, 165, 0, 0.6);
+}
+.row-logmeta .info-group .rect-overlimit {
+  background-color: rgba(165, 42, 42, 0.6);
+}
+.row-logmeta .col-viewmode .info-group {
+  margin-right: 0;
+}
+.row-logmeta .col-viewmode .btn-mode {
+  color: #666;
+}
+.row-logmeta .col-viewmode .btn-mode.active {
+  background-color: #297acc;
+  color: #fff;
+}
+.row-action {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.row-action .btn-group {
+  margin: 0 0 0 10px;
+}
+.row-screenshots {
+  margin-top: 10px;
+}
+.row-screenshots ul.slots,
+.row-screenshots ul.list-slots {
+  padding: 0px;
+  overflow: hidden;
+}
+.row-hour {
+  margin: 4px 0;
+  position: relative;
+}
+.ss-hour {
+  background-color: #ececec;
+  border-color: #cecece;
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  text-align: center;
+  width: 32px;
+  height: 158px;
+  padding: 56px 6px;
+  font-family: Arial, sans-serif;
+  float: left;
+}
+.ss-hour .num {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.ss-hour .ampm {
+  font-size: 12px;
+}
+.ss-col-right {
+  float: left;
+  position: relative;
+}
+.seg {
+  font-family: Arial;
+  position: absolute;
+  padding: 1px 8px;
+  background-color: rgba(0, 128, 0, 0.6);
+  color: #fff;
+  height: 22px;
+  word-break: break-word;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  top: 4px;
+}
+.seg.from0 {
+  left: 4px;
+}
+.seg.from1 {
+  left: 186px;
+}
+.seg.from2 {
+  left: 368px;
+}
+.seg.from3 {
+  left: 550px;
+}
+.seg.from4 {
+  left: 732px;
+}
+.seg.from5 {
+  left: 914px;
+}
+.seg.to0 {
+  right: 914px;
+}
+.seg.to1 {
+  right: 732px;
+}
+.seg.to2 {
+  right: 550px;
+}
+.seg.to3 {
+  right: 368px;
+}
+.seg.to4 {
+  right: 186px;
+}
+.seg.to5 {
+  right: 4px;
+}
+.seg.start {
+  border-top-left-radius: 11px;
+  border-bottom-left-radius: 11px;
+}
+.seg.end {
+  border-top-right-radius: 11px;
+  border-bottom-right-radius: 11px;
+}
+.seg.manual {
+  background-color: rgba(255, 165, 0, 0.6);
+}
+.seg.overlimit {
+  background-color: rgba(165, 42, 42, 0.6);
+}
+li.slot {
+  margin: 0 4px;
+  position: relative;
+}
+li.slot .score {
+  cursor: pointer;
+  z-index: 9;
+}
+li.slot .score .grey {
+  background-color: #ccc;
+  position: absolute;
+  z-index: 100;
+}
+li.slot .score .green {
+  background-color: rgba(0, 128, 0, 0.6);
+  position: absolute;
+  z-index: 110;
+}
+li.slot .score .borders {
+  position: absolute;
+  z-index: 120;
+}
+li.slot .score .a-slot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  z-index: 140;
+}
+li.slot .pic {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 28px;
+  bottom: 20px;
+}
+li.slot .pic.has-pic {
+  right: 18px;
+  border: 1px dashed transparent;
+}
+li.slot .pic.manual {
+  right: 0;
+  background-color: rgba(255, 255, 0, 0.4);
+}
+li.slot .pic.no-pic {
+  border: 1px dashed #ccc;
+}
+li.slot .pic > a {
+  width: 156px;
+  display: block;
+}
+li.slot .pic img {
+  width: 156px;
+  height: 110px;
+}
+li.slot.overlimit .score .green {
+  background-color: rgba(165, 42, 42, 0.6);
+}
+.pane-grid li.slot {
+  float: left;
+  width: 174px;
+  height: 160px;
+}
+.pane-grid li.slot .info {
+  position: absolute;
+  left: 2px;
+  bottom: 0;
+}
+.pane-grid li.slot .score {
+  right: 0;
+  top: 0;
+  position: absolute;
+  width: 14px;
+  top: 28px;
+  bottom: 20px;
+}
+.pane-grid li.slot .grey {
+  right: 0;
+  width: 100%;
+  top: 1px;
+  height: 110px;
+}
+.pane-grid li.slot .green {
+  left: 0;
+  bottom: 1px;
+  right: 0;
+}
+.pane-grid li.slot .borders > .border-block {
+  width: 14px;
+  height: 11px;
+  border-top: 1px solid white;
+}
+.pane-list .ss-col-right {
+  width: 96%;
+}
+.pane-list li.slot {
+  border-bottom: 1px solid #ccc;
+  margin-left: 10px;
+  padding-top: 2px;
+  overflow: hidden;
+}
+.pane-list li.slot .select-box {
+  float: left;
+  display: block;
+}
+.pane-list li.slot .select-box.empty {
+  width: 34px;
+}
+.pane-list li.slot .info {
+  float: left;
+  width: 70px;
+  margin-top: 3px;
+}
+.pane-list li.slot .score {
+  position: relative;
+  vertical-align: middle;
+  width: 110px;
+  height: 14px;
+  margin-right: 6px;
+  float: left;
+  margin-top: 4px;
+}
+.pane-list li.slot .score .grey {
+  width: 100%;
+  height: 100%;
+}
+.pane-list li.slot .score .green {
+  width: 100%;
+  height: 100%;
+}
+.pane-list li.slot .score .borders {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.pane-list li.slot .score .borders > .border-block {
+  float: left;
+  display: inline-block;
+  width: 11px;
+  height: 100%;
+  border-right: 1px solid white;
+}
+.pane-list li.slot .comment {
+  display: block;
+  width: 25%;
+  float: left;
+  margin-top: 3px;
+}
+.pane-list li.slot .active-window-wrp {
+  font-size: 0.85em;
+  margin-left: 6px;
+  display: block;
+  width: calc(100% - 70px - 110px - 25% - 50px);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
+  margin-top: 4px;
+}
+.pane-list li.slot .active-window {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 600px;
+}
+.pane-list li.slot.manual .score {
+  cursor: default;
+}
+.pane-list li.slot.manual .score .borders > .border-block {
+  background-color: rgba(255, 165, 0, 0.6);
+  border-right: 1px solid transparent;
+}
+.modal .screenshot {
+  margin-top: 4px;
+}
+.modal .screenshot a.link-full .ss-img {
+  max-width: 30%;
+  border: 1px solid #CCC;
+}
+.modal .info-table {
+  margin-top: 6px;
+  width: 90%;
+}
+.modal .table-slot-act.two-col {
+  float: left;
+  width: 40%;
+  margin: 0 5%;
+}
+.modal .table-slot-act th {
+  text-align: center;
+  background-color: #f2f2f2;
+}
+.modal .table-slot-act > tbody > tr > td {
+  padding: 4px;
+}
+.bootbox-alert .bootbox-body {
+  text-align: center;
+  margin-top: 30px;
+}
+.bootbox-alert .modal-footer {
+  text-align: center;
+  border: none;
+}
+.bootbox-alert .modal-footer .btn {
+  letter-spacing: 2px;
+  padding: 5px 30px;
+}
+textarea.memo {
+  width: 100%;
+}
+.contract-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.contract-term {
+  margin-left: 20px;
+}
+#addManualModal .row {
+  margin: 10px 0;
+}
+#addManualModal .row textarea {
+  width: 100%;
+}
+.border-alert {
+  border: 1px solid #a94442;
+}
+span.alert {
+  display: none;
+  color: #a94442;
+  margin-left: -15px !important;
+}
+@media (max-width: 736px) {
+  .workdiary-section .col-calendar {
+    text-align: left;
+  }
+  .workdiary-section .btn-mode-list {
+    display: none;
+  }
+  .workdiary-section .row-screenshots .pane-grid {
+    display: none !important;
+  }
+  .workdiary-section .row-screenshots .pane-list {
+    display: block !important;
+  }
+  .workdiary-section .row-screenshots .row-hour {
+    margin-bottom: 15px;
+  }
+  .workdiary-section .ss-col-right {
+    width: calc(100% - 35px);
+  }
+}
+.super-user-freelancer-workdiary .tab-pane {
+  padding: 12px 20px 15px 20px;
+}
+.super-user-freelancer-workdiary .page-content-section {
+  margin-top: 20px;
+}
+.super-user-freelancer-workdiary .page-breadcrumb.breadcrumb {
+  padding: 8px 0px 20px;
+}
+.super-user-freelancer-workdiary ul,
+.super-user-freelancer-workdiary li {
+  list-style: none;
+}
+.super-user-freelancer-workdiary .col-calendar .disabled {
+  vertical-align: middle;
+}
+.super-user-freelancer-workdiary span.title {
+  padding: 10px 0px;
+  min-height: 48px;
+}
+.super-user-freelancer-workdiary span.title span {
+  display: none;
+}
+.super-user-freelancer-workdiary span.title span.admin-title.hide {
+  display: block !important;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.super-user-freelancer-workdiary .timezone-label {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.super-user-freelancer-workdiary .row-action {
+  display: none;
+}
+.super-user-freelancer-workdiary .select-box {
+  display: none;
+}

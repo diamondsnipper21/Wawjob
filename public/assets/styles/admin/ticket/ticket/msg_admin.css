@@ -1,0 +1,54 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+/* Plugins */
+@import '/assets/plugins/metronic/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css';
+@import '/assets/plugins/select2/select2.min.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css';
+.portlet {
+  -moz-box-shadow: 0px 0px 0px 0px;
+  -webkit-box-shadow: 0px 0px 0px 0px;
+  box-shadow: 0px 0px 0px 0px;
+}
+.desc {
+  color: #FF5A89;
+  font-style: italic;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+.ticket-ticket-msg_admin .no-messsages {
+  text-align: center;
+  font-style: italic;
+  border-bottom: 1px solid #e5e5e5;
+}
+.ticket-ticket-msg_admin .ticket-info .control-label {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.ticket-ticket-msg_admin .ticket-info .control-label a {
+  text-decoration: underline;
+}
+.ticket-ticket-msg_admin .ticket-info .assigner {
+  margin-top: 15px;
+}
+.ticket-ticket-msg_admin .ticket-info .assigner img {
+  float: left;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+.ticket-ticket-msg_admin .ticket-info .assigner .assigner-name {
+  display: block;
+  padding-top: 5px;
+}
+.ticket-ticket-msg_admin .ticket-info .assigner .assigner-role {
+  display: block;
+  padding-top: 5px;
+}
+.ticket-ticket-msg_admin .text_center {
+  text-align: center;
+}
+.ticket-ticket-msg_admin .padding-bottom-30 {
+  padding-bottom: 30px;
+}

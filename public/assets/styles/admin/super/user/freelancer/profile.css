@@ -1,0 +1,926 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+/* Plugins */
+@import '/assets/plugins/select2/select2.min.css';
+@import '/assets/plugins/unify/vendor/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css';
+@import '/assets/plugins/select2/select2.min.css';
+@import '/assets/plugins/jquery.uniform/css/uniform.default.min.css';
+@import '/assets/plugins/bootstrap-fileinput/bootstrap-fileinput.css';
+@import '/assets/plugins/jcrop/css/jquery.Jcrop.min.css';
+@import '/assets/plugins/unify/vendor/cubeportfolio-full/cubeportfolio/css/cubeportfolio.min.css';
+.gray-stars {
+  font-size: 18px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.gray-stars > i {
+  color: #ccc;
+}
+.gray-stars .red-stars {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.gray-stars .red-stars i {
+  color: #ffc501;
+}
+.gray-stars i {
+  margin: 0 2px;
+  display: inline-block;
+}
+.star-marks-overlay {
+  visibility: hidden;
+  display: inline-block;
+}
+.star-marks {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+body .page-section.container .page-content.right {
+  padding: 0px;
+  -moz-box-shadow: 0px 0px 0px;
+  -webkit-box-shadow: 0px 0px 0px;
+  box-shadow: 0px 0px 0px;
+  background: transparent;
+}
+body .system-warnings {
+  display: none;
+}
+body .page-content .not-found-result {
+  font-size: 20px;
+}
+body .page-content.fixed {
+  position: absolute;
+}
+#my_profile_page,
+.freelancer-user-page {
+  /*.cbp-popup-lightbox-figure {
+		text-align: center;
+	}
+	.cbp-popup-lightbox-img {
+		display: inline-block;
+	}*/
+}
+.cbp-popup-lightbox-title {
+  text-align: left;
+  font-size: 14px;
+}
+.cbp-popup-lightbox-title strong {
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 8px 0px;
+}
+.profile-page .cbp-item {
+  margin: 0px;
+}
+.profile-page .disable-edit .action-buttons:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: #FFF;
+  opacity: 0.7;
+  z-index: 10;
+}
+.profile-page .disable-edit .action-link {
+  display: none;
+}
+.profile-page .form-group {
+  margin-bottom: 20px;
+}
+.profile-page .form-group .control-label {
+  /*padding-top: 10px;*/
+}
+.profile-page .action-link {
+  text-decoration: none;
+  color: #333333;
+  float: right;
+  margin: 7px 7px 0px 0px;
+}
+.profile-page .action-link i {
+  font-size: 20px;
+}
+.profile-page .page-content {
+  position: relative;
+}
+.profile-page .page-content:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  content: "";
+  background: #FFF;
+  z-index: 10;
+  opacity: 0.7;
+  display: none;
+}
+.profile-page .control-value-avatar {
+  position: relative;
+}
+.profile-page .control-value-avatar a {
+  display: none;
+  position: absolute;
+  bottom: 0px;
+  right: -30px;
+  font-size: 20px;
+  color: #666;
+  text-decoration: none;
+}
+.profile-page .file-upload-container {
+  max-width: 280px;
+}
+.profile-page .avatar-upload-container {
+  max-width: 280px;
+}
+.profile-page .avatar-upload-container > img {
+  max-width: 100%;
+  max-height: 280px;
+}
+.profile-page .avatar-upload-container .jcrop-holder {
+  margin: 0px auto;
+}
+.profile-page .toolbar .buttons {
+  overflow: hidden;
+}
+.profile-page .toolbar.fixed {
+  z-index: 601;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background: rgba(248, 249, 250, 0.9);
+  height: 50px;
+  -moz-box-shadow: 0 0px 11px rgba(72, 79, 99, 0.3);
+  -webkit-box-shadow: 0 0px 11px rgba(72, 79, 99, 0.3);
+  box-shadow: 0 0px 11px rgba(72, 79, 99, 0.3);
+}
+.profile-page .toolbar.fixed .buttons {
+  top: 8px;
+  position: absolute;
+  text-align: right;
+}
+.profile-page .toolbar.fixed .edit-action {
+  display: none;
+}
+.profile-page .toolbar.fixed .btn-edit-action {
+  display: block;
+}
+.profile-page .btn-view-others {
+  padding-right: 0px;
+  padding-top: 10px;
+}
+.profile-page .edit-action.action-link {
+  cursor: pointer;
+}
+.profile-page .edit-action,
+.profile-page .control-value {
+  display: block;
+}
+.profile-page .btn-edit-action {
+  display: none;
+}
+.profile-page .cancel-action,
+.profile-page .save-action,
+.profile-page .form-control,
+.profile-page .form-select2-control {
+  display: none;
+}
+.profile-page span.required {
+  display: none;
+}
+.profile-page .input-group {
+  display: none;
+}
+.profile-page .radio-box {
+  display: none;
+}
+.profile-page .select2.select2-container {
+  display: none;
+}
+.profile-page .actions {
+  display: none;
+}
+.profile-page.edit-mode .page-content:before {
+  display: block;
+}
+.profile-page.edit-mode #about_me.page-content:before {
+  display: none;
+}
+.profile-page.edit-mode .control-value-avatar a {
+  display: block;
+}
+.profile-page.edit-mode .btn-edit-action,
+.profile-page.edit-mode .edit-action,
+.profile-page.edit-mode .control-value {
+  display: none;
+}
+.profile-page.edit-mode .fixed .btn-edit-action {
+  display: none;
+}
+.profile-page.edit-mode .select2.select2-container {
+  display: block;
+}
+.profile-page.edit-mode .form-select2-control {
+  display: inline-block;
+}
+.profile-page.edit-mode .cancel-action,
+.profile-page.edit-mode .save-action,
+.profile-page.edit-mode .form-control {
+  display: block;
+}
+.profile-page.edit-mode span.required {
+  display: inline-block;
+}
+.profile-page.edit-mode .input-group {
+  display: table;
+}
+.profile-page.edit-mode .radio-box {
+  display: block;
+}
+.profile-page.edit-mode span.skill {
+  padding-right: 26px;
+}
+.profile-page.edit-mode span.skill i {
+  display: block;
+  cursor: pointer;
+}
+.profile-page.edit-mode .actions {
+  display: block;
+}
+.profile-page.edit-mode .add-item-action,
+.profile-page.edit-mode .add-language-action,
+.profile-page.edit-mode .add-skill-action {
+  display: block;
+}
+.profile-page .control-label {
+  font-size: 14px;
+}
+.profile-page .control-value {
+  margin-top: 7px;
+}
+.profile-page #profile_languages,
+.profile-page #profile_skills {
+  width: 80%;
+}
+.profile-page .page-content .item {
+  position: relative;
+  font-size: 12px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f0f3f5;
+}
+.profile-page .page-content .item:last-child {
+  border-bottom: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+}
+.profile-page .page-content .item .item-title {
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.profile-page .page-content .item .action-buttons {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  right: -15px;
+  width: 150px;
+}
+.profile-page .page-content .item .action-buttons .edit-item-action,
+.profile-page .page-content .item .action-buttons .remove-item-action {
+  text-align: center;
+  color: #333333;
+  font-size: 18px;
+  text-decoration: none;
+  display: table-cell;
+  vertical-align: middle;
+  position: absolute;
+  top: calc(50% - 15px);
+  right: 100px;
+}
+.profile-page .page-content .item .action-buttons .edit-item-action.remove-item-action,
+.profile-page .page-content .item .action-buttons .remove-item-action.remove-item-action {
+  font-size: 22px;
+  top: calc(50% - 18px);
+  right: 35px;
+}
+.profile-page .page-content .item .action-buttons .edit-item-action.remove-item-action:before,
+.profile-page .page-content .item .action-buttons .remove-item-action.remove-item-action:before {
+  content: '';
+  position: absolute;
+  border-left: 1px solid #f0f3f5;
+  top: -4px;
+  left: -20px;
+  width: 1px;
+  height: 50px;
+}
+.profile-page .page-content .item .col-md-12 {
+  padding-right: 150px;
+}
+.profile-page .page-content .item .col-md-12:after {
+  content: '';
+  position: absolute;
+  border-left: 1px solid #f0f3f5;
+  top: 3px;
+  right: 126px;
+  width: 1px;
+  bottom: 3px;
+}
+.profile-page .page-content .item:hover {
+  /*background: #f8f8f8;*/
+}
+.profile-page #portfolios .portfolio {
+  border: solid 1px #CCC;
+  padding: 2px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 15px;
+  position: relative;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.profile-page #portfolios .portfolio .border-top {
+  border-color: #f0f3f5 !important;
+}
+.profile-page #portfolios .portfolio .portfolio-image {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.profile-page #portfolios .portfolio .portfolio-image img {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  max-width: 100%;
+  height: auto;
+}
+.profile-page #portfolios .portfolio .portfolio-title {
+  padding: 15px 0px 0px;
+}
+.profile-page #portfolios .portfolio .portfolio-category {
+  padding: 10px 5px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.profile-page #portfolios .portfolio .portfolio-url {
+  padding: 15px 0px 0px;
+}
+.profile-page #portfolios .portfolio .portfolio-keyword {
+  padding: 15px 0px 0px;
+}
+.profile-page #portfolios .portfolio .portfolio-desc {
+  padding: 15px 0px 0px;
+}
+.profile-page #portfolios .portfolio .action-buttons {
+  position: relative;
+  width: auto;
+  right: auto;
+}
+.profile-page #portfolios .portfolio .action-buttons a {
+  float: left;
+  width: 50%;
+  line-height: 34px;
+  height: 32px;
+  position: relative;
+  right: auto;
+}
+.profile-page #portfolios .portfolio .action-buttons a.remove-item-action {
+  position: relative;
+}
+.profile-page #portfolios .portfolio .action-buttons a.remove-item-action:before {
+  content: '';
+  position: absolute;
+  border-left: 1px solid #f0f3f5;
+  top: 2px;
+  left: 0px;
+  bottom: 2px;
+  width: 1px;
+  height: auto;
+}
+.profile-page #portfolios .pagination {
+  margin: 0px;
+}
+.profile-page #certifications .certification .cert-title {
+  padding-top: 10px;
+  display: block;
+}
+.profile-page #certifications .certification .cert-title a {
+  color: #333333;
+  text-decoration: none;
+}
+.profile-page #certifications .certification .cert-desc {
+  margin-top: 10px;
+}
+.profile-page #certifications .certification .cert-date {
+  padding-top: 10px;
+}
+.profile-page #certifications .certification .cert-url {
+  padding-top: 10px;
+}
+.profile-page #employments .employment .employment-company {
+  padding-top: 10px;
+  display: block;
+}
+.profile-page #employments .employment .employment-desc {
+  margin-top: 10px;
+}
+.profile-page #employments .employment .employment-date {
+  padding-top: 10px;
+}
+.profile-page #employments .employment .employment-position {
+  padding-top: 10px;
+}
+.profile-page #educations .education .education-date,
+.profile-page #educations .education .education-major,
+.profile-page #educations .education .education-degree {
+  padding-top: 10px;
+}
+.profile-page #educations .education .education-desc {
+  margin-top: 10px;
+}
+.profile-page #experiences .experience .experience-title {
+  padding-top: 10px;
+  display: block;
+}
+.profile-page #experiences .experience .experience-desc {
+  margin-top: 10px;
+}
+.profile-page #experiences .experience .actions {
+  right: 14px;
+}
+.profile-page.edit-mode .certifications .cert-desc {
+  margin-bottom: 28px;
+}
+.profile-page.edit-mode .employments .employment-desc {
+  margin-bottom: 28px;
+}
+.profile-page .actions {
+  position: absolute;
+  bottom: 6px;
+  right: 10px;
+}
+.profile-page .actions a {
+  font-size: 14px;
+  color: #666666;
+}
+.profile-page .margin-top-3 {
+  margin-top: 3px;
+}
+.profile-page .margin-top-7 {
+  margin-top: 7px;
+}
+#modal_portfolio .portfolio-img {
+  padding-top: 15px;
+  text-align: center;
+}
+#modal_portfolio .portfolio-img img {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  max-height: 200px;
+}
+#modal_portfolio .temp-avatar {
+  width: 50%;
+}
+#modal_container .modal-title strong {
+  font-weight: normal;
+}
+@media (max-width: 736px) {
+  .profile-page .page-content .item .action-buttons {
+    width: 70px;
+    right: -10px;
+  }
+  .profile-page .page-content .item .action-buttons .edit-item-action {
+    top: 10px;
+    right: 45px;
+  }
+  .profile-page .page-content .item .action-buttons .remove-item-action.remove-item-action {
+    top: 7px;
+    right: 0;
+  }
+  .profile-page .page-content .item .action-buttons .remove-item-action.remove-item-action:before {
+    top: 2px;
+    left: -10px;
+    height: 25px;
+  }
+}
+body .round-ribbon {
+  font-weight: normal;
+}
+body .alert.alert-warning {
+  display: none;
+}
+body .page-content .title-section {
+  padding-top: 0px;
+}
+body .page-content .title-section form {
+  padding-right: 0px;
+}
+body .page-section.container .page-content {
+  padding: 30px 30px 30px;
+}
+body .title-section {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+body .page-content .page-content-section {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+body .page-content .page-content-section > .row {
+  margin-right: 0px;
+}
+body .page-content .page-content-section > .row > .col-sm-3.page-content {
+  /*padding-right: 0px;*/
+}
+body .page-section.container > .page-content {
+  padding: 0px;
+  background: transparent;
+  -moz-box-shadow: 0px 0px 0px;
+  -webkit-box-shadow: 0px 0px 0px;
+  box-shadow: 0px 0px 0px;
+}
+.freelancer-user-page.profile-page .form-control,
+.freelancer-user-page.profile-page .form-select2-control,
+.freelancer-user-page.profile-page .select2.select2-container {
+  display: block;
+}
+.freelancer-user-page #portfolios .title-section {
+  font-size: inherit;
+}
+.freelancer-user-page #portfolios .title-section span.title {
+  font-size: 24px;
+}
+.freelancer-user-page #portfolios .portfolio .border-top,
+.freelancer-user-page #portfolios .portfolio .action-buttons {
+  display: none;
+}
+.freelancer-user-page #portfolios .pagination {
+  float: right;
+}
+.freelancer-user-page #work_history_feedback .title-section {
+  font-size: inherit;
+}
+.freelancer-user-page #work_history_feedback .title-section span.title {
+  font-size: 24px;
+}
+.freelancer-user-page .action-link {
+  display: none;
+}
+.freelancer-user-page.profile-page .page-content .item .col-md-12 {
+  padding-right: 15px;
+}
+.freelancer-user-page.profile-page .page-content .item .col-md-12:after {
+  display: none;
+}
+.freelancer-user-page.profile-page .page-content .item .action-buttons {
+  display: none;
+}
+.freelancer-user-page .summary {
+  margin-bottom: 20px;
+}
+.freelancer-user-page .summary .name {
+  font-size: 24px;
+}
+.freelancer-user-page .summary .name .user-name span {
+  display: block;
+  font-size: 16px;
+  margin-top: 4px;
+}
+.freelancer-user-page .summary .name .user-rate {
+  font-size: 28px;
+}
+.freelancer-user-page .summary ul {
+  padding-left: 0;
+}
+.freelancer-user-page .summary ul.meta li {
+  margin-bottom: 10px;
+}
+.freelancer-user-page .summary ul.meta li i {
+  font-size: 16px;
+}
+.freelancer-user-page .summary ul.meta li.title {
+  font-size: 16px;
+}
+.freelancer-user-page .summary ul.meta li.skill-button {
+  font-weight: none;
+}
+.freelancer-user-page .summary ul.meta li .fa-map-marker {
+  margin-right: 10px;
+}
+.freelancer-user-page .left-detail h4 {
+  margin-bottom: 20px;
+}
+.freelancer-user-page .left-detail .overview {
+  margin: 30px 0;
+  line-height: 1.67em;
+}
+.freelancer-user-page .block .block-content ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.freelancer-user-page .block .block-content ul.items li.date {
+  margin-bottom: 10px;
+}
+.freelancer-user-page .block .block-content ul.items li.title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.freelancer-user-page .block .block-content ul.items li.title .label {
+  font-size: 11px;
+}
+.freelancer-user-page .block .block-content ul.items li.feedback {
+  margin-bottom: 10px;
+}
+.freelancer-user-page .block .block-content ul.items li.feedback.not-give {
+  font-style: italic;
+  color: #999;
+}
+.freelancer-user-page .block .block-content ul.items li.contract-hours {
+  margin-bottom: 10px;
+}
+.freelancer-user-page .block .block-content ul.items li.rate {
+  margin-bottom: 10px;
+}
+.freelancer-user-page .block .block-content ul.items li.desc div {
+  margin-top: 15px;
+}
+.freelancer-user-page .block .block-content ul.table {
+  padding-left: 0px;
+}
+.freelancer-user-page .block .block-content ul.table li {
+  padding: 20px;
+  border-bottom: solid 1px #ddd;
+  font-weight: bold;
+}
+.freelancer-user-page .block .block-content ul.table :last-child {
+  border-bottom-width: 0px;
+}
+.freelancer-user-page .block .block-content ul.table button.btn-custom {
+  color: #333;
+  background-color: #fff;
+  border: solid 1px #ccc;
+}
+.freelancer-user-page .block .block-content ul.table button.active {
+  color: #fff;
+  background-color: #297acc;
+  border: solid 1px #2e6da4;
+}
+.freelancer-user-page .block .block-content .content {
+  border-top: 1px solid #e1eaea;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.freelancer-user-page .block .block-content .content:first-child {
+  border-top: 0px;
+}
+.freelancer-user-page .block .block-content .cont {
+  padding: 20px 0;
+  border-bottom: solid 1px #e1eaea;
+}
+.freelancer-user-page .block .block-content .cont:last-child {
+  border-bottom-width: 0;
+}
+.freelancer-user-page .block .block-content .cont .margin-bottom-10 {
+  margin-bottom: 10px;
+}
+.freelancer-user-page .block .block-content .cont .title {
+  font-size: 16px;
+  font-weight: normal;
+}
+.freelancer-user-page .block .block-content .cont .title .date {
+  padding-top: 3px;
+  font-size: 13px;
+}
+.freelancer-user-page .block .block-content .cont .title span {
+  padding-right: 10px;
+  padding-left: 10px;
+  border-right: solid 1px;
+}
+.freelancer-user-page .block .block-content .cont .title span:last-child {
+  border-width: 0;
+}
+.freelancer-user-page .block .block-content .cont .title span:first-child {
+  padding-left: 0;
+}
+.freelancer-user-page .right-side .result-section {
+  margin-bottom: 30px;
+}
+.freelancer-user-page .right-side .result-section .title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.freelancer-user-page .right-side .result-section.languages-section .value {
+  margin-bottom: 5px;
+}
+.freelancer-user-page .right-side .right-side-block-header {
+  margin-bottom: 14px;
+}
+.freelancer-user-page .right-side .profile-score .stars {
+  float: left;
+}
+.freelancer-user-page .right-side .profile-score .profile-reviews {
+  float: left;
+  margin-top: 4px;
+  margin-left: 10px;
+}
+.freelancer-user-page .right-side .profile-success-percent {
+  margin-top: 10px;
+  width: 48%;
+}
+.freelancer-user-page .right-side-block {
+  margin-bottom: 40px;
+}
+.freelancer-user-page .no-border {
+  border-width: 0;
+}
+.freelancer-user-page .no-background {
+  background-color: #fff;
+}
+.freelancer-user-page .right-align {
+  text-align: right;
+}
+.freelancer-user-page .btn-wide {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.freelancer-user-page .btn-normal {
+  color: #297acc;
+}
+.freelancer-user-page .btn-section {
+  padding-left: 60px;
+  padding-right: 80px;
+}
+.freelancer-user-page .border-bottom {
+  border-bottom: solid 1px #d0f3e5;
+}
+#boxInvite {
+  width: 300px;
+  /*height:390px;*/
+  display: none;
+  position: absolute;
+  top: -35px;
+  left: -92%;
+  background-color: #fff;
+  border: 1px solid #CCC;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  text-align: left;
+  padding: 15px;
+}
+#boxInvite:before {
+  position: absolute;
+  top: 45px;
+  right: -16px;
+  display: inline-block !important;
+  border-right: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #e0e0e0;
+  content: '';
+}
+#boxInvite:after {
+  position: absolute;
+  top: 45px;
+  right: -14px;
+  display: inline-block !important;
+  border-right: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #fff;
+  content: '';
+}
+#boxInvite a.btn {
+  font-size: inherit;
+}
+#boxInvite label {
+  font-size: inherit;
+}
+#boxInvite .box-user-info {
+  margin-bottom: 15px;
+}
+#boxInvite .box-user-info .info span {
+  display: block;
+}
+#boxInvite .box-message {
+  position: relative;
+}
+#boxInvite .box-message .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  opacity: 0.5;
+  z-index: 10;
+}
+#boxInvite .box-message .control-label {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#boxInvite .box-message textarea {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  display: block;
+  margin-bottom: 15px;
+}
+#boxInvite .box-message .btn-link {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+#boxInvite .box-message .btn-link.btn-view-more {
+  margin-top: 10px;
+}
+span.freelancer-total-score {
+  margin-left: 6px;
+}
+img.img-portfolio {
+  max-width: 100%;
+}
+span.score {
+  margin-left: 10px;
+}
+.description {
+  word-break: break-word;
+}
+.is-not-described {
+  font-weight: 700;
+}
+@media (max-width: 736px) {
+  body.freelancer-user-profile .page-section.container > .page-content .page-content-section > .row {
+    margin-right: -15px;
+  }
+  body.freelancer-user-profile .page-section.container > .page-content .page-content-section > .row > .col-sm-9 > .page-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  body.freelancer-user-profile .page-section.container > .page-content .page-content-section > .row > .col-sm-9 > .page-content .form-group {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  body.freelancer-user-profile .page-section.container > .page-content .page-content-section > .row > .col-sm-9 > .page-content .item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  body.freelancer-user-profile .page-section.container > .page-content .page-content-section > .row .summary .name .user-rate {
+    text-align: left;
+    padding-top: 15px;
+  }
+  body.freelancer-user-profile .page-section.container > .page-content .page-content-section > .row > .col-sm-3.page-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  body.freelancer-user-profile .page-section.container > .page-content .page-content-section > .row > .col-sm-3.page-content .right-side .profile-success-percent {
+    width: 35%;
+  }
+  body.freelancer-user-profile .page-section.container > .page-content .page-content-section > .row > .col-sm-3.page-content .right-side #boxInvite {
+    width: 92%;
+    left: 15px;
+    top: 65px;
+  }
+  body.freelancer-user-profile .page-section.container > .page-content .page-content-section > .row > .col-sm-3.page-content .right-side #boxInvite:before,
+  body.freelancer-user-profile .page-section.container > .page-content .page-content-section > .row > .col-sm-3.page-content .right-side #boxInvite:after {
+    display: none !important;
+  }
+}
+@media (max-width: 320px) {
+  body.freelancer-user-profile .page-section.container > .page-content .page-content-section > .row > .col-sm-3.page-content .right-side .profile-success-percent {
+    width: 40%;
+  }
+}
+.super-user-freelancer-profile .tab-pane {
+  padding: 12px 20px 15px 20px;
+}
+.super-user-freelancer-profile ul,
+.super-user-freelancer-profile li {
+  list-style: none;
+}
+.super-user-freelancer-profile .action-buttons {
+  display: none;
+}

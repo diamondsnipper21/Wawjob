@@ -1,0 +1,73 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+/* Plugins */
+@import '/assets/plugins/metronic/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css';
+@import '/assets/plugins/metronic/admin/pages/css/tasks.css';
+.super-dashboard .dashboard-stat .details {
+  float: left;
+  margin-top: 27px;
+  position: static;
+  padding: 0px;
+  padding-left: 100px;
+  min-height: 110px;
+  width: 100%;
+  color: #FFF;
+}
+.super-dashboard .dashboard-stat .row1,
+.super-dashboard .dashboard-stat .row2,
+.super-dashboard .dashboard-stat .row3,
+.super-dashboard .dashboard-stat .row4 {
+  text-align: right;
+  line-height: 20px;
+}
+.super-dashboard .dashboard-stat .row1 .value,
+.super-dashboard .dashboard-stat .row2 .value,
+.super-dashboard .dashboard-stat .row3 .value,
+.super-dashboard .dashboard-stat .row4 .value {
+  text-align: left;
+  /*text-decoration: underline;*/
+  font-size: 15px;
+}
+.super-dashboard .dashboard-stat .row1.row4,
+.super-dashboard .dashboard-stat .row2.row4,
+.super-dashboard .dashboard-stat .row3.row4,
+.super-dashboard .dashboard-stat .row4.row4 {
+  margin-top: 15px;
+}
+.super-dashboard .dashboard-stat .row1.job-postings,
+.super-dashboard .dashboard-stat .row2.job-postings,
+.super-dashboard .dashboard-stat .row3.job-postings,
+.super-dashboard .dashboard-stat .row4.job-postings,
+.super-dashboard .dashboard-stat .row1.job-active-contracts,
+.super-dashboard .dashboard-stat .row2.job-active-contracts,
+.super-dashboard .dashboard-stat .row3.job-active-contracts,
+.super-dashboard .dashboard-stat .row4.job-active-contracts,
+.super-dashboard .dashboard-stat .row1.contracts,
+.super-dashboard .dashboard-stat .row2.contracts,
+.super-dashboard .dashboard-stat .row3.contracts,
+.super-dashboard .dashboard-stat .row4.contracts {
+  line-height: 30px;
+}
+.super-dashboard .dashboard-stat .visual {
+  position: absolute;
+}
+.super-dashboard .feeds.todos li {
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 1px solid #F4F6F9;
+  background: transparent;
+  margin: 0px;
+}
+.super-dashboard .feeds.todos li:hover {
+  background: #F4F6F9;
+}
+.super-dashboard .feeds.todos li .col2 {
+  width: 150px;
+  margin-left: -150px;
+}
+.super-dashboard .feeds.todos li .col1 > .cont > .cont-col2 > .desc {
+  margin-left: 10px;
+}
+.super-dashboard .feeds.todos li .col1 > .cont {
+  margin-right: 150px;
+}

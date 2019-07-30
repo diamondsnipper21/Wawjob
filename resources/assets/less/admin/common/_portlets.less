@@ -1,0 +1,204 @@
+/***
+Portlets
+***/
+
+
+/* Box portlet */
+
+
+.portlet-block-variant(@name, @bg-color, @border-color) {
+    &.@{name} {
+        background-color: @bg-color;  
+
+        > .portlet-body {
+            border-color: @border-color;            
+        }
+    }
+}
+
+
+.portlet.block {
+    background-color: #364150;
+
+    .portlet-block-variant(light, #4873AD, #81ADE8);
+    .portlet-block-variant(jade, #196E88, #70B5B5);
+    .portlet-block-variant(blue-madison, #578ebe, #79AEDC);
+    .portlet-block-variant(blue, #4991D0, #76B1E4);
+    .portlet-block-variant(pink, #BF50C3, #DB78DE);
+    .portlet-block-variant(green, #449E69, #79CA9A);
+    .portlet-block-variant(blue-dark, #22516D, #6EA7CA);
+    .portlet-block-variant(jade, #226D6D, #8ADADA);
+    .portlet-block-variant(brown, #F59630, #ECB170);
+    .portlet-block-variant(red-intense, #e35b5a, #F58686);
+    .portlet-block-variant(green-haze, #44b6ae, #7BC7C2);
+    .portlet-block-variant(purple-plum, #8775a7, #AC98D0);
+    .portlet-block-variant(purple-plum, #8775a7, #AC98D0);
+    .portlet-block-variant(purple-wisteria, #9b59b6, #b07cc6);
+    .portlet-block-variant(purple-wisteria, #9b59b6, #b07cc6);
+    .portlet-block-variant(red-sunglo, #e26a6a, #ea9595);
+
+
+    .btn-group {
+        
+        .dropdown-toggle {
+            box-shadow: none;
+            border: solid 1px #eee;
+            border-radius: 0;
+            background-color: #eee;
+        }
+
+        .dropdown-menu {
+            &:before, &:after {display: none;}
+            margin-top: -1px;
+
+            .btn-toolbar {
+                border-bottom: solid 1px #eee;
+                margin-top: -5px;
+                margin-left: 0px;
+                margin-bottom: 2px;
+                .btn, .btn-like {
+                    margin: 5px;
+                    i {margin-right: 3px;}
+                }
+
+                .btn-like:active, .btn-like.active {
+                    outline: 0;
+                    background-image: none;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+
+    &.with-bottom-padding {
+        padding-bottom: 2px !important;
+    }
+
+    padding:0px !important;
+    margin-bottom: 5px;
+
+    &.border-radius-lefttop {border-top-left-radius: 16px;}
+    &.border-radius-lefttop > .portlet-body {border-top-left-radius: 15px;}
+
+    &.border-radius-leftbottom {border-bottom-left-radius: 16px;}
+    &.border-radius-leftbottom > .portlet-body {border-bottom-left-radius: 15px;}
+
+    &.border-radius-righttop {border-top-right-radius: 16px;}
+    &.border-radius-righttop > .portlet-body {border-top-right-radius: 15px;}
+
+    &.border-radius-rightbottom {border-bottom-right-radius: 16px;}
+    &.border-radius-rightbottom > .portlet-body {border-bottom-right-radius: 15px;}
+
+    .row {margin-bottom: 10px;}
+
+    > .portlet-title {  
+        border-bottom: 0px solid #eee;
+        padding: 0 10px;
+        margin-bottom: 0;
+        color: #fff;    
+
+
+        .actions > .btn, .actions > .btn-group > .btn {
+            color: #fff;
+            background-color: transparent;
+            border-radius: 0;
+            .opacity(0.5);
+            .transition(all 0.2s linear);
+
+            &:hover {
+                .opacity(1);
+            }
+        }
+
+        .dropdown-menu label {color: #555; font-weight: normal; display: block;}
+
+        &:before, &:after {
+          content: "";
+          display: table;
+        }
+
+        &:after {
+          clear: both;
+        }
+
+        > .caption {
+            padding: 11px 0 9px 0;
+            float: left;
+            display: inline-block;
+            i {margin-right: 10px;}
+        }
+
+        > .tools {
+
+            float: right;
+            display: inline-block;
+            padding: 12px 0 8px 0;
+
+            > a {
+                display: inline-block;
+                height: 16px;
+                margin-left: 5px;
+                background-repeat: no-repeat;
+            }
+            > a.remove {
+                background-image:url(/assets/images/common/icons/portlet-remove-icon-white.png);
+                width: 11px;
+            }
+
+            > a.config {
+                background-image:url(/assets/images/common/icons/portlet-config-icon-white.png);
+                width: 12px;
+            }
+
+            > a.reload {
+                background-image:url(/assets/images/common/icons/portlet-reload-icon-white.png);
+                width: 13px;
+            }
+
+            > a.expand {
+                background-image:url(/assets/images/common/icons/portlet-expand-icon-white.png);
+                width: 14px;
+            }
+
+            > a.collapse {
+                background-image:url(/assets/images/common/icons/portlet-collapse-icon-white.png);
+                width: 14px;
+            }
+        }
+
+        > .actions {
+            padding: 6px 0;   
+        }
+    }
+
+    > .portlet-body {
+        background-color: #fff;
+        padding: 10px 20px;
+        border: solid 1px #ADB6C1;
+
+        .btn-toolbar {
+            border-bottom: solid 1px #ddd;
+        }
+
+        h3.form-section {
+            padding: 8px 10px 8px 10px;
+            font-weight: normal;
+            margin: 0px 0 10px 0;
+            color: #1D4579;
+            background-color: #D8E3F3;
+            border-bottom: solid 2px #B4C3D8;
+            border-radius: 10px 0 10px 0;
+            font-size: 14px;
+
+            .fright .btn, .fright .btn {margin-top: -3px;}
+            a, a:visited {
+                color: #E215A4;
+                font-size: 12px;
+                text-decoration: none;
+            }
+            a:hover {text-decoration: none;}
+        }
+    }
+}
+

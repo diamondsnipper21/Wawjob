@@ -1,0 +1,74 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+/* Plugins */
+@import '/assets/plugins/metronic/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css';
+@import '/assets/plugins/select2/select2.min.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css';
+.ticket-todo-detail .no-messsages {
+  text-align: center;
+  font-style: italic;
+  border-bottom: 1px solid #e5e5e5;
+}
+.ticket-todo-detail .messages {
+  margin-top: 0px;
+}
+.ticket-todo-detail .todo-attachments {
+  margin-right: 0px;
+}
+.ticket-todo-detail .todo-attachments li {
+  list-style: none;
+}
+.ticket-todo-detail .todo-info.col-md-3 {
+  width: 23%;
+}
+.ticket-todo-detail .todo-info .control-label {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.ticket-todo-detail .todo-info .control-label a {
+  text-decoration: underline;
+}
+.ticket-todo-detail .todo-info .assigner {
+  margin-top: 15px;
+  clear: both;
+  overflow: hidden;
+}
+.ticket-todo-detail .todo-info .assigner img {
+  float: left;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+.ticket-todo-detail .todo-info .assigner .assigner-name {
+  display: block;
+  padding-top: 21px;
+}
+.ticket-todo-detail .todo-info .assigner .assigner-role {
+  display: block;
+  padding-top: 21px;
+}
+.ticket-todo-detail .todo-info .no-body {
+  color: #999;
+  margin-top: 10px;
+  padding-left: 15px;
+  font-style: italic;
+}
+.ticket-todo-detail .tools {
+  clear: both;
+}
+.ticket-todo-detail .portlet.light > .portlet-title > .actions {
+  padding-bottom: 0px;
+}
+.ticket-todo-detail .portlet.light > .portlet-title .back-list {
+  margin-right: 15px;
+  margin-top: 0px;
+}
+.ticket-todo-detail .overdue {
+  color: #F3565D;
+  font-weight: bold;
+}
+.ticket-todo-detail blockquote {
+  font-size: inherit;
+}

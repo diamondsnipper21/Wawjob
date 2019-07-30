@@ -1,0 +1,517 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+/* Plugins */
+@import '/assets/plugins/select2/select2.min.css';
+@import '/assets/plugins/jquery.uniform/css/uniform.default.min.css';
+@import '/assets/plugins/bootstrap-fileinput/bootstrap-fileinput.css';
+@import '/assets/plugins/jquery.uniform/css/uniform.default.min.css';
+.gray-stars {
+  font-size: 18px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.gray-stars > i {
+  color: #ccc;
+}
+.gray-stars .red-stars {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.gray-stars .red-stars i {
+  color: #ffc501;
+}
+.gray-stars i {
+  margin: 0 2px;
+  display: inline-block;
+}
+.star-marks-overlay {
+  visibility: hidden;
+  display: inline-block;
+}
+.star-marks {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.job-review-proposals-page .title-section .title i,
+.job-interviews-page .title-section .title i {
+  margin-left: 10px;
+}
+.job-review-proposals-page .tab-section,
+.job-interviews-page .tab-section {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.job-review-proposals-page .tab-section .nav-tabs,
+.job-interviews-page .tab-section .nav-tabs {
+  padding-left: 25px;
+}
+.job-review-proposals-page .proposals-section .proposal-item,
+.job-interviews-page .proposals-section .proposal-item {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /*border:1px solid @border-color;*/
+}
+.job-review-proposals-page .proposals-section .proposal-item .widgets,
+.job-interviews-page .proposals-section .proposal-item .widgets {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  z-index: 10;
+}
+.job-review-proposals-page .proposals-section .proposal-item.user-item:hover,
+.job-interviews-page .proposals-section .proposal-item.user-item:hover {
+  background: transparent;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-avatar,
+.job-interviews-page .proposals-section .proposal-item .user-avatar {
+  padding-top: 0px;
+  width: 100px;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-avatar img,
+.job-interviews-page .proposals-section .proposal-item .user-avatar img {
+  width: 100%;
+  height: auto;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-info,
+.job-interviews-page .proposals-section .proposal-item .user-info {
+  width: calc(100% - 420px);
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-info .name .label,
+.job-interviews-page .proposals-section .proposal-item .user-info .name .label {
+  font-size: 12px;
+  font-weight: 400;
+  float: right;
+  font-style: italic;
+  margin-left: 5px;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-info .hours,
+.job-interviews-page .proposals-section .proposal-item .user-info .hours {
+  margin: 0px;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-info .earned,
+.job-interviews-page .proposals-section .proposal-item .user-info .earned {
+  margin-top: 40px;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-info .profile-success-percent,
+.job-interviews-page .proposals-section .proposal-item .user-info .profile-success-percent {
+  margin-top: 35px;
+  width: 58%;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-info .country,
+.job-interviews-page .proposals-section .proposal-item .user-info .country,
+.job-review-proposals-page .proposals-section .proposal-item .user-info .hours,
+.job-interviews-page .proposals-section .proposal-item .user-info .hours,
+.job-review-proposals-page .proposals-section .proposal-item .user-info .profile-success-percent,
+.job-interviews-page .proposals-section .proposal-item .user-info .profile-success-percent {
+  display: inline-block;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-info .country,
+.job-interviews-page .proposals-section .proposal-item .user-info .country {
+  margin-top: 10px;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-info .user-title,
+.job-interviews-page .proposals-section .proposal-item .user-info .user-title {
+  font-size: 16px;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-info .ago,
+.job-interviews-page .proposals-section .proposal-item .user-info .ago {
+  font-size: 13px;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-info span.suspended,
+.job-interviews-page .proposals-section .proposal-item .user-info span.suspended {
+  margin-left: 5px;
+  color: #e74d44;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-cover-letter .heading,
+.job-interviews-page .proposals-section .proposal-item .user-cover-letter .heading {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-cover-letter .letter,
+.job-interviews-page .proposals-section .proposal-item .user-cover-letter .letter {
+  word-break: break-all;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-cover-letter .more-link,
+.job-interviews-page .proposals-section .proposal-item .user-cover-letter .more-link {
+  color: #297acc;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-cover-letter .less-link,
+.job-interviews-page .proposals-section .proposal-item .user-cover-letter .less-link {
+  color: #297acc;
+  margin-left: 10px;
+  cursor: pointer;
+  display: none;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-cover-letter .more-text,
+.job-interviews-page .proposals-section .proposal-item .user-cover-letter .more-text {
+  display: none;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-cover-letter .files,
+.job-interviews-page .proposals-section .proposal-item .user-cover-letter .files {
+  margin-top: 10px;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-cover-letter.expanded .more-link,
+.job-interviews-page .proposals-section .proposal-item .user-cover-letter.expanded .more-link {
+  display: none;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-cover-letter.expanded .more-text,
+.job-interviews-page .proposals-section .proposal-item .user-cover-letter.expanded .more-text {
+  display: inline;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-cover-letter.expanded .less-link,
+.job-interviews-page .proposals-section .proposal-item .user-cover-letter.expanded .less-link {
+  display: inline;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-proposal-price,
+.job-interviews-page .proposals-section .proposal-item .user-proposal-price {
+  font-weight: 700;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-proposal-price .heading,
+.job-interviews-page .proposals-section .proposal-item .user-proposal-price .heading {
+  font-weight: 500;
+  margin-left: 10px;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-proposal-price .heading:first-child,
+.job-interviews-page .proposals-section .proposal-item .user-proposal-price .heading:first-child {
+  margin-left: 0;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-action,
+.job-interviews-page .proposals-section .proposal-item .user-action {
+  width: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-action .qualification .tooltip,
+.job-interviews-page .proposals-section .proposal-item .user-action .qualification .tooltip {
+  width: 150px;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-action .btn-top,
+.job-interviews-page .proposals-section .proposal-item .user-action .btn-top {
+  margin-bottom: 20px;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-action .btn-top .btn,
+.job-interviews-page .proposals-section .proposal-item .user-action .btn-top .btn {
+  padding: 3px 7px;
+  border-radius: 50%;
+  box-shadow: 0 0px 3px rgba(72, 79, 99, 0.3);
+  background-color: transparent;
+  margin-left: 5px;
+  font-size: 16px;
+  color: #333333;
+  outline: none;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-action .btn-top .btn.btn-like,
+.job-interviews-page .proposals-section .proposal-item .user-action .btn-top .btn.btn-like {
+  border: none;
+  box-shadow: none;
+  color: #4e9ef0;
+  margin-left: 0;
+  font-size: 20px;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-action .btn-top .btn.btn-like.like,
+.job-interviews-page .proposals-section .proposal-item .user-action .btn-top .btn.btn-like.like {
+  color: #4e9ef0;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-action .btn-top .btn.btn-like.dislike,
+.job-interviews-page .proposals-section .proposal-item .user-action .btn-top .btn.btn-like.dislike {
+  color: #9e9e9e;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-action .btn-top .btn.btn-unarchive,
+.job-interviews-page .proposals-section .proposal-item .user-action .btn-top .btn.btn-unarchive {
+  color: #9e9e9e;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-action .btn-top .btn.disabled,
+.job-interviews-page .proposals-section .proposal-item .user-action .btn-top .btn.disabled {
+  color: #9e9e9e;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-action .btn-wrap,
+.job-interviews-page .proposals-section .proposal-item .user-action .btn-wrap {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-action .btn-wrap .btn,
+.job-interviews-page .proposals-section .proposal-item .user-action .btn-wrap .btn {
+  padding-left: 5px;
+  padding-right: 5px;
+  display: block;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-action .box-decline,
+.job-interviews-page .proposals-section .proposal-item .user-action .box-decline {
+  width: 300px;
+  display: none;
+  position: absolute;
+  top: -115px;
+  right: 65px;
+  background-color: #fff;
+  border: 1px solid #CCC;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  text-align: left;
+  padding: 15px;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-action .box-decline:before,
+.job-interviews-page .proposals-section .proposal-item .user-action .box-decline:before {
+  position: absolute;
+  top: 120px;
+  right: -16px;
+  display: inline-block !important;
+  border-right: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #e0e0e0;
+  content: '';
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-action .box-decline:after,
+.job-interviews-page .proposals-section .proposal-item .user-action .box-decline:after {
+  position: absolute;
+  top: 120px;
+  right: -14px;
+  display: inline-block !important;
+  border-right: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid #fff;
+  content: '';
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-action .box-decline .box-title,
+.job-interviews-page .proposals-section .proposal-item .user-action .box-decline .box-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-action .box-decline .box-user-info,
+.job-interviews-page .proposals-section .proposal-item .user-action .box-decline .box-user-info {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-action .box-decline .box-user-info .info span,
+.job-interviews-page .proposals-section .proposal-item .user-action .box-decline .box-user-info .info span {
+  display: block;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-action .box-decline .box-message,
+.job-interviews-page .proposals-section .proposal-item .user-action .box-decline .box-message {
+  position: relative;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-action .box-decline .box-message .box-ctrl,
+.job-interviews-page .proposals-section .proposal-item .user-action .box-decline .box-message .box-ctrl {
+  margin-bottom: 10px;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-action .box-decline .box-message .overlay,
+.job-interviews-page .proposals-section .proposal-item .user-action .box-decline .box-message .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  opacity: 0.5;
+  z-index: 10;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-action .box-decline .box-message label,
+.job-interviews-page .proposals-section .proposal-item .user-action .box-decline .box-message label {
+  font-size: inherit;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-action .box-decline .box-message textarea,
+.job-interviews-page .proposals-section .proposal-item .user-action .box-decline .box-message textarea {
+  height: 50px;
+}
+.job-review-proposals-page .proposals-section .proposal-item .user-action .declined-reason,
+.job-interviews-page .proposals-section .proposal-item .user-action .declined-reason {
+  padding-top: 10px;
+}
+.job-review-proposals-page #modalJobTerm .alert,
+.job-interviews-page #modalJobTerm .alert {
+  margin: 20px auto;
+  width: 720px;
+  position: relative;
+  padding-left: 50px;
+}
+.job-review-proposals-page #modalJobTerm .alert i,
+.job-interviews-page #modalJobTerm .alert i {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 180%;
+}
+.job-review-proposals-page #modalJobTerm .alert p,
+.job-interviews-page #modalJobTerm .alert p {
+  color: #666;
+  font-size: 14px;
+}
+.job-review-proposals-page #modalJobTerm ul,
+.job-interviews-page #modalJobTerm ul {
+  margin: 0 0 0 5px;
+  padding: 0;
+}
+.job-review-proposals-page #modalJobTerm ul li,
+.job-interviews-page #modalJobTerm ul li {
+  list-style-type: none;
+}
+.job-review-proposals-page #messagesModal .modal-header label,
+.job-interviews-page #messagesModal .modal-header label {
+  text-transform: capitalize;
+  font-size: 28px;
+  display: block;
+  text-align: center;
+  padding-top: 5px;
+}
+.job-review-proposals-page #messagesModal .modal-header .user-info .avatar,
+.job-interviews-page #messagesModal .modal-header .user-info .avatar {
+  margin-right: 10px;
+}
+.job-review-proposals-page #messagesModal .modal-header .user-info h4,
+.job-interviews-page #messagesModal .modal-header .user-info h4 {
+  margin-top: 5px;
+  margin-bottom: 0;
+  line-height: 120%;
+}
+.job-review-proposals-page #messagesModal .modal-header .user-info .user-title,
+.job-interviews-page #messagesModal .modal-header .user-info .user-title {
+  font-size: 16px;
+}
+.job-review-proposals-page #messagesModal .modal-header .user-info span,
+.job-interviews-page #messagesModal .modal-header .user-info span {
+  display: block;
+}
+.job-review-proposals-page #messagesModal .modal-body textarea,
+.job-interviews-page #messagesModal .modal-body textarea {
+  height: 120px;
+}
+.job-review-proposals-page #messagesModal .modal-body .box-message,
+.job-interviews-page #messagesModal .modal-body .box-message {
+  position: relative;
+}
+.job-review-proposals-page #messagesModal .modal-body .box-message .overlay,
+.job-interviews-page #messagesModal .modal-body .box-message .overlay {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.job-review-proposals-page #messagesModal .modal-body .box-message .buttons,
+.job-interviews-page #messagesModal .modal-body .box-message .buttons {
+  margin-top: 15px;
+}
+.job-review-proposals-page #messagesModal .modal-body .box-message .attachments .file .link-delete,
+.job-interviews-page #messagesModal .modal-body .box-message .attachments .file .link-delete {
+  cursor: pointer;
+}
+.job-review-proposals-page #messagesModal .modal-body .box-message .attachments .file .link-delete i,
+.job-interviews-page #messagesModal .modal-body .box-message .attachments .file .link-delete i {
+  font-size: 16px;
+}
+.job-review-proposals-page .not-found-shortlist-result,
+.job-interviews-page .not-found-shortlist-result {
+  padding-top: 120px;
+  padding-bottom: 107px;
+  display: none;
+}
+.job-review-proposals-page .not-found-shortlist-result .heading,
+.job-interviews-page .not-found-shortlist-result .heading {
+  font-size: 26px;
+  padding-bottom: 10px;
+}
+.job-review-proposals-page .not-found-shortlist-result p,
+.job-interviews-page .not-found-shortlist-result p {
+  font-size: 14px;
+}
+.job-review-proposals-page textarea.form-control,
+.job-interviews-page textarea.form-control {
+  resize: none;
+  width: 100%;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.job-review-proposals-page input[type="file"].form-control,
+.job-interviews-page input[type="file"].form-control {
+  border: none;
+}
+.super-user-buyer-job-proposals .page-content-section,
+.super-job-proposals .page-content-section {
+  padding: 12px 20px 15px 20px;
+}
+.super-user-buyer-job-proposals .job-top-section,
+.super-job-proposals .job-top-section,
+.super-user-buyer-job-proposals .job-info,
+.super-job-proposals .job-info,
+.super-user-buyer-job-proposals .job-action,
+.super-job-proposals .job-action {
+  display: none;
+}
+.super-user-buyer-job-proposals .title-section,
+.super-job-proposals .title-section {
+  padding: 20px;
+  font-size: 20px;
+  color: #4DB3A2;
+}
+.super-user-buyer-job-proposals .title-section .status-closed,
+.super-job-proposals .title-section .status-closed {
+  font-size: 12px;
+}
+.super-user-buyer-job-proposals .shadow-box.job-review-proposals-page,
+.super-job-proposals .shadow-box.job-review-proposals-page {
+  -moz-box-shadow: 0px 0px 0px;
+  -webkit-box-shadow: 0px 0px 0px;
+  box-shadow: 0px 0px 0px;
+}
+.super-user-buyer-job-proposals .overview-section,
+.super-job-proposals .overview-section,
+.super-user-buyer-job-proposals .details-section,
+.super-job-proposals .details-section {
+  padding: 15px 25px 0px;
+}
+.super-user-buyer-job-proposals h4,
+.super-job-proposals h4 {
+  font-size: 14px;
+}
+.super-user-buyer-job-proposals .proposals-section .col-md-2,
+.super-job-proposals .proposals-section .col-md-2 {
+  width: 25%;
+}
+.super-user-buyer-job-proposals .proposals-section .col-md-7,
+.super-job-proposals .proposals-section .col-md-7 {
+  width: 75%;
+}
+.super-user-buyer-job-proposals .proposals-section .col-md-3,
+.super-job-proposals .proposals-section .col-md-3 {
+  display: none;
+}
+.super-user-buyer-job-proposals .proposals-section .proposal-item .user-avatar img,
+.super-job-proposals .proposals-section .proposal-item .user-avatar img {
+  margin-top: 10px;
+}
+.super-user-buyer-job-proposals .proposals-filter .checkbox,
+.super-job-proposals .proposals-filter .checkbox {
+  margin-top: 15px;
+}
+.super-job-proposals .overview-section,
+.super-job-proposals .details-section {
+  padding: 0px;
+}
+.super-job-proposals .title-section {
+  display: none;
+}
+.super-job-proposals .page-breadcrumb {
+  clear: both;
+  padding: 15px 15px 15px 0px;
+}

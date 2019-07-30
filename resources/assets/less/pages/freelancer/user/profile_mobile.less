@@ -1,0 +1,77 @@
+@media (max-width: 736px) {
+	body.freelancer-user-profile {
+		.page-section.container {
+			> .page-content {
+				.page-content-section {
+					> .row {
+						margin-right: -15px;
+
+						> .col-sm-9 {
+							> .page-content {
+								padding-left: 0;
+								padding-right: 0;
+
+								.form-group {
+									margin-left: -15px;
+									margin-right: -15px;
+								}
+
+								.item {
+									margin-left: 0;
+									margin-right: 0;
+								}
+							}
+						}
+
+						.summary .name .user-rate {
+							text-align: left;
+							padding-top: 15px;
+						}
+
+						> .col-sm-3.page-content {
+							padding-left: 15px;
+							padding-right: 15px;
+
+							.right-side {
+								.profile-success-percent {
+									width: 35%;
+								}
+
+								#boxInvite {
+									width: 92%;
+									left: 15px;
+									top: 65px;
+
+									&:before,
+									&:after {
+										display: none !important;
+									}
+								}								
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 320px) {
+	body.freelancer-user-profile {
+		.page-section.container {
+			> .page-content {
+				.page-content-section {
+					> .row {
+						> .col-sm-3.page-content {
+							.right-side {
+								.profile-success-percent {
+									width: 40%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

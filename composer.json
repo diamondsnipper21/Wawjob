@@ -1,0 +1,95 @@
+{
+    "name": "laravel/laravel",
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=7.1.3",
+        "adyen/php-api-library": "^1.4",
+        "braintree/braintree_php": "^3.28",
+        "davejamesmiller/laravel-breadcrumbs": "^5.0",
+        "doctrine/dbal": "^2.6",
+        "dwolla/dwollaswagger": "^1.0",
+        "egulias/email-validator": "^2.1",
+        "endroid/qr-code": "^3.2",
+        "fideloper/proxy": "~4.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "inacho/php-credit-card-validator": "^1.0",
+        "laravel/framework": "5.6.*",
+        "laravel/tinker": "~1.0",
+        "mews/captcha": "^2.1",
+        "niklasravnsborg/laravel-pdf": "^2.0",
+        "orangehill/iseed": "dev-master",
+        "paypal/adaptivepayments-sdk-php": "*",
+        "paypal/merchant-sdk-php": "^3.12",
+        "paypal/rest-api-sdk-php": "*",
+        "paypal/sdk-core-php": "^3.4",
+        "paysafegroup/paysafe_sdk_php": "^1.0",
+        "rap2hpoutre/laravel-log-viewer": "^0.14.3",
+        "spatie/laravel-backup": "^5.9",
+        "stripe/stripe-php": "^6.3",
+        "tdanielcox/bluesnap-php": "^0.2.2"
+    },
+    "require-dev": {
+        "filp/whoops": "~2.0",
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "~1.0",
+        "nunomaduro/collision": "~1.1",
+        "phpunit/phpunit": "~7.0",
+        "symfony/thanks": "^1.0"
+    },
+    "autoload": {
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ],
+        "psr-4": {
+            "iJobDesk\\": "app/"
+        },
+        "files": [
+            "app/Helpers/base.php",
+            "app/Helpers/datatable.php",
+            "app/Helpers/file.php",
+            "app/Helpers/http.php",
+            "app/Helpers/job.php",
+            "app/Helpers/jwt.php",
+            "app/Helpers/lang.php",
+            "app/Helpers/mail.php",
+            "app/Helpers/notification.php",
+            "app/Helpers/session.php",
+            "app/Helpers/string.php",
+            "app/Helpers/time.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": [
+            ]
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate"
+        ],
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -1,0 +1,121 @@
+@less: '../../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '/assets/plugins/jquery.uniform/css/uniform.default.min.css';
+@import '/assets/plugins/bootstrap-datepicker/css/datepicker3.css';
+
+.buyer-user-deposit-page {
+	.title-blank {
+		margin-bottom:20px;
+	}
+
+	.info {
+		color: #777;
+	}
+
+	img.gateway-logo {
+		display:inline-block;
+		height:25px;
+		vertical-align:middle;
+	}
+
+	.date-picker {
+		cursor: pointer;
+	}
+
+	.list-group {
+		margin-top:20px;  
+	}
+
+	.row-inner {
+		margin-bottom:8px;
+	}
+
+	.sub-title {
+		font-size: 22px;
+
+		span {
+			font-size:22px;
+		}
+
+		.btn {
+			margin-left:10px;
+		}
+	}
+
+	.sub-title2 {
+		font-size:16px;
+		margin-bottom:10px;
+	}
+
+	.holding {
+		font-style: italic;
+
+		i {
+			cursor: default;
+		}
+
+		.tooltip {
+			font-style: normal;
+		}
+	}
+
+	.amount-title {
+		padding-top:5px;
+	}
+
+	.info-div {
+		font-size:16px;
+	}
+
+	.deposit-amount-field {
+		width:150px;
+	}
+
+	.radiobox {
+		label {
+			margin-bottom: 0;
+			display: block;
+			overflow: hidden;
+		}
+
+		input[type="radio"] {
+			visibility: hidden;
+		}
+
+		.radio {
+			float: left;
+			width: 10%;
+			margin: 3px 0 0;
+		}
+
+		span {
+			float: left;
+
+			&.box-img {
+				img {
+					width: auto;
+					height: 25px;
+				}
+			}
+
+			&.box-title {
+				word-break: break-word;
+			}
+		}
+	}
+
+	#copy_address {
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+
+	#btn_copy {
+		margin-left: 0;
+	}
+}
+
+@import 'deposit_mobile.less';

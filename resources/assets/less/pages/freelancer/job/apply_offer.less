@@ -1,0 +1,108 @@
+@less: '../../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+body {
+    .page-section.container > .page-content {
+        .box-shadow(0px 0px 0px);
+        background: transparent;
+        padding: 0px;
+    }
+}
+
+.alert-warning.type-5 {
+    display: none;
+}
+
+.job-content-section > .row {
+    margin: 0px;
+    .page-content {
+        margin-top: 0px;
+    }
+    > .col-md-3 {
+        padding: 0px;
+    }
+}
+
+.box-section {
+    .sub-title {
+        font-size: 18px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        margin-top: 40px;
+
+        span {
+            font-size:13px;
+        }
+    }
+
+    #ApplyOfferForm {
+        .sub-title {
+            line-height: 40px;
+            padding: 0px 15px;
+            background-color: @gray-bg-color;
+        }
+    }
+
+    textarea {
+        height:110px;
+        resize:none;
+    }
+
+    .term-section {
+        margin-bottom: 20px;
+        label {
+            font-weight: bold;
+        }
+
+        .col-sm-9 {
+            margin-top: 1px;
+        }
+    }
+
+    .attached-files {
+        margin-top: 0px;
+        overflow: hidden;
+        .file {
+            float: left;
+            padding: 10px 20px 10px 0;
+        }
+    }
+}
+
+.display-block {
+    font-size: 14px;
+    display: block;
+}
+
+.has-error {
+    margin: -20px 0 20px;
+}
+
+input.has-errors {
+    border: 1px solid #A94442;
+}
+
+.instruction {
+    .title {
+        background-color: @sidebar-header-bgcolor;
+        color: @sidebar-header-color;
+        line-height: 70px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    ul {
+        margin: 0px 2px 0px;
+        list-style: disc;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        li {
+            padding: 15px 15px 0px 0px;
+            line-height: 25px;
+            font-size: 14px;
+        }
+    }
+}

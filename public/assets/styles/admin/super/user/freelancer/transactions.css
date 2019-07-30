@@ -1,0 +1,149 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+/* Plugins */
+@import '/assets/plugins/select2/select2.min.css';
+@import '/assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css';
+.title-section label {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.report-transactions-page .filter-section {
+  margin-bottom: 20px;
+}
+.report-transactions-page .filter-section .date-filter-section #date_range {
+  width: 260px;
+  float: left;
+  margin: 0 2px;
+}
+.report-transactions-page .filter-section .date-filter-section .prev-unit,
+.report-transactions-page .filter-section .date-filter-section .next-unit {
+  float: left;
+  padding: 3px 8px;
+  font-size: 20px;
+}
+.report-transactions-page .filter-section .date-filter-section .prev-unit:hover,
+.report-transactions-page .filter-section .date-filter-section .next-unit:hover {
+  text-decoration: none;
+}
+.report-transactions-page .filter-section .contract-filter-section .dropdown-menu .filter-item {
+  padding: 5px 10px;
+}
+.report-transactions-page .filter-section .contract-filter-section .dropdown-menu .contract-filter {
+  padding-left: 30px;
+}
+.report-transactions-page .filter-section .contract-filter-section .btn.selectpicker {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.report-transactions-page .filter-section .btn-filter {
+  margin-left: 10px;
+}
+.report-transactions-page .transactions-section .table .tbody {
+  background: #f5f5f5;
+}
+.report-transactions-page .transactions-section .table .tbody .tr.status-available .td {
+  background: #f5f5f5;
+}
+.report-transactions-page .transactions-section .table .tbody .tr.status-done .td {
+  background: #f5f5f5;
+}
+.report-transactions-page .transactions-section .table .tbody .tr.status-pending .td {
+  background: #f5f5f5;
+}
+.report-transactions-page .transactions-section .table .tbody .tr.status-review .td {
+  background: #f5f5f5;
+}
+.report-transactions-page .transactions-section .table .tbody .tr.status-cancelled .td {
+  background: #f5f5f5;
+}
+.report-transactions-page .transactions-section .info {
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.report-transactions-page .statement-section {
+  margin-top: 50px;
+}
+.report-transactions-page .statement-section .statement-content {
+  margin-top: 20px;
+}
+.report-transactions-page .statement-section .statement-content table {
+  width: 100%;
+}
+.report-transactions-page .statement-section .statement-content table tr td {
+  padding: 10px 8px;
+  text-align: right;
+  border-bottom: solid 1px #ddd;
+}
+.report-transactions-page .statement-section .statement-content table tr td.last {
+  border-bottom: none;
+}
+@media (max-width: 736px) {
+  .report-transactions-page .filter-section .date-filter-section #date_range {
+    width: 100%;
+  }
+  .report-transactions-page .filter-section .contract-filter-section {
+    margin-bottom: 15px;
+  }
+  .report-transactions-page .filter-section .transaction-type-section {
+    width: 65% !important;
+  }
+  .report-transactions-page .transactions-section .table .thead .tr .th.rp-ref,
+  .report-transactions-page .transactions-section .table .tbody .tr .td.rp-ref,
+  .report-transactions-page .transactions-section .table .thead .tr .th.rp-type,
+  .report-transactions-page .transactions-section .table .tbody .tr .td.rp-type,
+  .report-transactions-page .transactions-section .table .thead .tr .th.rp-buyer,
+  .report-transactions-page .transactions-section .table .tbody .tr .td.rp-buyer {
+    display: none;
+  }
+  .report-transactions-page .transactions-section .table .thead .tr .th.rp-date,
+  .report-transactions-page .transactions-section .table .tbody .tr .td.rp-date {
+    width: 20% !important;
+  }
+  .report-transactions-page .transactions-section .table .thead .tr .th.rp-description,
+  .report-transactions-page .transactions-section .table .tbody .tr .td.rp-description {
+    width: 40% !important;
+  }
+  .report-transactions-page .transactions-section .table .thead .tr .th.rp-amount,
+  .report-transactions-page .transactions-section .table .tbody .tr .td.rp-amount {
+    width: 20% !important;
+  }
+  .report-transactions-page .transactions-section .table .thead .tr .th.rp-balance,
+  .report-transactions-page .transactions-section .table .tbody .tr .td.rp-balance {
+    width: 20% !important;
+  }
+  .report-transactions-page .statement-section {
+    margin-bottom: 15px;
+  }
+}
+.super-user-freelancer-transactions .tab-pane {
+  padding: 12px 20px 15px 20px;
+}
+.super-user-freelancer-transactions .title-section {
+  margin-bottom: 20px;
+}
+.super-user-freelancer-transactions .page-breadcrumb.breadcrumb {
+  padding: 8px 0px 20px;
+}
+.super-user-freelancer-transactions span.title {
+  padding: 10px 0px;
+  min-height: 48px;
+}
+.super-user-freelancer-transactions span.title span {
+  display: none;
+}
+.super-user-freelancer-transactions span.title span.admin-title.hide {
+  display: block !important;
+  font-size: 16px;
+}
+.super-user-freelancer-transactions .transactions-section.table-scrollable {
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: 0px;
+}
+.super-user-freelancer-transactions .transactions-section.table-scrollable table tr th {
+  text-align: left;
+}
+.super-user-freelancer-transactions .transactions-section.table-scrollable table tr th.text-right {
+  text-align: right;
+}

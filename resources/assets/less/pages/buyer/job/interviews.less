@@ -1,0 +1,520 @@
+@less: '../../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '@{less}/stars.less';
+
+@import '/assets/plugins/select2/select2.min.css';
+@import '/assets/plugins/jquery.uniform/css/uniform.default.min.css';
+@import '/assets/plugins/bootstrap-fileinput/bootstrap-fileinput.css';
+
+.job-interviews-page {
+
+	.title-section {
+		.title {
+			i {
+				margin-left:10px;
+			}
+		}
+	}
+
+	.tab-section {
+		margin-left: -15px;
+		margin-right: -15px;
+
+		.nav-tabs {
+			padding-left: 25px;
+		}
+	}
+
+	.proposals-section {
+
+		&.shortlisted {
+			.proposal-item:not(.liked) {
+				display:none;
+			}
+		}
+
+		.proposal-item {
+
+			&.featured {
+				.box-bid {
+					.sub-title {
+						background-color: #b863c6;
+						color: #fff;
+					}
+				}			
+			}
+
+			position:relative;
+			margin-top:20px;
+			margin-bottom:20px;
+			padding-left:10px;
+			padding-right:10px;
+			/*border:1px solid @border-color;*/
+
+			&.user-item:hover {
+				background: transparent;
+			}
+
+			.user-avatar {
+				padding-top: 0px;
+				width: 100px;
+				
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+
+			.user-info {
+				width: calc(100% - 420px);
+
+				.name {
+					.label {
+						font-size: 12px;
+					    font-weight: 400;
+					    float: right;
+					    font-style: italic;
+					    margin-left: 5px;
+					}
+				}
+
+				.hours {
+					margin: 0px;
+				}
+
+				.earned {
+					margin-top: 30px;
+				}
+
+				.profile-success-percent {
+					margin-top: 25px;
+					width: 72%;
+				}
+
+				.country, .hours, .profile-success-percent {
+					display: inline-block;
+				}
+
+				.ago {
+					font-size: 13px;
+				}
+
+				span.suspended {
+					margin-left: 5px;
+	    			color: #e74d44;
+				}
+			}
+
+			.user-cover-letter {
+				.heading {
+					font-weight: 700;
+				    display: block;
+				    margin-bottom: 5px;
+				    margin-top: 10px;
+				    font-size: 16px;
+				}
+
+				.letter {
+					word-break: break-all;
+				}
+
+				.more-link {
+					color: @default-color;
+					margin-left:10px;
+					cursor:pointer;
+				}
+
+				.less-link {
+					color: @default-color;
+					margin-left:10px;
+					cursor:pointer;
+					display:none;
+				}
+
+				.more-text {
+					display:none;
+				}
+
+				.files {
+					margin-top:10px;
+				}
+
+				&.expanded {
+					.more-link {
+						display:none;
+					}
+
+					.more-text {
+						display:inline;
+					}
+
+					.less-link {
+						display:inline;
+					}
+				}
+			}
+
+			.user-proposal-price {
+				font-weight:700;
+				.heading {
+					font-weight:500;
+					margin-left:10px;
+
+					&:first-child {
+						margin-left: 0;
+					}
+				}
+			}
+
+			.user-action {
+				width: 300px;
+				padding-left: 20px;
+				padding-right: 20px;
+
+				.qualification {
+					.tooltip {
+						width: 200px;
+						.tooltip-inner {
+							text-align: left;
+						}
+					}
+				}
+
+				.btn-top {
+					margin-bottom:20px;
+
+					.btn {
+						padding:3px 7px;
+						border-radius: 50%;
+						box-shadow: 0 0px 3px rgba(72, 79, 99, 0.3);
+						background-color: transparent;
+						margin-left: 5px;
+						font-size: 16px;
+						color: @text-color;
+						outline: none;
+						
+						&.btn-like {
+							border: none;
+							box-shadow: none;
+							color: @default-light-color;
+							margin-left: 0;
+							font-size: 20px;
+
+							&.like {
+								color: @gray-text-color;
+
+								i.fa-heart {
+									display: none;
+								}
+							}
+
+							&.dislike {
+								color: @brand-interview;
+
+								i.fa-heart-o {
+									display: none;
+								}								
+							}
+						}
+
+						&.btn-unarchive {
+							color: @gray-text-color;
+						}
+
+						&.disabled {
+							color: @gray-text-color;
+						}
+					}
+				}
+
+				.btn-wrap {
+					padding-bottom: 20px;
+					margin-bottom: 20px;
+
+					.btn {
+						padding-left: 5px;
+						padding-right: 5px;
+						display: block;
+					}
+				}
+
+				.box-decline {
+					width:300px;
+					display:none;
+					position:absolute;
+					top:-115px;
+					right:65px;
+					background-color:#fff;
+					border:1px solid @border-color;
+					.border-radius(4px);
+					box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.1);
+					z-index:100;
+					text-align:left;
+					padding:15px;
+
+					&:before {
+						position: absolute;
+						top: 120px;
+						right: -16px;
+						display: inline-block !important;
+						border-right: 8px solid transparent;
+						border-top: 8px solid transparent;
+						border-bottom: 8px solid transparent;
+						border-left: 8px solid #e0e0e0;
+						content: '';
+					}
+
+					&:after {
+					    position: absolute;
+					    top: 120px;
+					    right: -14px;
+					    display: inline-block !important;
+						border-right: 8px solid transparent;
+						border-top: 8px solid transparent;
+						border-bottom: 8px solid transparent;
+						border-left: 8px solid #fff;
+					    content: '';
+					}
+
+					.box-title {
+						font-weight:700;
+						margin-bottom:10px;
+					}					
+
+					.box-user-info {
+						margin-top:10px;
+						margin-bottom:10px;
+
+						.info {
+							span {
+								display:block;
+							}
+						}
+					}
+
+					.box-message {
+						position:relative;
+
+						.box-ctrl {
+							margin-bottom:10px;
+						}
+
+						.overlay {
+							position:absolute;
+							width:100%;
+							height:100%;
+							left:0;
+							top:0;
+							background-color:#fff;
+							opacity:0.5;
+							z-index:10;
+						}
+
+						label {
+							font-size:inherit;
+						}
+
+						textarea {
+							height:50px;
+						}
+					}
+				}
+
+				.declined-reason {
+					padding-top:10px;
+				}
+			}
+		}
+	}
+
+	#modalJobTerm {
+		.alert {
+			margin:20px auto;
+			width:720px;
+			position:relative;
+			padding-left:50px;
+
+			i {
+				position:absolute;
+				top:15px;
+				left:15px;
+				font-size:180%;
+			}
+
+			p {
+				color:#666;
+				font-size:14px;
+			}
+		}
+
+		ul {
+			margin: 0 0 0 5px;
+			padding: 0;
+
+			li {
+				list-style-type:none;
+			}
+		}
+	}
+
+	#messagesModal {
+		.modal-header {
+			label {
+				text-transform:capitalize;
+				font-size:28px;
+				display:block;
+				text-align:center;
+				padding-top:5px;	
+			}
+
+			.user-info {
+				font-weight:700;
+
+				.avatar  {
+					margin-right:10px;
+				}
+
+				h4 {
+					font-size:18px;
+					margin-top:5px;
+					margin-bottom:0;
+					line-height:120%;
+				}
+
+				span {
+					display:block;
+				}
+			}
+		}
+
+		.modal-body {
+			.messages-list  {
+				height: 330px;
+				overflow:hidden;
+				overflow-y:auto;
+				margin-bottom:10px;
+
+				.message-row {
+					padding-right:20px;
+
+					.avatar {
+						padding-top:10px;
+					}
+
+					.message {
+						font-size:14px;
+						margin-bottom:10px;
+						padding-top:10px;
+
+						.user {
+							font-weight:700;
+						}
+
+						.text {
+							padding-top:3px;
+							padding-bottom:10px;
+							line-height:22px;
+							margin-right:10px;
+
+							.attachments {
+								margin-top:5px;
+
+								a {
+									margin-right:20px;
+								}
+							}
+						}
+
+						.time {
+							text-align:right;
+							font-weight:400;
+						}						
+					}
+
+					&.received {
+						.message {
+							background-color:rgba(244, 253, 165, 0.54);
+							border:1px solid #E7F39F;
+							.border-radius(4px);
+						}
+					}					
+				}
+			}
+
+			textarea {
+				height:120px;
+			}
+
+			.characters-left {
+				margin-top:5px;
+			}
+		}
+
+		.box-message {
+			position:relative;
+
+			.overlay {
+				position:absolute;
+				z-index:100;
+				width:100%;
+				height:100%;
+				background-color:rgba(255,255,255,0.5);
+			}
+
+			.buttons {
+				margin-top:15px;
+			}
+
+			.attachments {
+				.file {
+					padding:5px 0 0 15px;
+
+					.link-delete {
+						cursor:pointer;
+
+						i {
+							font-size:16px;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.not-found-shortlist-result {
+		padding-top:120px;
+		padding-bottom:107px;
+		display: none;
+
+		.heading {
+			font-size: 26px;
+			padding-bottom:10px;
+		}
+
+		p {
+			font-size:14px;
+		}
+	}
+
+	textarea {
+		&.form-control {
+			resize: none;
+			width:100%;
+			display:block;
+			margin-top:5px;
+			margin-bottom:5px;
+		}
+	}
+
+	input[type="file"] {
+		&.form-control {
+			border:none;
+		}
+	}
+}
+
+@import 'interviews_mobile.less';

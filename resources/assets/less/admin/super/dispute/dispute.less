@@ -1,0 +1,98 @@
+@less: '../../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '/assets/plugins/metronic/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css';
+@import '/assets/plugins/select2/select2.min.css';
+
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-modal/css/bootstrap-modal.css';
+
+@import '/assets/plugins/metronic/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css';
+@import '/assets/plugins/metronic/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css';
+
+.clear {
+	clear: both;
+}
+
+.portlet {
+	.portlet-title {
+		.caption {
+			.number {
+				margin-left: 15px;
+				color: #5b9bd1;
+				font-style: italic;
+				font-size: 13px;
+				display: block;
+				strong {
+					font-size: 18px;
+					font-weight: bold;
+					text-decoration: underline;
+				}
+				span {
+					font-size: 13px;
+					color: #ff5722;
+				}
+			}
+		}
+	}
+
+	.portlet-body {
+		form {
+			.toolbar {
+				.view {
+					float: left;
+					margin-top: 5px;
+					padding-right: 5px;
+				}
+				select {
+					float: left;
+				}
+			}
+
+			.drop {
+
+				position: relative;
+
+				.dropdown-menu {
+					margin-left: -283px;
+					top: 55px;
+					width: 350px;
+					padding: 10px;
+
+					.detail {
+						padding-bottom: 7px;
+						border-bottom: 1px solid #D1D1D1;
+					}
+					.row {
+						padding: 5px;
+					}
+				}
+
+				.dropdown-menu::before {
+				    position: absolute;
+				    top: -7px;
+				    right: 9px;
+				    display: inline-block !important;
+				    border-right: 7px solid transparent;
+				    border-bottom: 7px solid #fff;
+				    border-left: 7px solid transparent;
+				    content: "";
+				}
+			}
+		}
+	}
+}
+
+.modal.view-modal {
+	a {
+		text-decoration: underline;
+	}
+
+	.row {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}

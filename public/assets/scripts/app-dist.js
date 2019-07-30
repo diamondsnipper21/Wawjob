@@ -1,0 +1,1 @@
+"use strict";requirejs(["jquery","defines","common","bootstrap"],function(i,e,n){n.init(),pageId&&-1==i.inArray(pageId,config.noScriptPages)&&require(["scripts/pages/"+pageId],function(i){i.init()})});

@@ -1,0 +1,61 @@
+@less: '../../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '/assets/plugins/metronic/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css';
+@import '/assets/plugins/metronic/admin/pages/css/tasks.css';
+
+.super-payments-overview {
+	.dashboard-stat {
+		.details {
+			float: left;
+			margin-top: 27px;
+			position: static;
+			padding:  0px;
+			padding-left: 15px;
+			padding-right: 15px;
+			min-height: 110px;
+			width: 100%;
+			color: #FFF;
+		}
+		.row1, .row2, .row3, .row4 {
+			text-align: right;
+			line-height: 40px;
+			.value {
+				text-align: left;
+				text-decoration: underline;
+			}
+			&.row4 {
+				margin-top: 15px;
+			}
+		}
+		.visual {
+			position: absolute;
+		}
+	}
+
+	 .feeds.todos{
+	 	li {
+		 	position: relative;
+		    padding: 10px 0;
+		    border-bottom: 1px solid #F4F6F9;
+		    background: transparent;
+		    margin: 0px;
+		    &:hover {
+		    	background: #F4F6F9;
+		    }
+		    .col2 {
+		    	width: 150px;
+	 			margin-left: -150px;
+		    }
+		    .col1 > .cont > .cont-col2 > .desc {
+		    	margin-left: 10px;
+		    }
+		    .col1 > .cont {
+		    	margin-right: 150px;	
+		    }
+		}
+	 }
+}

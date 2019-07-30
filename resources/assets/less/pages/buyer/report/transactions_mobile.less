@@ -1,0 +1,44 @@
+@media (max-width: 736px) {
+	.report-transactions-page {
+		#date_range {
+			width: 100%;
+		}
+
+		.contract-filter-section {
+			margin-bottom: 15px;
+		}
+
+		.transaction-type-section {
+			.section-content {
+				width: 65% !important;
+			}
+		}
+
+		.transactions-section {
+			.table .thead .tr .th,
+			.table .tbody .tr .td {
+				&.rp-ref,
+				&.rp-type,
+				&.rp-freelancer {
+					display: none;
+				}
+
+				&.rp-date {
+					width: 25% !important;
+				}
+
+				&.rp-description {
+					width: 50% !important;
+				}
+
+				&.rp-amount {
+					width: 25% !important;
+				}
+			}
+		}
+
+		.statement-section {
+			margin-bottom: 15px;
+		}
+	}
+}

@@ -1,0 +1,47 @@
+@less: '../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '/assets/plugins/jquery.uniform/css/uniform.default.min.css';
+
+.page-content-section {
+
+	.sub-header {
+		font-size:18px;
+	}
+  
+	fieldset {
+		.form-group {
+			&.setting {
+				border-bottom:1px solid @border-color;
+				margin-left: 0px;
+    			margin-right: 5px;
+			}
+
+			label {
+				cursor:pointer;
+
+				&.control-label {
+					margin-bottom:5px;
+					padding-top:0;
+					display: block;
+					text-align: left;
+					font-size: 13px;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+
+	#notification_settings_form {
+		div.toggle-checkbox {
+			visibility: hidden;
+		}
+
+		div.checker {
+			float: right;
+		}
+	}
+}

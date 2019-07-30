@@ -1,0 +1,66 @@
+@less: '../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+.faq-sidebar-menu {
+  > ul {
+    padding-left: 20px;
+    > li {
+      padding: 10px 12px 10px 17px;
+      &.active {
+        background: #eaedee url('/assets/images/common/menu-selected-bg.png') 0px 0px repeat-y;
+      }
+      a {
+        font-weight: bold;
+        &:hover {
+          color: @default-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &.faq-sidebar-menu > ul {
+    padding-left: 0px;
+  }
+}
+.faq-list {
+  .dd-list {
+    .dd-item {
+      border: 1px solid #e0e0e0;
+      margin: 0px 0px 2px 0px;
+      color: #666;
+
+      .dd-item-header {
+        background-color: #f9f9f9;
+        padding: 10px 15px;
+        cursor: pointer;
+        line-height: 1em;
+        h5 {
+          margin: 0px;
+          color: #666;
+        }
+      }
+      &.selected{
+        .dd-item-header {
+          h5 {
+            color: @site-color;
+            font-weight: bold;
+          }
+        }
+      }
+      .dd-item-body {
+        .dd-item-content{
+          p {
+            padding: 10px 15px;
+            margin: 0;
+          }
+          &.in{
+            border-top: 1px solid #e0e0e0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,188 @@
+/** From Metronic material design3 {{{ **/
+/** }}} **/
+.clear {
+  clear: both;
+}
+.page-content .title-section {
+  padding: 10px 0px;
+  margin-left: -15px;
+  color: #666;
+  border-bottom: 1px solid #E0E0E0;
+}
+.page-content .page-content-section {
+  color: #666;
+}
+.page-content .page-content-section .client-satisfaction {
+  background-color: #EFEFEF;
+  border: 1px solid #cccccc;
+  padding: 25px;
+  height: 355px;
+}
+.page-content .page-content-section .client-satisfaction .client-satisfaction-title {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.page-content .page-content-section .client-satisfaction .easy-pie-chart {
+  margin-left: -90px;
+  position: relative;
+}
+.page-content .page-content-section .client-satisfaction .easy-pie-chart span {
+  position: absolute;
+  top: 57px;
+  left: 67px;
+}
+.page-content .page-content-section .client-satisfaction .easy-pie-chart span h1 {
+  color: #1BBC9B;
+}
+.page-content .page-content-section .client-satisfaction .easy-pie-chart .job-success {
+  position: absolute;
+  top: 83px;
+  left: 48px;
+  width: 100px;
+}
+.page-content .page-content-section .client-satisfaction .last-updated {
+  margin-top: 130px;
+  margin-left: 35px;
+  margin-bottom: 20px;
+}
+.page-content .page-content-section .client-satisfaction .satisfaction-right .row {
+  margin-bottom: 20px;
+}
+.page-content .page-content-section .client-satisfaction .satisfaction-right .row .value {
+  color: #000;
+  font-weight: bold;
+}
+.page-content .page-content-section .client-satisfaction .satisfaction-right .row .value div {
+  float: left;
+  margin-right: 10px;
+}
+.page-content .page-content-section .client-satisfaction .satisfaction-right .row .value span {
+  float: left;
+}
+.page-content .page-content-section .client-satisfaction-extra {
+  position: relative;
+  background-color: #EFEFEF;
+  border: 1px solid #cccccc;
+  border-left: none;
+  padding: 25px;
+  height: 355px;
+}
+.page-content .page-content-section .client-satisfaction-extra #top_rated {
+  width: 135px;
+  background-image: url('/assets/images/pages/home/people/top-rated-background.png');
+  text-align: center;
+  color: #fff;
+}
+.page-content .page-content-section .client-satisfaction-extra .how-to-improve {
+  position: absolute;
+  top: 250px;
+}
+.page-content .page-content-section .communication {
+  background-color: #EFEFEF;
+  border: 1px solid #cccccc;
+  padding: 25px;
+  height: 300px;
+}
+.page-content .page-content-section .communication .communication-title {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.page-content .page-content-section .communication label {
+  font-weight: bold;
+}
+.page-content .page-content-section .communication .wrapper {
+  border: 1px solid #2E6DA4;
+  border-radius: 4px;
+  text-align: center;
+  border-radius: 2px !important;
+}
+.page-content .page-content-section .communication .wrapper .percent {
+  border-radius: 0px;
+  background-color: #337AB7;
+  color: #FFF;
+  height: 14px;
+}
+.page-content .page-content-section .communication-extra {
+  background-color: #EFEFEF;
+  border: 1px solid #cccccc;
+  border-left: none;
+  padding: 25px;
+  height: 300px;
+}
+.page-content .page-content-section .communication-extra .font-bold {
+  font-weight: 700;
+  color: #000;
+}
+.page-content .page-content-section .communication-extra #change_btn {
+  border-radius: 4px !important;
+  width: 100px;
+}
+.page-content .page-content-section .marketing-effectiveness {
+  background-color: #EFEFEF;
+  border: 1px solid #cccccc;
+  padding: 25px;
+  height: 666px;
+  position: relative;
+}
+.page-content .page-content-section .marketing-effectiveness .marketing-effectiveness-title {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.page-content .page-content-section .marketing-effectiveness label {
+  font-weight: bold;
+}
+.page-content .page-content-section .marketing-effectiveness #average {
+  margin-left: 67px;
+}
+.page-content .page-content-section .marketing-effectiveness .average-line {
+  position: absolute;
+  top: 160px;
+  left: 408px;
+  height: 120px;
+  border-left: 1px dashed #000;
+}
+.page-content .page-content-section .marketing-effectiveness .wrapper {
+  border: 1px solid #2E6DA4;
+  border-radius: 4px;
+  text-align: center;
+  border-radius: 2px !important;
+}
+.page-content .page-content-section .marketing-effectiveness .wrapper .percent {
+  border-radius: 0px;
+  background-color: #337AB7;
+  color: #FFF;
+  height: 14px;
+}
+.page-content .page-content-section .marketing-effectiveness-extra {
+  background-color: #EFEFEF;
+  border: 1px solid #cccccc;
+  border-left: none;
+  padding: 25px;
+  height: 666px;
+}
+.gray-stars {
+  font-size: 18px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.gray-stars > span {
+  color: #CCC;
+}
+.gray-stars .red-stars {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.gray-stars .red-stars span {
+  color: #337ab7;
+}
+.gray-stars span {
+  padding: 0px 1px 0px 1px;
+  display: inline-block;
+}

@@ -1,0 +1,182 @@
+@less: '../../../common';
+
+@import '@{less}/_variables.less';
+@import '@{less}/_mixins.less';
+@import '@{less}/_plugins.less';
+
+@import '/assets/plugins/jquery.uniform/css/uniform.default.min.css';
+@import '/assets/plugins/select2/select2.min.css';
+@import '/assets/plugins/bootstrap-fileinput/bootstrap-fileinput.css';
+@import '/assets/plugins/bootstrap-datepicker/css/datepicker3.css';
+
+@colorAuto: fade(green, 60%);
+@colorManual: fade(orange, 60%);
+@colorOverlimit: fade(brown, 60%);
+
+body {
+    .page-section.container > .page-content {
+        .box-shadow(0px 0px 0px);
+        background: transparent;
+        padding: 0px;
+    }
+}
+
+.job-content-section > .row {
+    margin: 0px;
+    .page-content {
+        margin-top: 0px;
+    }
+    > .col-md-3 {
+        padding: 0px;
+    }
+
+    .box-section {
+    	.title {
+    		font-size: 24px;
+    		font-weight: 400;
+    	}
+    }
+}
+
+.view-section {
+
+	.profile-info {
+		float: left;
+
+		img {
+			float: left;
+			width: 48px;
+		}
+		> div {
+			float: left;
+			margin-left: 10px;
+			.profile-name {
+				margin-top: 3px;
+				a {
+					font-size: 18px;
+					color: @site-color;
+				}
+			}
+			.profile-title {
+				margin-top: 1px;
+			}
+		}
+	}
+
+	.contract-subject {
+		font-size: 16px;
+		font-weight: 700;
+
+		i {
+			font-size: 25px;
+		}
+	}
+
+	.note {
+		padding-left: 25px;
+	}
+
+	#hourly_setting {
+		.fee-label {
+			font-size: 14px;
+		}
+	}
+
+	#work_description {
+		resize:none;
+		width:100%;
+		display:block;
+	}
+
+	.comment {
+		color:#aaa;
+	}
+
+	.col-calendar {
+		width:120px;
+		border: 1px solid #e1eaea;
+		line-height: 32px;
+
+		.fa-calendar {
+		    float: right;
+    		padding: 8px;
+		}
+	}
+
+	.info {
+		color: @default-info-color;
+	}
+
+	.control-label {
+		.info {
+			font-weight: 400;
+		}
+	}
+
+	.fileinput {
+		margin-bottom: 0;
+	}
+
+	.milestones {
+		.milestone-header {
+			.border-light-bottom {
+				border-width: 2px !important;
+			}
+		}
+
+		.col {
+			float: left;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		.milestone {
+			.order {
+				width: 15px;
+				float: left;
+				font-size: 14px;
+				margin-top: 5px;
+			}
+
+			.milestone-title {
+				float: left;
+				width: 195px;
+			}
+
+			i.icon-question {
+				font-size: 16px;
+				vertical-align: middle;
+			}
+
+			i.btn-delete-milestone {
+				cursor: pointer;
+				font-size: 18px;
+				vertical-align: middle;
+			}
+		}
+	}
+}
+
+.instruction {
+    .title {
+        background-color: @sidebar-header-bgcolor;
+        color: @sidebar-header-color;
+        line-height: 70px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    ul {
+        margin: 0px 2px 0px;
+        list-style: disc;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        li {
+            padding: 15px 15px 0px 0px;
+            line-height: 25px;
+            font-size: 14px;
+        }
+    }
+}
+
+@import 'hire_mobile.less';
